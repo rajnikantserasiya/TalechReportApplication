@@ -55,19 +55,27 @@
   <ItemGroup>
     <Compile Include="AllMerchantStoreInfoModel.cs" />
     <Compile Include="AuthenticationMethodResultModel.cs" />
+    <Compile Include="EmployeeDetailsClasses\EmployeeDetails.cs" />
     <Compile Include="EmployeeResultModel.cs" />
     <Compile Include="GeneralHelper.cs" />
     <Compile Include="JsonExtensions.cs" />
     <Compile Include="LogHelper.cs" />
+    <Compile Include="MainClass.cs" />
+    <Compile Include="MenuItems.cs" />
+    <Compile Include="MerchantClasses\MerchantDetails.cs" />
     <Compile Include="OrderDetailsResultModel.cs" />
     <Compile Include="OrderHistoryInputParametersModel.cs" />
     <Compile Include="OrderHistoryResultModel.cs" />
+    <Compile Include="OrdersDetailsClasses\OrderDetails.cs" />
+    <Compile Include="OrdersDetailsClasses\Orders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceiptSummaryReportInputParameterModel.cs" />
     <Compile Include="StoreHourlySummaryResultModel.cs" />
     <Compile Include="StoreSummaryAllResultModel.cs" />
     <Compile Include="TalechAccountDetailsModel.cs" />
     <Compile Include="TalechAPIMethods.cs" />
+    <Compile Include="TokenGeneralClasses\Token.cs" />
+    <Compile Include="TokenGeneralClasses\TokenDetails.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

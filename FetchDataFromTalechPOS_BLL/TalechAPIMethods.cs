@@ -78,18 +78,11 @@ namespace FetchDataFromTalechPOS_BLL
 
         public async Task<int> GetOrderHistoryByCriteriaTestNew(List<MerchantIdentification_StoreName> lstAllMerchantStoreInformation, string startdate, string enddate)
         {
-
-
-            // string startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 25)).ToString("MM/dd/yyyy HH:mm:ss");
-            // string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 26)).ToString("MM/dd/yyyy HH:mm:ss");
-
-
+            
             List<OrderDetailsExportFields> lstFinalResult = new List<OrderDetailsExportFields>();
             LogHelper.Log("Start Date: " + startdate + " End Date: " + enddate);
             foreach (var objAllMerchantStoreInformation in lstAllMerchantStoreInformation)
-            {
-
-                //LogHelper.Log("Store: " + objAllMerchantStoreInformation.merchantStoreName + " Time: " + DateTime.Now);
+            {                
 
                 OrderHistorySearchCriteria objReportSearchCriteria = new OrderHistorySearchCriteria();
                 objReportSearchCriteria.searchCriteria = new OrderHistoryInputParametersModel();
@@ -126,9 +119,6 @@ namespace FetchDataFromTalechPOS_BLL
 
                 string jsonString = JsonConvert.SerializeObject(objReportSearchCriteria);
                 JObject objInputParameters = JObject.Parse(jsonString);
-
-                //Merchant IDs: 304267,864093,782465,401041,706913,938269,146195,184349,260068,225657,322240
-                //UserID : 34135           
 
                 try
                 {
@@ -174,20 +164,15 @@ namespace FetchDataFromTalechPOS_BLL
                                     objOrderDetailsExportFields.Employee = objOrderHistory.userFirstName + " " + objOrderHistory.userLastName;
                                     objOrderDetailsExportFields.Store = objAllMerchantStoreInformation.merchantStoreName;
                                     objOrderDetailsExportFields.Date = Convert.ToDateTime(objOrderHistory.orderDate).ToString("MM/dd/yyyy");
-                                    objOrderDetailsExportFields.Time = Convert.ToDateTime(objOrderHistory.orderDate).ToString("hh:mm tt");
-                                    //objOrderDetailsExportFields.CategoryId = objOrderDetail.categoryId;
-                                    //objOrderDetailsExportFields.CategoryName = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objOrderDetail.name)).categoryType;//objCategory.FirstOrDefault(s => s.Key == objOrderDetail.categoryId.ToString()).Value;
-                                    objOrderDetailsExportFields.ItemName = objOrderHistory.listOfItems;
-                                    //objOrderDetailsExportFields.QtySold = objOrderDetail.quantity;
+                                    objOrderDetailsExportFields.Time = Convert.ToDateTime(objOrderHistory.orderDate).ToString("hh:mm tt");                                    
+                                    objOrderDetailsExportFields.ItemName = objOrderHistory.listOfItems;                                    
                                     objOrderDetailsExportFields.PaymentType = objOrderHistory.paymentType;
-                                    objOrderDetailsExportFields.TransactionType = objOrderHistory.paymentInfo.FirstOrDefault().transactionType;
-                                    //objOrderDetailsExportFields.CreditType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().cardType;
+                                    objOrderDetailsExportFields.TransactionType = objOrderHistory.paymentInfo.FirstOrDefault().transactionType;                                    
                                     objOrderDetailsExportFields.GrossSale = objOrderHistory.subTotal;
                                     objOrderDetailsExportFields.Discounts = objOrderHistory.discount;
                                     objOrderDetailsExportFields.Refunds = objOrderHistory.refundAmount;
                                     objOrderDetailsExportFields.NetSale = objOrderDetailsExportFields.GrossSale - objOrderDetailsExportFields.Discounts - objOrderDetailsExportFields.Refunds;
-                                    objOrderDetailsExportFields.Tips = objOrderHistory.tip;
-                                    //tips = objOrderDetailsExportFields.Tips;
+                                    objOrderDetailsExportFields.Tips = objOrderHistory.tip;                                    
                                     objOrderDetailsExportFields.Tax = objOrderHistory.tax;
                                     objOrderDetailsExportFields.Total = objOrderDetailsExportFields.NetSale + objOrderDetailsExportFields.Tax + objOrderDetailsExportFields.Tips;
 
