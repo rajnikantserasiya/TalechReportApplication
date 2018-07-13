@@ -108,9 +108,20 @@ namespace FetchDataFromTalechPOS_BLL
                      orderBy = "firstPaymentDate",
                      //userId = objEmployee.id,//232741//
 
+                     //Sale option
                      hideSale = false,  // To display only refund transaction
                      hideRefund = true, // To display only sales transaction
-                     onlySplitCheck = true // To display only split check transaction
+                     onlySplitCheck = false // To display only split check transaction
+
+                     //Refund option
+                     //hideSale = true,  // To display only refund transaction
+                     //hideRefund = false, // To display only sales transaction
+                     //onlySplitCheck = false // To display only split check transaction
+
+                     //Split Check option
+                     //hideSale = false,  // To display only refund transaction
+                     //hideRefund = true, // To display only sales transaction
+                     //onlySplitCheck = true // To display only split check transaction
                  };
 
                 string jsonString = JsonConvert.SerializeObject(objReportSearchCriteria);
