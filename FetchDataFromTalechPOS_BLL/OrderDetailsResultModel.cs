@@ -15,6 +15,8 @@ namespace FetchDataFromTalechPOS_BLL
         public double tax { get; set; }
         public int categoryId { get; set; }
         public int quantity { get; set; }
+         public double refundedPrice { get; set; }
+        public int refundedQuantity { get; set; }
 
     }
 
