@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +15,12 @@ namespace FetchDataFromTalechPOS_BLL
         public double tax { get; set; }
         public int categoryId { get; set; }
         public int quantity { get; set; }
-         public double refundedPrice { get; set; }
+
+        public int printedQuantity { get; set; }
+        public double refundedPrice { get; set; }
         public int refundedQuantity { get; set; }
+
+        public List<AddOns> addOns { get; set; }
 
     }
 
@@ -68,6 +72,19 @@ namespace FetchDataFromTalechPOS_BLL
         public int QtySold { get; set; }
         public double Tips { get; set; }
 
+    }
+
+    public class AddOns
+    {
+        public double discountAmt { get; set; }
+        public string name { get; set; }
+        public double price { get; set; }
+        public double tax { get; set; }
+        public int categoryId { get; set; }
+        public int quantity { get; set; }
+        public int printedQuantity { get; set; }
+        public double refundedPrice { get; set; }
+        public int refundedQuantity { get; set; }
     }
 
 
