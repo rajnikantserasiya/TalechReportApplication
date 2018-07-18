@@ -39,18 +39,18 @@ namespace FetchDataFromTalechPOS_BLL
                 List<MerchantIdentification_StoreName> lstAllMerchantStoreInformation = await GetAllMerchantStoreDetails();
                 LogHelper.Log("Merchant Store Count: " + lstAllMerchantStoreInformation.Count() + " Time: " + DateTime.Now);
 
-                //await GetMenuItemsByCriteria(lstAllMerchantStoreInformation);
+                await GetMenuItemsByCriteria(lstAllMerchantStoreInformation);
                 ////await GetMenuUpdatesByCriteria(lstAllMerchantStoreInformation);
-                //LogHelper.Log("Menu Item and Category method completed. Count: " + lstAllMenuResultModel.Count() + " Time: " + DateTime.Now);
+                LogHelper.Log("Menu Item and Category method completed. Count: " + lstAllMenuResultModel.Count() + " Time: " + DateTime.Now);
 
                 //List<MerchantIdentification_StoreName> lstAllMerchantStoreInformationawait = await GetEmployeeByCriteria(lstAllMerchantStoreInformation);
                 //LogHelper.Log("Get Employee list method completed. Time: " + DateTime.Now);
 
                 //cypress,fountain valley,alhambra,artesia,chino hills,westminster,tustin,irvine,euclid,huntington beach,costa mesa                
-                //lstAllMerchantStoreInformation = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "fountain valley").ToList();
+                lstAllMerchantStoreInformation = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "fountain valley").ToList();
 
-                string startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2018, 01, 25)).ToString("MM/dd/yyyy HH:mm:ss");
-                string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2018, 01, 26)).ToString("MM/dd/yyyy HH:mm:ss");
+                string startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 01)).ToString("MM/dd/yyyy HH:mm:ss");
+                string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 02)).ToString("MM/dd/yyyy HH:mm:ss");
                 await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
                 //await GetOrderHistoryByCriteriaTest(lstAllMerchantStoreInformation, startdate, enddate);
                 //await GetOrderHistoryByCriteria(lstAllMerchantStoreInformation, startdate, enddate);
@@ -172,7 +172,7 @@ namespace FetchDataFromTalechPOS_BLL
                                     objOrderDetailsExportFields.Total = objOrderDetailsExportFields.NetSale + objOrderDetailsExportFields.Tax + objOrderDetailsExportFields.Tips;
 
                                     //lstStoreResult.Add(objOrderDetailsExportFields);
-                                    
+
                                     //OrderHistoryResultModel objOrderHistory = JsonConvert.DeserializeObject<OrderHistoryResultModel>(jObjectOrder.ToString());
                                     if (objOrderHistory != null && !string.IsNullOrEmpty(objOrderHistory.orderId))
                                     {
@@ -182,11 +182,11 @@ namespace FetchDataFromTalechPOS_BLL
                                         if (objResult != null && objResult.Count() > 0)
                                         {
                                             lstStoreResult.AddRange(objResult);
-                                            if (objOrderDetailsExportFields.NetSale != objResult.Sum(s => s.NetSale))
-                                            {
-                                                LogHelper.Log("Order and Order Details Net sale not matched. Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId);
-                                                LogHelper.Log("Order NetSale Amount: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale Amount: " + objResult.Sum(s => s.NetSale));
-                                            }
+                                            double ItemDetailsSum = objResult.Sum(s => s.NetSale);
+                                            //if (objOrderDetailsExportFields.NetSale - ItemDetailsSum > 0)
+                                            //{                                            
+                                            LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order NetSale: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale: " + ItemDetailsSum);
+                                            //}
                                         }
                                     }
 
@@ -237,7 +237,6 @@ namespace FetchDataFromTalechPOS_BLL
             try
             {
 
-
                 OrderDetails objOrderDetails = new OrderDetails()
                 {
                     orderId = orderID//"10865651095924"
@@ -257,45 +256,44 @@ namespace FetchDataFromTalechPOS_BLL
                         var objRes = await response.Content.ReadAsStringAsync();
                         OrderDetailsResultModel objOrderDetailsResultModel = JsonConvert.DeserializeObject<OrderDetailsResultModel>(objRes.ToString());
 
-                        var tips = 0.0;
-                        //var Refund_Amount = 0.0;
-                        foreach (var objOrderDetail in objOrderDetailsResultModel.Order.orderDetails)
+                        foreach (OrderDetail objOrderDetail in objOrderDetailsResultModel.Order.orderDetails)
                         {
-                            OrderDetailsExportFields objOrderDetailsExportFields = new OrderDetailsExportFields();
-                            objOrderDetailsExportFields.TicketNo = transactionCode;
-                            objOrderDetailsExportFields.Type = objOrderDetailsResultModel.Order.orderType;
-                            objOrderDetailsExportFields.Employee = Employeename;
-                            objOrderDetailsExportFields.Store = storeName;
-                            objOrderDetailsExportFields.Date = Convert.ToDateTime(objOrderDetailsResultModel.Order.orderCreationTime).ToString("MM/dd/yyyy");
-                            objOrderDetailsExportFields.Time = Convert.ToDateTime(objOrderDetailsResultModel.Order.orderCreationTime).ToString("hh:mm tt");
-                            //objOrderDetailsExportFields.CategoryId = objOrderDetail.categoryId;
-                            var categoryObj = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objOrderDetail.name));
-                            if (categoryObj != null)
-                                objOrderDetailsExportFields.CategoryName = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objOrderDetail.name)).categoryType;//objCategory.FirstOrDefault(s => s.Key == objOrderDetail.categoryId.ToString()).Value;
-                            objOrderDetailsExportFields.ItemName = objOrderDetail.name;
-                            objOrderDetailsExportFields.QtySold = objOrderDetail.quantity;
-                            //objOrderDetailsExportFields.TransactionType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().;
-                            objOrderDetailsExportFields.PaymentType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().paymentType;
-                            objOrderDetailsExportFields.CreditType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().cardType;
-                            objOrderDetailsExportFields.GrossSale = objOrderDetail.quantity == 0 ? objOrderDetail.price * objOrderDetail.refundedQuantity : objOrderDetail.price * objOrderDetail.quantity;
-                            objOrderDetailsExportFields.Discounts = objOrderDetail.discountAmt * objOrderDetail.quantity;
-                            objOrderDetailsExportFields.Refunds = objOrderDetail.refundedPrice;
-                            //if (Refund_Amount == 0.0)
-                            //    Refund_Amount = objOrderDetailsExportFields.Refunds = refundAmount;
-                            //else
-                            //    objOrderDetailsExportFields.Refunds = 0.0;
-                            objOrderDetailsExportFields.NetSale = objOrderDetailsExportFields.GrossSale - objOrderDetailsExportFields.Discounts - objOrderDetailsExportFields.Refunds;
-
-                            if (tips == 0.0)
-                                tips = objOrderDetailsExportFields.Tips = objOrderDetailsResultModel.Order.tipsAmount;
-                            else
-                                objOrderDetailsExportFields.Tips = 0.0;
-                            //tips = objOrderDetailsExportFields.Tips;
-                            objOrderDetailsExportFields.Tax = objOrderDetail.tax;
-                            objOrderDetailsExportFields.Total = objOrderDetailsExportFields.NetSale + objOrderDetailsExportFields.Tax + objOrderDetailsExportFields.Tips;
-
+                            OrderDetailsExportFields objOrderDetailsExportFields = setOrderObject(objOrderDetailsResultModel, objOrderDetail, transactionCode, Employeename, storeName);
                             lstOrderDetailsExportFields.Add(objOrderDetailsExportFields);
 
+                            if (objOrderDetail.addOns != null && objOrderDetail.addOns.Count() > 0)
+                            {
+                                foreach (AddOns objAddOns in objOrderDetail.addOns)
+                                {
+                                    OrderDetailsExportFields objOrderDetailsExportFields_AddOns = new OrderDetailsExportFields();
+                                    objOrderDetailsExportFields_AddOns.TicketNo = transactionCode;
+                                    objOrderDetailsExportFields_AddOns.Type = objOrderDetailsResultModel.Order.orderType;
+                                    objOrderDetailsExportFields_AddOns.Employee = Employeename;
+                                    objOrderDetailsExportFields_AddOns.Store = storeName;
+                                    objOrderDetailsExportFields_AddOns.Date = Convert.ToDateTime(objOrderDetailsResultModel.Order.orderCreationTime).ToString("MM/dd/yyyy");
+                                    objOrderDetailsExportFields_AddOns.Time = Convert.ToDateTime(objOrderDetailsResultModel.Order.orderCreationTime).ToString("hh:mm tt");
+                                    //objOrderDetailsExportFields.CategoryId = objOrderDetail.categoryId;
+                                    var categoryObj = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objAddOns.name));
+                                    if (categoryObj != null)
+                                        objOrderDetailsExportFields_AddOns.CategoryName = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objAddOns.name)).categoryType;//objCategory.FirstOrDefault(s => s.Key == objOrderDetail.categoryId.ToString()).Value;
+                                    objOrderDetailsExportFields_AddOns.ItemName = objAddOns.name;
+                                    objOrderDetailsExportFields_AddOns.QtySold = objAddOns.quantity + objAddOns.refundedQuantity;
+                                    //objOrderDetailsExportFields.TransactionType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().;
+                                    objOrderDetailsExportFields_AddOns.PaymentType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().paymentType;
+                                    objOrderDetailsExportFields_AddOns.CreditType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().cardType;
+                                    //objOrderDetailsExportFields_AddOns.GrossSale = objAddOns.quantity == 0 ? objAddOns.price * objAddOns.refundedQuantity : objAddOns.price * objAddOns.quantity;
+                                    objOrderDetailsExportFields_AddOns.GrossSale = objAddOns.price * (objAddOns.quantity + objAddOns.refundedQuantity);
+                                    objOrderDetailsExportFields_AddOns.Discounts = objAddOns.discountAmt * objAddOns.quantity;
+                                    objOrderDetailsExportFields_AddOns.Refunds = objAddOns.refundedPrice;
+                                    objOrderDetailsExportFields_AddOns.NetSale = objOrderDetailsExportFields_AddOns.GrossSale - objOrderDetailsExportFields_AddOns.Discounts - objOrderDetailsExportFields_AddOns.Refunds;
+                                    objOrderDetailsExportFields_AddOns.Tips = 0.0;
+                                    //tips = objOrderDetailsExportFields.Tips;
+                                    objOrderDetailsExportFields_AddOns.Tax = objAddOns.tax;
+                                    objOrderDetailsExportFields_AddOns.Total = objOrderDetailsExportFields_AddOns.NetSale + objOrderDetailsExportFields_AddOns.Tax + objOrderDetailsExportFields_AddOns.Tips;
+
+                                    lstOrderDetailsExportFields.Add(objOrderDetailsExportFields_AddOns);
+                                }
+                            }
                         }
 
                     }
@@ -304,12 +302,54 @@ namespace FetchDataFromTalechPOS_BLL
             }
             catch (Exception ex)
             {
-                LogHelper.Log("Error in Order details method. Error: " + ex.Message);
+                LogHelper.Log("Error in Order details method. OrderID: " + orderID + " Error: " + ex.Message);
                 //throw;
             }
 
             return lstOrderDetailsExportFields;
 
+        }
+
+        public OrderDetailsExportFields setOrderObject(OrderDetailsResultModel objOrderDetailsResultModel, OrderDetail objOrderDetail,
+            string transactionCode, string Employeename, string storeName)
+        {
+            var tips = 0.0;
+            //var Refund_Amount = 0.0;
+            OrderDetailsExportFields objOrderDetailsExportFields = new OrderDetailsExportFields();
+            objOrderDetailsExportFields.TicketNo = transactionCode;
+            objOrderDetailsExportFields.Type = objOrderDetailsResultModel.Order.orderType;
+            objOrderDetailsExportFields.Employee = Employeename;
+            objOrderDetailsExportFields.Store = storeName;
+            objOrderDetailsExportFields.Date = Convert.ToDateTime(objOrderDetailsResultModel.Order.orderCreationTime).ToString("MM/dd/yyyy");
+            objOrderDetailsExportFields.Time = Convert.ToDateTime(objOrderDetailsResultModel.Order.orderCreationTime).ToString("hh:mm tt");
+            //objOrderDetailsExportFields.CategoryId = objOrderDetail.categoryId;
+            var categoryObj = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objOrderDetail.name));
+            if (categoryObj != null)
+                objOrderDetailsExportFields.CategoryName = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objOrderDetail.name)).categoryType;//objCategory.FirstOrDefault(s => s.Key == objOrderDetail.categoryId.ToString()).Value;
+            objOrderDetailsExportFields.ItemName = objOrderDetail.name;
+            objOrderDetailsExportFields.QtySold = objOrderDetail.quantity + objOrderDetail.refundedQuantity;
+            //objOrderDetailsExportFields.TransactionType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().;
+            objOrderDetailsExportFields.PaymentType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().paymentType;
+            objOrderDetailsExportFields.CreditType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().cardType;
+            //objOrderDetailsExportFields.GrossSale = objOrderDetail.quantity == 0 ? objOrderDetail.price * objOrderDetail.refundedQuantity : objOrderDetail.price * objOrderDetail.quantity;
+            objOrderDetailsExportFields.GrossSale = objOrderDetail.price * (objOrderDetail.quantity + objOrderDetail.refundedQuantity);
+            objOrderDetailsExportFields.Discounts = objOrderDetail.discountAmt * objOrderDetail.quantity;
+            objOrderDetailsExportFields.Refunds = objOrderDetail.refundedPrice;
+            //if (Refund_Amount == 0.0)
+            //    Refund_Amount = objOrderDetailsExportFields.Refunds = refundAmount;
+            //else
+            //    objOrderDetailsExportFields.Refunds = 0.0;
+            objOrderDetailsExportFields.NetSale = objOrderDetailsExportFields.GrossSale - objOrderDetailsExportFields.Discounts - objOrderDetailsExportFields.Refunds;
+
+            if (tips == 0.0)
+                tips = objOrderDetailsExportFields.Tips = objOrderDetailsResultModel.Order.tipsAmount;
+            else
+                objOrderDetailsExportFields.Tips = 0.0;
+            //tips = objOrderDetailsExportFields.Tips;
+            objOrderDetailsExportFields.Tax = objOrderDetail.tax;
+            objOrderDetailsExportFields.Total = objOrderDetailsExportFields.NetSale + objOrderDetailsExportFields.Tax + objOrderDetailsExportFields.Tips;
+
+            return objOrderDetailsExportFields;
         }
 
         public async Task<int> GetMenuItemsByCriteria(List<MerchantIdentification_StoreName> lstAllMerchantStoreInformation)
@@ -475,8 +515,6 @@ namespace FetchDataFromTalechPOS_BLL
                 }
             }
         }
-
-
 
         public async Task<List<MerchantIdentification_StoreName>> GetEmployeeByCriteria(List<MerchantIdentification_StoreName> lstAllMerchantStoreInformation)
         {
