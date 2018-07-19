@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +11,13 @@ namespace FetchDataFromTalechPOS_BLL
 {
     public static class GeneralHelper
     {
+
+        const double _3 = 0.001;
+        const double _4 = 0.0001;
+        const double _5 = 0.00001;
+        const double _6 = 0.000001;
+        const double _7 = 0.0000001;
+
         public static DataTable ToDataTable<T>(this IList<T> data)
         {
             PropertyDescriptorCollection props =
@@ -50,5 +57,19 @@ namespace FetchDataFromTalechPOS_BLL
                dateTime.Day,
                23, 59, 59, 999);
         }
+
+
+        
+
+        public static bool Equals3DigitPrecision(this double left, double right)
+        {
+            return Math.Abs(left - right) < _3;
+        }
+
+        public static bool Equals4DigitPrecision(this double left, double right)
+        {
+            return Math.Abs(left - right) < _4;
+        }
+
     }
 }
