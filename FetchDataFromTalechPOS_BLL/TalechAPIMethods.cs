@@ -281,10 +281,10 @@ namespace FetchDataFromTalechPOS_BLL
                                         objOrderDetailsExportFields_AddOns.CategoryName = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objAddOns.name)).categoryType;//objCategory.FirstOrDefault(s => s.Key == objOrderDetail.categoryId.ToString()).Value;
                                     objOrderDetailsExportFields_AddOns.ItemName = objAddOns.name;
 
-                                    if (objAddOns.refundedQuantity == 0) {
-                                        if (objAddOns.quantity != objAddOns.printedQuantity)
-                                            objAddOns.quantity = objAddOns.printedQuantity;
-                                    }
+                                    //if (objAddOns.refundedQuantity == 0) {
+                                    //    if (objAddOns.quantity != objAddOns.printedQuantity)
+                                    //        objAddOns.quantity = objAddOns.printedQuantity;
+                                    //}
 
                                     objOrderDetailsExportFields_AddOns.QtySold = objAddOns.quantity + objAddOns.refundedQuantity;
                                     //objOrderDetailsExportFields.TransactionType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().;
