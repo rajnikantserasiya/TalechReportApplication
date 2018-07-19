@@ -39,28 +39,27 @@ namespace FetchDataFromTalechPOS_BLL
                 List<MerchantIdentification_StoreName> lstAllMerchantStoreInformation = await GetAllMerchantStoreDetails();
                 LogHelper.Log("Merchant Store Count: " + lstAllMerchantStoreInformation.Count() + " Time: " + DateTime.Now);
 
-                await GetMenuItemsByCriteria(lstAllMerchantStoreInformation);
+                //await GetMenuItemsByCriteria(lstAllMerchantStoreInformation);
                 ///await GetMenuUpdatesByCriteria(lstAllMerchantStoreInformation);
-                LogHelper.Log("Menu Item and Category method completed. Count: " + lstAllMenuResultModel.Count() + " Time: " + DateTime.Now);
+                //LogHelper.Log("Menu Item and Category method completed. Count: " + lstAllMenuResultModel.Count() + " Time: " + DateTime.Now);
 
                 //List<MerchantIdentification_StoreName> lstAllMerchantStoreInformationawait = await GetEmployeeByCriteria(lstAllMerchantStoreInformation);
                 //LogHelper.Log("Get Employee list method completed. Time: " + DateTime.Now);
 
                 //cypress,fountain valley,alhambra,artesia,chino hills,westminster,tustin,irvine,euclid,huntington beach,costa mesa                
-                lstAllMerchantStoreInformation =
-                    lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "fountain valley").ToList();
+                //lstAllMerchantStoreInformation = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "tustin").ToList();
 
                 string startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 01)).ToString("MM/dd/yyyy HH:mm:ss");
-                string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 02)).ToString("MM/dd/yyyy HH:mm:ss");
+                string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 08)).ToString("MM/dd/yyyy HH:mm:ss");
                 await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
                 //await GetOrderHistoryByCriteriaTest(lstAllMerchantStoreInformation, startdate, enddate);
                 //await GetOrderHistoryByCriteria(lstAllMerchantStoreInformation, startdate, enddate);
-                //LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
                 //await GetOrderDetailsByOrderID(lstAllMerchantStoreInformation);
                 //await LogOff(lstAllMerchantStoreInformation);
-                //await DownloadStoreRevenueReport(lstAllMerchantStoreInformation,startdate,enddate);
-                //LogHelper.Log("DownloadStoreRevenueReport method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                LogHelper.Log("DownloadStoreRevenueReport method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
                 // Console.WriteLine("File saved successfully");
             }
@@ -86,7 +85,7 @@ namespace FetchDataFromTalechPOS_BLL
                  new OrderHistoryInputParametersModel()
                  {
                      offset = 0,
-                     limit = 10000,
+                     limit = 100000,
                      //searchString = "",
                      startDate = startdate,
                      endDate = enddate,
@@ -185,9 +184,9 @@ namespace FetchDataFromTalechPOS_BLL
                                             lstStoreResult.AddRange(objResult);
                                             double ItemDetailsSum = objResult.Sum(s => s.NetSale);
                                             double difference = objOrderDetailsExportFields.NetSale - ItemDetailsSum;
-                                            if (difference > 0)
+                                            if (!objOrderDetailsExportFields.NetSale.Equals3DigitPrecision(ItemDetailsSum))
                                             {
-                                                LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order NetSale: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale: " + ItemDetailsSum + " Difference: " + difference);
+                                                LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order NetSale: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale: " + ItemDetailsSum + " Difference: " + difference + " Order Date:" + objOrderDetailsExportFields.Date + " Time:" + objOrderDetailsExportFields.Time);
                                             }
                                         }
                                     }
@@ -241,7 +240,7 @@ namespace FetchDataFromTalechPOS_BLL
 
                 OrderDetails objOrderDetails = new OrderDetails()
                 {
-                    orderId = orderID//"10075532813763"
+                    orderId = orderID//"10080661970916"
                 };
 
                 string jsonString = JsonConvert.SerializeObject(objOrderDetails);
@@ -294,7 +293,8 @@ namespace FetchDataFromTalechPOS_BLL
                                     objOrderDetailsExportFields_AddOns.GrossSale = objAddOns.price * (objAddOns.quantity + objAddOns.refundedQuantity);
                                     objOrderDetailsExportFields_AddOns.Discounts = objAddOns.discountAmt * objAddOns.quantity;
                                     objOrderDetailsExportFields_AddOns.Refunds = objAddOns.refundedPrice;
-                                    objOrderDetailsExportFields_AddOns.NetSale = objOrderDetailsExportFields_AddOns.GrossSale - objOrderDetailsExportFields_AddOns.Discounts - objOrderDetailsExportFields_AddOns.Refunds;
+                                    objOrderDetailsExportFields_AddOns.NetSale =
+                                        (objOrderDetailsExportFields_AddOns.GrossSale - objOrderDetailsExportFields_AddOns.Discounts - objOrderDetailsExportFields_AddOns.Refunds) < 0 ? 0 : (objOrderDetailsExportFields_AddOns.GrossSale - objOrderDetailsExportFields_AddOns.Discounts - objOrderDetailsExportFields_AddOns.Refunds);
                                     objOrderDetailsExportFields_AddOns.Tips = 0.0;
                                     //tips = objOrderDetailsExportFields.Tips;
                                     objOrderDetailsExportFields_AddOns.Tax = objAddOns.tax;
@@ -343,11 +343,8 @@ namespace FetchDataFromTalechPOS_BLL
             objOrderDetailsExportFields.GrossSale = objOrderDetail.price * (objOrderDetail.quantity + objOrderDetail.refundedQuantity);
             objOrderDetailsExportFields.Discounts = objOrderDetail.discountAmt * objOrderDetail.quantity;
             objOrderDetailsExportFields.Refunds = objOrderDetail.refundedPrice;
-            //if (Refund_Amount == 0.0)
-            //    Refund_Amount = objOrderDetailsExportFields.Refunds = refundAmount;
-            //else
-            //    objOrderDetailsExportFields.Refunds = 0.0;
-            objOrderDetailsExportFields.NetSale = objOrderDetailsExportFields.GrossSale - objOrderDetailsExportFields.Discounts - objOrderDetailsExportFields.Refunds;
+            objOrderDetailsExportFields.NetSale =
+                (objOrderDetailsExportFields.GrossSale - objOrderDetailsExportFields.Discounts - objOrderDetailsExportFields.Refunds) < 0 ? 0 : (objOrderDetailsExportFields.GrossSale - objOrderDetailsExportFields.Discounts - objOrderDetailsExportFields.Refunds);
 
             if (tips == 0.0)
                 tips = objOrderDetailsExportFields.Tips = objOrderDetailsResultModel.Order.tipsAmount;
