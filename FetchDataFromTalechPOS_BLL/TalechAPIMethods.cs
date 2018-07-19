@@ -40,21 +40,22 @@ namespace FetchDataFromTalechPOS_BLL
                 LogHelper.Log("Merchant Store Count: " + lstAllMerchantStoreInformation.Count() + " Time: " + DateTime.Now);
 
                 await GetMenuItemsByCriteria(lstAllMerchantStoreInformation);
-                ////await GetMenuUpdatesByCriteria(lstAllMerchantStoreInformation);
+                ///await GetMenuUpdatesByCriteria(lstAllMerchantStoreInformation);
                 LogHelper.Log("Menu Item and Category method completed. Count: " + lstAllMenuResultModel.Count() + " Time: " + DateTime.Now);
 
                 //List<MerchantIdentification_StoreName> lstAllMerchantStoreInformationawait = await GetEmployeeByCriteria(lstAllMerchantStoreInformation);
                 //LogHelper.Log("Get Employee list method completed. Time: " + DateTime.Now);
 
                 //cypress,fountain valley,alhambra,artesia,chino hills,westminster,tustin,irvine,euclid,huntington beach,costa mesa                
-                lstAllMerchantStoreInformation = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "fountain valley").ToList();
+                lstAllMerchantStoreInformation =
+                    lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "fountain valley").ToList();
 
                 string startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 01)).ToString("MM/dd/yyyy HH:mm:ss");
                 string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(2017, 01, 02)).ToString("MM/dd/yyyy HH:mm:ss");
                 await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
                 //await GetOrderHistoryByCriteriaTest(lstAllMerchantStoreInformation, startdate, enddate);
                 //await GetOrderHistoryByCriteria(lstAllMerchantStoreInformation, startdate, enddate);
-                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                //LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
                 //await GetOrderDetailsByOrderID(lstAllMerchantStoreInformation);
                 //await LogOff(lstAllMerchantStoreInformation);
@@ -183,10 +184,11 @@ namespace FetchDataFromTalechPOS_BLL
                                         {
                                             lstStoreResult.AddRange(objResult);
                                             double ItemDetailsSum = objResult.Sum(s => s.NetSale);
-                                            //if (objOrderDetailsExportFields.NetSale - ItemDetailsSum > 0)
-                                            //{                                            
-                                            LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order NetSale: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale: " + ItemDetailsSum);
-                                            //}
+                                            double difference = objOrderDetailsExportFields.NetSale - ItemDetailsSum;
+                                            if (difference > 0)
+                                            {
+                                                LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order NetSale: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale: " + ItemDetailsSum + " Difference: " + difference);
+                                            }
                                         }
                                     }
 
@@ -239,7 +241,7 @@ namespace FetchDataFromTalechPOS_BLL
 
                 OrderDetails objOrderDetails = new OrderDetails()
                 {
-                    orderId = orderID//"10865651095924"
+                    orderId = orderID//"10075532813763"
                 };
 
                 string jsonString = JsonConvert.SerializeObject(objOrderDetails);
@@ -256,9 +258,10 @@ namespace FetchDataFromTalechPOS_BLL
                         var objRes = await response.Content.ReadAsStringAsync();
                         OrderDetailsResultModel objOrderDetailsResultModel = JsonConvert.DeserializeObject<OrderDetailsResultModel>(objRes.ToString());
 
+                        double tips = 0.0;
                         foreach (OrderDetail objOrderDetail in objOrderDetailsResultModel.Order.orderDetails)
                         {
-                            OrderDetailsExportFields objOrderDetailsExportFields = setOrderObject(objOrderDetailsResultModel, objOrderDetail, transactionCode, Employeename, storeName);
+                            OrderDetailsExportFields objOrderDetailsExportFields = setOrderObject(objOrderDetailsResultModel, objOrderDetail, transactionCode, Employeename, storeName, ref tips);
                             lstOrderDetailsExportFields.Add(objOrderDetailsExportFields);
 
                             if (objOrderDetail.addOns != null && objOrderDetail.addOns.Count() > 0)
@@ -277,6 +280,12 @@ namespace FetchDataFromTalechPOS_BLL
                                     if (categoryObj != null)
                                         objOrderDetailsExportFields_AddOns.CategoryName = lstAllMenuResultModel.FirstOrDefault(s => s.name.Contains(objAddOns.name)).categoryType;//objCategory.FirstOrDefault(s => s.Key == objOrderDetail.categoryId.ToString()).Value;
                                     objOrderDetailsExportFields_AddOns.ItemName = objAddOns.name;
+
+                                    if (objAddOns.refundedQuantity == 0) {
+                                        if (objAddOns.quantity != objAddOns.printedQuantity)
+                                            objAddOns.quantity = objAddOns.printedQuantity;
+                                    }
+
                                     objOrderDetailsExportFields_AddOns.QtySold = objAddOns.quantity + objAddOns.refundedQuantity;
                                     //objOrderDetailsExportFields.TransactionType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().;
                                     objOrderDetailsExportFields_AddOns.PaymentType = objOrderDetailsResultModel.Order.paymentDetails.FirstOrDefault().paymentType;
@@ -311,10 +320,9 @@ namespace FetchDataFromTalechPOS_BLL
         }
 
         public OrderDetailsExportFields setOrderObject(OrderDetailsResultModel objOrderDetailsResultModel, OrderDetail objOrderDetail,
-            string transactionCode, string Employeename, string storeName)
+            string transactionCode, string Employeename, string storeName, ref double tips)
         {
-            var tips = 0.0;
-            //var Refund_Amount = 0.0;
+
             OrderDetailsExportFields objOrderDetailsExportFields = new OrderDetailsExportFields();
             objOrderDetailsExportFields.TicketNo = transactionCode;
             objOrderDetailsExportFields.Type = objOrderDetailsResultModel.Order.orderType;
@@ -902,7 +910,7 @@ namespace FetchDataFromTalechPOS_BLL
                     worksheet.Cells["E4:E14"].Style.Font.Color.SetColor(Color.Red);
                     worksheet.Cells["F4:F14"].Style.Font.Color.SetColor(Color.Red);
 
-                    FileInfo objFile = GetFileInfo(@"C:\Users\Rajni\Desktop\E\Projects\Custom Data Reports via API\Excel Export", dtStoreSummary.TableName + ".xlsx");
+                    FileInfo objFile = GetFileInfo(AppDomain.CurrentDomain.BaseDirectory, dtStoreSummary.TableName + ".xlsx");
                     package.SaveAs(objFile);
                 }
             }
