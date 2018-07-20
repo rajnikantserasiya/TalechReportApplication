@@ -1,0 +1,181 @@
+Service executed on daily. Time:09:11
+Next Service execution, after 0 hours 0 Minutes 49 seconds
+Refresh Token Method Response code: OK
+Access token:204440829/nPhVXM1mc9F8TKRLgXfsKT6S Expires in:1800 token_type:Bearer
+Merchant Store Count: 11 Time: 7/19/2018 9:11:01 AM
+Start Date: 01/01/2017 00:00:00 End Date: 01/08/2017 00:00:00
+Store: Fountain Valley Orders Count: 5426 Time: 7/19/2018 9:11:14 AM
+Transaction is duplicate. Transaction Code: R9IT
+Ticket no: MTU7 Order ID:10075532858090 Order NetSale: 8 Order Details Net Sale: 7.5 Difference: 0.5 Order Date:01/07/2017 Time:09:07 PM
+Ticket no: UAU1 Order ID:10075532856869 Order NetSale: 8 Order Details Net Sale: 7.5 Difference: 0.5 Order Date:01/07/2017 Time:05:23 PM
+Transaction is duplicate. Transaction Code: 9XDR
+Ticket no: J6QW Order ID:10075532855143 Order NetSale: 24.75 Order Details Net Sale: 24.25 Difference: 0.5 Order Date:01/07/2017 Time:02:16 PM
+Transaction is duplicate. Transaction Code: I8J2
+Transaction is duplicate. Transaction Code: 1MEZ
+Ticket no: N4NB Order ID:10075532851626 Order NetSale: 0 Order Details Net Sale: 3 Difference: -3 Order Date:01/07/2017 Time:08:28 AM
+Ticket no: IKU1 Order ID:10075532851232 Order NetSale: 0 Order Details Net Sale: 12.4 Difference: -12.4 Order Date:01/06/2017 Time:10:41 PM
+Ticket no: L4HT Order ID:10075532850479 Order NetSale: 8 Order Details Net Sale: 7.5 Difference: 0.5 Order Date:01/06/2017 Time:08:13 PM
+Ticket no: 6FVM Order ID:10075532848086 Order NetSale: 12.5 Order Details Net Sale: 12 Difference: 0.5 Order Date:01/06/2017 Time:02:59 PM
+Transaction is duplicate. Transaction Code: CA8D
+Ticket no: XQ7Y Order ID:10075532844955 Order NetSale: 0 Order Details Net Sale: 3.25 Difference: -3.25 Order Date:01/06/2017 Time:08:55 AM
+Transaction is duplicate. Transaction Code: T90P
+Transaction is duplicate. Transaction Code: 5DB8
+Transaction is duplicate. Transaction Code: 7I9P
+Error in Order details method. OrderID: 10075532839406 Error: Input string '0.5' is not a valid integer. Path 'Order.orderDetails[0].printedQuantity', line 1, position 3628.
+Ticket no: I6SR Order ID:10075532838697 Order NetSale: 0 Order Details Net Sale: 12 Difference: -12 Order Date:01/05/2017 Time:11:15 AM
+Transaction is duplicate. Transaction Code: 4YHC
+Ticket no: 8H5M Order ID:10075532834037 Order NetSale: 5 Order Details Net Sale: 4.5 Difference: 0.5 Order Date:01/04/2017 Time:03:54 PM
+Ticket no: VRY8 Order ID:10075532833788 Order NetSale: 8 Order Details Net Sale: 7.5 Difference: 0.5 Order Date:01/04/2017 Time:03:23 PM
+Transaction is duplicate. Transaction Code: CD4A
+Transaction is duplicate. Transaction Code: 1ACR
+Ticket no: IHZ0 Order ID:10075532831906 Order NetSale: 0 Order Details Net Sale: 9 Difference: -9 Order Date:01/04/2017 Time:12:37 PM
+Ticket no: 5Q59 Order ID:10075532831299 Order NetSale: 0 Order Details Net Sale: 10.5 Difference: -10.5 Order Date:01/04/2017 Time:11:05 AM
+Transaction is duplicate. Transaction Code: RLU1
+Transaction is duplicate. Transaction Code: RLU1
+Transaction is duplicate. Transaction Code: CEJ7
+Transaction is duplicate. Transaction Code: 6NWG
+Ticket no: 37W7 Order ID:10075521041901 Order NetSale: 0 Order Details Net Sale: 4 Difference: -4 Order Date:01/03/2017 Time:02:23 PM
+Ticket no: Q16J Order ID:10075532818183 Order NetSale: 0 Order Details Net Sale: 3 Difference: -3 Order Date:01/02/2017 Time:12:08 PM
+Transaction is duplicate. Transaction Code: EKW2
+Ticket no: 26X7 Order ID:10075532815266 Order NetSale: 12.5 Order Details Net Sale: 12 Difference: 0.5 Order Date:01/01/2017 Time:07:35 PM
+Ticket no: SDG6 Order ID:10075532814798 Order NetSale: 8 Order Details Net Sale: 7.5 Difference: 0.5 Order Date:01/01/2017 Time:06:21 PM
+Transaction is duplicate. Transaction Code: WZK9
+Ticket no: DPG4 Order ID:10075532813763 Order NetSale: 16.9 Order Details Net Sale: 15.9 Difference: 1 Order Date:01/01/2017 Time:04:24 PM
+Transaction is duplicate. Transaction Code: G3H3
+Transaction is duplicate. Transaction Code: XA9P
+Transaction is duplicate. Transaction Code: UF1K
+Store: Huntington Beach Orders Count: 2123 Time: 7/19/2018 9:43:04 AM
+Transaction is duplicate. Transaction Code: C8NE
+Ticket no: U8FJ Order ID:10146910475440 Order NetSale: 0 Order Details Net Sale: 0.5 Difference: -0.5 Order Date:01/06/2017 Time:01:16 PM
+Transaction is duplicate. Transaction Code: UFJ1
+Ticket no: MIU5 Order ID:10146910470537 Order NetSale: 0 Order Details Net Sale: 8.25 Difference: -8.25 Order Date:01/04/2017 Time:08:26 PM
+Transaction is duplicate. Transaction Code: ZCE0
+Transaction is duplicate. Transaction Code: EEI5
+Transaction is duplicate. Transaction Code: R3SX
+Ticket no: VD8R Order ID:10146910463424 Order NetSale: 0 Order Details Net Sale: 6.5 Difference: -6.5 Order Date:01/02/2017 Time:03:43 PM
+Transaction is duplicate. Transaction Code: N7VB
+Transaction is duplicate. Transaction Code: 2F5B
+Store: Tustin Orders Count: 3415 Time: 7/19/2018 9:55:58 AM
+Transaction is duplicate. Transaction Code: 8D6H
+Ticket no: 7IRD Order ID:10080661999564 Order NetSale: 0 Order Details Net Sale: 6.75 Difference: -6.75 Order Date:01/07/2017 Time:04:03 PM
+Transaction is duplicate. Transaction Code: YWG8
+Transaction is duplicate. Transaction Code: E6BR
+Ticket no: VK61 Order ID:10080661992117 Order NetSale: 0 Order Details Net Sale: 3.25 Difference: -3.25 Order Date:01/06/2017 Time:12:33 PM
+Transaction is duplicate. Transaction Code: 4F4U
+Transaction is duplicate. Transaction Code: U49G
+Transaction is duplicate. Transaction Code: 6HI4
+Transaction is duplicate. Transaction Code: KCX4
+Transaction is duplicate. Transaction Code: X9L8
+Transaction is duplicate. Transaction Code: NIE0
+Ticket no: EUK5 Order ID:10080661979342 Order NetSale: 0 Order Details Net Sale: 3.75 Difference: -3.75 Order Date:01/03/2017 Time:06:31 PM
+Ticket no: 43WZ Order ID:10080661976539 Order NetSale: 0 Order Details Net Sale: 9.75 Difference: -9.75 Order Date:01/03/2017 Time:09:03 AM
+Transaction is duplicate. Transaction Code: 43WZ
+Transaction is duplicate. Transaction Code: XXC6
+Ticket no: DJP0 Order ID:10080661975404 Order NetSale: 0 Order Details Net Sale: 3.25 Difference: -3.25 Order Date:01/02/2017 Time:07:23 PM
+Transaction is duplicate. Transaction Code: Y33G
+Ticket no: MHA5 Order ID:10080661973771 Order NetSale: 0 Order Details Net Sale: 8.25 Difference: -8.25 Order Date:01/02/2017 Time:03:21 PM
+Ticket no: 1VZA Order ID:10080661973631 Order NetSale: 0 Order Details Net Sale: 3.75 Difference: -3.75 Order Date:01/02/2017 Time:03:03 PM
+Transaction is duplicate. Transaction Code: 5GXU
+Ticket no: L6FB Order ID:10080661970916 Order NetSale: 0 Order Details Net Sale: 7.75 Difference: -7.75 Order Date:01/01/2017 Time:08:41 PM
+Transaction is duplicate. Transaction Code: 6WR1
+Transaction is duplicate. Transaction Code: L1WY
+Store: Westminster Orders Count: 3457 Time: 7/19/2018 10:15:57 AM
+Transaction is duplicate. Transaction Code: 3WRF
+Transaction is duplicate. Transaction Code: TXL9
+Transaction is duplicate. Transaction Code: EFE8
+Ticket no: 3MYS Order ID:10089431768283 Order NetSale: 0 Order Details Net Sale: 4 Difference: -4 Order Date:01/05/2017 Time:01:09 PM
+Transaction is duplicate. Transaction Code: XF1X
+Transaction is duplicate. Transaction Code: 37IQ
+Transaction is duplicate. Transaction Code: QZ91
+Transaction is duplicate. Transaction Code: KPJ0
+Transaction is duplicate. Transaction Code: LXP0
+Ticket no: 8XAZ Order ID:10089431761827 Order NetSale: 0 Order Details Net Sale: 3 Difference: -3 Order Date:01/04/2017 Time:07:48 AM
+Transaction is duplicate. Transaction Code: VYE0
+Transaction is duplicate. Transaction Code: 2W55
+Transaction is duplicate. Transaction Code: P9S8
+Transaction is duplicate. Transaction Code: QPR9
+Transaction is duplicate. Transaction Code: 98Q1
+Transaction is duplicate. Transaction Code: UH8X
+Transaction is duplicate. Transaction Code: AVG9
+Store: Cypress Orders Count: 3011 Time: 7/19/2018 10:36:17 AM
+Ticket no: CU92 Order ID:10266450092076 Order NetSale: 0 Order Details Net Sale: 3 Difference: -3 Order Date:01/07/2017 Time:05:49 PM
+Transaction is duplicate. Transaction Code: J0X2
+Transaction is duplicate. Transaction Code: 3CDR
+Transaction is duplicate. Transaction Code: 9QPJ
+Transaction is duplicate. Transaction Code: PG51
+Transaction is duplicate. Transaction Code: G892
+Transaction is duplicate. Transaction Code: AXG2
+Store: Irvine Orders Count: 3808 Time: 7/19/2018 10:54:01 AM
+Ticket no: QE0Q Order ID:10103541521002 Order NetSale: 0 Order Details Net Sale: 0.5 Difference: -0.5 Order Date:01/07/2017 Time:10:49 PM
+Ticket no: 6QWQ Order ID:10103541519731 Order NetSale: 8.88178419700125E-16 Order Details Net Sale: 12.55 Difference: -12.55 Order Date:01/07/2017 Time:08:26 PM
+Ticket no: ERC6 Order ID:10103541519711 Order NetSale: 0 Order Details Net Sale: 11.25 Difference: -11.25 Order Date:01/07/2017 Time:08:25 PM
+Transaction is duplicate. Transaction Code: 8FCD
+Transaction is duplicate. Transaction Code: 6RKZ
+Ticket no: 60HG Order ID:10103541496941 Order NetSale: 0 Order Details Net Sale: 3 Difference: -3 Order Date:01/03/2017 Time:09:51 PM
+Ticket no: 614M Order ID:10103541492910 Order NetSale: 0 Order Details Net Sale: 4.25 Difference: -4.25 Order Date:01/03/2017 Time:07:52 AM
+Transaction is duplicate. Transaction Code: HNI6
+Transaction is duplicate. Transaction Code: 2D39
+Transaction is duplicate. Transaction Code: ARW2
+Store: Euclid Orders Count: 5510 Time: 7/19/2018 11:16:46 AM
+Transaction is duplicate. Transaction Code: E3GU
+Transaction is duplicate. Transaction Code: WCG3
+Transaction is duplicate. Transaction Code: 090V
+Transaction is duplicate. Transaction Code: 7EA8
+Transaction is duplicate. Transaction Code: IE79
+Ticket no: 9EIK Order ID:10156672066223 Order NetSale: 5.57 Order Details Net Sale: 6 Difference: -0.43 Order Date:01/06/2017 Time:02:05 PM
+Transaction is duplicate. Transaction Code: I5Q9
+Transaction is duplicate. Transaction Code: IS0Y
+Ticket no: REJ0 Order ID:10156672060734 Order NetSale: 0 Order Details Net Sale: 3.75 Difference: -3.75 Order Date:01/05/2017 Time:07:57 PM
+Transaction is duplicate. Transaction Code: REJ0
+Transaction is duplicate. Transaction Code: HXH4
+Transaction is duplicate. Transaction Code: MBE9
+Transaction is duplicate. Transaction Code: VQD4
+Transaction is duplicate. Transaction Code: 380H
+Transaction is duplicate. Transaction Code: 98N6
+Transaction is duplicate. Transaction Code: 63AK
+Transaction is duplicate. Transaction Code: 32FC
+Transaction is duplicate. Transaction Code: QLZ3
+Transaction is duplicate. Transaction Code: V0RS
+Transaction is duplicate. Transaction Code: MKK8
+Transaction is duplicate. Transaction Code: 56CG
+Transaction is duplicate. Transaction Code: C8ND
+Transaction is duplicate. Transaction Code: GP79
+Transaction is duplicate. Transaction Code: JH7W
+Transaction is duplicate. Transaction Code: HG4C
+Transaction is duplicate. Transaction Code: 6K9Z
+Transaction is duplicate. Transaction Code: HRM3
+Store: Chino Hills Orders Count: 2616 Time: 7/19/2018 11:52:27 AM
+Transaction is duplicate. Transaction Code: RC9A
+Transaction is duplicate. Transaction Code: VAQ6
+Transaction is duplicate. Transaction Code: PTI1
+Transaction is duplicate. Transaction Code: MA8W
+Transaction is duplicate. Transaction Code: AWS2
+Transaction is duplicate. Transaction Code: GU1J
+Transaction is duplicate. Transaction Code: KU1L
+Transaction is duplicate. Transaction Code: P5HN
+Ticket no: KDV1 Order ID:10187650642624 Order NetSale: 0 Order Details Net Sale: 3.9 Difference: -3.9 Order Date:01/02/2017 Time:01:40 PM
+Transaction is duplicate. Transaction Code: 9KZI
+Transaction is duplicate. Transaction Code: 3H6S
+Transaction is duplicate. Transaction Code: ND9P
+Transaction is duplicate. Transaction Code: 51LA
+Transaction is duplicate. Transaction Code: 51LA
+Transaction is duplicate. Transaction Code: 51LA
+Transaction is duplicate. Transaction Code: 370Y
+Transaction is duplicate. Transaction Code: QCD5
+Store: Costa Mesa Orders Count: 1870 Time: 7/19/2018 12:09:47 PM
+Transaction is duplicate. Transaction Code: 7YX2
+Transaction is duplicate. Transaction Code: EFJ6
+Transaction is duplicate. Transaction Code: 6UX7
+Transaction is duplicate. Transaction Code: LCG1
+Transaction is duplicate. Transaction Code: 5C4Z
+Transaction is duplicate. Transaction Code: MV76
+Transaction is duplicate. Transaction Code: KKG5
+Transaction is duplicate. Transaction Code: AWV3
+Transaction is duplicate. Transaction Code: HR5Q
+Total Records: 105329
+File saved successfully. 7/19/2018 12:21:06 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 01/01/2017 00:00:00 End Date: 01/08/2017 00:00:00 Time: 7/19/2018 12:21:06 PM
+DownloadStoreRevenueReport method completed for Start Date: 01/01/2017 00:00:00 End Date: 01/08/2017 00:00:00 Time: 7/19/2018 12:22:39 PM
+Execute Task completed. 7/19/2018 12:22:39 PM
+Service executed on daily. Time:09:11
+Next Service execution, after 20 hours 48 Minutes 20 seconds
