@@ -14,11 +14,11 @@ namespace FetchDataFromTalechPOS_BLL
         public double price { get; set; }
         public double tax { get; set; }
         public int categoryId { get; set; }
-        public int quantity { get; set; }
+        public double quantity { get; set; }
 
-        public int printedQuantity { get; set; }
+        public double printedQuantity { get; set; }
         public double refundedPrice { get; set; }
-        public int refundedQuantity { get; set; }
+        public double refundedQuantity { get; set; }
 
         public List<AddOns> addOns { get; set; }
 
@@ -69,7 +69,7 @@ namespace FetchDataFromTalechPOS_BLL
         public double NetSale { get; set; }
         public double Tax { get; set; }
         public double Total { get; set; }
-        public int QtySold { get; set; }
+        public double QtySold { get; set; }
         public double Tips { get; set; }
 
     }
@@ -81,10 +81,10 @@ namespace FetchDataFromTalechPOS_BLL
         public double price { get; set; }
         public double tax { get; set; }
         public int categoryId { get; set; }
-        public int quantity { get; set; }
-        public int printedQuantity { get; set; }
+        public double quantity { get; set; }
+        public double printedQuantity { get; set; }
         public double refundedPrice { get; set; }
-        public int refundedQuantity { get; set; }
+        public double refundedQuantity { get; set; }
     }
 
 
