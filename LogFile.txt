@@ -1,1062 +1,1052 @@
-Service executed on daily. Time:19:20
-Next Service execution, after 0 hours 0 Minutes 37 seconds
+Service executed on daily. Time:19:15
+Next Service execution, after 23 hours 59 Minutes 55 seconds
+service stopped
+Service executed on daily. Time:19:16
+Next Service execution, after 0 hours 0 Minutes 26 seconds
 Refresh Token Method Response code: OK
-Access token:205716992/FiVyvnG4mxiflxMEzTvaFhnp Expires in:1800 token_type:Bearer
-Merchant Store Count: 11 Time: 7/23/2018 7:20:01 PM
-Menu Item and Category method completed. Count: 189 Time: 7/23/2018 7:20:13 PM
-Start Date: 03/01/2017 00:00:00 End Date: 03/02/2017 00:00:00
-Store: Fountain Valley Orders Count: 855 Time: 7/23/2018 7:20:16 PM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: XYC9
-Transaction is duplicate. Transaction Code: EDT0
-Transaction is duplicate. Transaction Code: WCQ9
-Transaction is duplicate. Transaction Code: Q5BH
-Transaction is duplicate. Transaction Code: 7G1B
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Store: Huntington Beach Orders Count: 438 Time: 7/23/2018 7:25:11 PM
-Transaction is duplicate. Transaction Code: FEI6
-Transaction is duplicate. Transaction Code: VCE2
-Store: Tustin Orders Count: 559 Time: 7/23/2018 7:27:45 PM
-Transaction is duplicate. Transaction Code: 050J
-Transaction is duplicate. Transaction Code: NUN7
-Transaction is duplicate. Transaction Code: ZEB5
-Transaction is duplicate. Transaction Code: ZEB5
-Store: Westminster Orders Count: 455 Time: 7/23/2018 7:30:56 PM
-Transaction is duplicate. Transaction Code: XHB7
-Transaction is duplicate. Transaction Code: Q6X0
-Store: Cypress Orders Count: 662 Time: 7/23/2018 7:33:33 PM
-Transaction is duplicate. Transaction Code: SUI9
-Transaction is duplicate. Transaction Code: 485A
-Store: Irvine Orders Count: 696 Time: 7/23/2018 7:37:20 PM
-Transaction is duplicate. Transaction Code: Y6ND
-Transaction is duplicate. Transaction Code: U0US
-Transaction is duplicate. Transaction Code: 2FBF
-Store: Euclid Orders Count: 784 Time: 7/23/2018 7:41:20 PM
-Transaction is duplicate. Transaction Code: BV4V
-Ticket no: 3ELH Order ID:10156672567494 Order NetSale: -0.699999999999999 Order Details Net Sale: 0 Difference: -0.699999999999999 Order Date:03/01/2017 Time:04:54 PM
-Transaction is duplicate. Transaction Code: 3ELH
-Transaction is duplicate. Transaction Code: LV86
-Store: Chino Hills Orders Count: 317 Time: 7/23/2018 7:46:17 PM
-Transaction is duplicate. Transaction Code: 14JE
-Store: Costa Mesa Orders Count: 457 Time: 7/23/2018 7:48:11 PM
-Total Records: 17176
-File saved successfully. 7/23/2018 7:50:54 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/01/2017 00:00:00 End Date: 03/02/2017 00:00:00 Time: 7/23/2018 7:50:54 PM
-Download Store Revenue Report method completed for Start Date: 03/01/2017 00:00:00 End Date: 03/02/2017 00:00:00 Time: 7/23/2018 7:51:11 PM
-Start Date: 03/02/2017 00:00:00 End Date: 03/03/2017 00:00:00
-Store: Fountain Valley Orders Count: 898 Time: 7/23/2018 7:51:14 PM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 3ZDL
-Transaction is duplicate. Transaction Code: LPU5
-Transaction is duplicate. Transaction Code: K9DB
-Store: Huntington Beach Orders Count: 438 Time: 7/23/2018 7:56:21 PM
-Transaction is duplicate. Transaction Code: VB4J
-Transaction is duplicate. Transaction Code: ICX2
-Store: Tustin Orders Count: 550 Time: 7/23/2018 7:58:52 PM
-Transaction is duplicate. Transaction Code: HBJ5
-Transaction is duplicate. Transaction Code: 6U09
-Store: Westminster Orders Count: 508 Time: 7/23/2018 8:02:09 PM
-Transaction is duplicate. Transaction Code: W02U
-Transaction is duplicate. Transaction Code: R6DA
-Store: Cypress Orders Count: 746 Time: 7/23/2018 8:05:04 PM
-Transaction is duplicate. Transaction Code: K7M6
-Transaction is duplicate. Transaction Code: X5JA
-Store: Irvine Orders Count: 659 Time: 7/23/2018 8:09:19 PM
-Transaction is duplicate. Transaction Code: GWF9
-Store: Euclid Orders Count: 796 Time: 7/23/2018 8:13:08 PM
-Store: Chino Hills Orders Count: 319 Time: 7/23/2018 8:18:17 PM
-Store: Costa Mesa Orders Count: 453 Time: 7/23/2018 8:20:16 PM
-Total Records: 17800
-File saved successfully. 7/23/2018 8:22:57 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/02/2017 00:00:00 End Date: 03/03/2017 00:00:00 Time: 7/23/2018 8:22:57 PM
-Download Store Revenue Report method completed for Start Date: 03/02/2017 00:00:00 End Date: 03/03/2017 00:00:00 Time: 7/23/2018 8:23:15 PM
-Start Date: 03/03/2017 00:00:00 End Date: 03/04/2017 00:00:00
-Store: Fountain Valley Orders Count: 978 Time: 7/23/2018 8:23:18 PM
-Transaction is duplicate. Transaction Code: 937D
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: CQT4
-Transaction is duplicate. Transaction Code: NP7Z
-Transaction is duplicate. Transaction Code: T1J3
-Transaction is duplicate. Transaction Code: DTR8
-Store: Huntington Beach Orders Count: 474 Time: 7/23/2018 8:28:56 PM
-Store: Tustin Orders Count: 641 Time: 7/23/2018 8:31:42 PM
-Transaction is duplicate. Transaction Code: M1Y3
-Transaction is duplicate. Transaction Code: FWD5
-Transaction is duplicate. Transaction Code: EJ91
-Store: Westminster Orders Count: 589 Time: 7/23/2018 8:35:22 PM
-Transaction is duplicate. Transaction Code: XD7R
-Store: Cypress Orders Count: 679 Time: 7/23/2018 8:38:44 PM
-Transaction is duplicate. Transaction Code: IGM6
-Transaction is duplicate. Transaction Code: IGM6
-Transaction is duplicate. Transaction Code: A0MC
-Store: Irvine Orders Count: 827 Time: 7/23/2018 8:42:41 PM
-Transaction is duplicate. Transaction Code: TSA3
-Transaction is duplicate. Transaction Code: 9FB7
-Transaction is duplicate. Transaction Code: P3IP
-Store: Euclid Orders Count: 971 Time: 7/23/2018 8:47:25 PM
-Transaction is duplicate. Transaction Code: WHF5
-Store: Chino Hills Orders Count: 483 Time: 7/23/2018 8:53:36 PM
-Transaction is duplicate. Transaction Code: ZYA9
-Transaction is duplicate. Transaction Code: NMG7
-Store: Costa Mesa Orders Count: 407 Time: 7/23/2018 8:56:29 PM
-Transaction is duplicate. Transaction Code: 1C1R
-Total Records: 20702
-File saved successfully. 7/23/2018 8:58:56 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/03/2017 00:00:00 End Date: 03/04/2017 00:00:00 Time: 7/23/2018 8:58:56 PM
-Download Store Revenue Report method completed for Start Date: 03/03/2017 00:00:00 End Date: 03/04/2017 00:00:00 Time: 7/23/2018 8:59:13 PM
-Start Date: 03/04/2017 00:00:00 End Date: 03/05/2017 00:00:00
-Store: Fountain Valley Orders Count: 927 Time: 7/23/2018 8:59:16 PM
-Transaction is duplicate. Transaction Code: 2HV1
-Transaction is duplicate. Transaction Code: D5Y6
-Store: Huntington Beach Orders Count: 412 Time: 7/23/2018 9:04:57 PM
-Transaction is duplicate. Transaction Code: 1QF9
-Transaction is duplicate. Transaction Code: 9I5H
-Transaction is duplicate. Transaction Code: GYM2
-Store: Tustin Orders Count: 681 Time: 7/23/2018 9:07:21 PM
-Transaction is duplicate. Transaction Code: QFB4
-Transaction is duplicate. Transaction Code: 16GS
-Transaction is duplicate. Transaction Code: Z3J5
-Transaction is duplicate. Transaction Code: 7U2S
-Transaction is duplicate. Transaction Code: W15L
-Store: Westminster Orders Count: 620 Time: 7/23/2018 9:11:13 PM
-Transaction is duplicate. Transaction Code: ARR6
-Transaction is duplicate. Transaction Code: MD9J
-Transaction is duplicate. Transaction Code: 6229
-Transaction is duplicate. Transaction Code: DUF2
-Store: Cypress Orders Count: 590 Time: 7/23/2018 9:14:49 PM
-Transaction is duplicate. Transaction Code: ZDH0
-Transaction is duplicate. Transaction Code: DSE1
-Ticket no: X3DU Order ID:10266450416635 Order NetSale: 6.27 Order Details Net Sale: 6.5 Difference: -0.23 Order Date:03/04/2017 Time:01:45 PM
-Transaction is duplicate. Transaction Code: KGX8
-Store: Irvine Orders Count: 739 Time: 7/23/2018 9:18:15 PM
-Transaction is duplicate. Transaction Code: 1D5K
-Transaction is duplicate. Transaction Code: NII2
-Store: Euclid Orders Count: 920 Time: 7/23/2018 9:22:27 PM
-Transaction is duplicate. Transaction Code: UP1C
-Transaction is duplicate. Transaction Code: GKU7
-Ticket no: N6Z5 Order ID:10156530186503 Order NetSale: -0.399999999999999 Order Details Net Sale: 0 Difference: -0.399999999999999 Order Date:03/04/2017 Time:04:13 PM
-Store: Chino Hills Orders Count: 480 Time: 7/23/2018 9:28:20 PM
-Ticket no: FG17 Order ID:10300270046682 Order NetSale: 5.52 Order Details Net Sale: 5.525 Difference: -0.00500000000000078 Order Date:03/04/2017 Time:03:22 PM
-Store: Costa Mesa Orders Count: 425 Time: 7/23/2018 9:31:13 PM
-Transaction is duplicate. Transaction Code: 5FZE
-Transaction is duplicate. Transaction Code: M9HZ
-Transaction is duplicate. Transaction Code: VM0T
-Total Records: 21300
-File saved successfully. 7/23/2018 9:33:42 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/04/2017 00:00:00 End Date: 03/05/2017 00:00:00 Time: 7/23/2018 9:33:42 PM
-Download Store Revenue Report method completed for Start Date: 03/04/2017 00:00:00 End Date: 03/05/2017 00:00:00 Time: 7/23/2018 9:33:58 PM
-Start Date: 03/05/2017 00:00:00 End Date: 03/06/2017 00:00:00
-Store: Fountain Valley Orders Count: 829 Time: 7/23/2018 9:34:01 PM
-Transaction is duplicate. Transaction Code: 5854
-Transaction is duplicate. Transaction Code: U4WG
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 0L3D
-Transaction is duplicate. Transaction Code: 2ISY
-Transaction is duplicate. Transaction Code: VLI4
-Store: Huntington Beach Orders Count: 394 Time: 7/23/2018 9:38:51 PM
-Transaction is duplicate. Transaction Code: Z2NJ
-Store: Tustin Orders Count: 543 Time: 7/23/2018 9:41:05 PM
-Transaction is duplicate. Transaction Code: RVE3
-Store: Westminster Orders Count: 583 Time: 7/23/2018 9:44:11 PM
-Transaction is duplicate. Transaction Code: RPU7
-Transaction is duplicate. Transaction Code: 9IHP
-Transaction is duplicate. Transaction Code: 7XSG
-Transaction is duplicate. Transaction Code: NHT4
-Transaction is duplicate. Transaction Code: 4KYD
-Transaction is duplicate. Transaction Code: 5MNK
-Transaction is duplicate. Transaction Code: CYF3
-Store: Cypress Orders Count: 507 Time: 7/23/2018 9:47:30 PM
-Transaction is duplicate. Transaction Code: BKR8
-Transaction is duplicate. Transaction Code: F659
-Store: Irvine Orders Count: 715 Time: 7/23/2018 9:50:27 PM
-Transaction is duplicate. Transaction Code: 950V
-Store: Euclid Orders Count: 800 Time: 7/23/2018 9:54:35 PM
-Ticket no: I8LS Order ID:10156672610496 Order NetSale: 3.9 Order Details Net Sale: 4.25 Difference: -0.35 Order Date:03/05/2017 Time:07:40 PM
-Transaction is duplicate. Transaction Code: N53R
-Ticket no: SHC4 Order ID:10156672605268 Order NetSale: 13.59 Order Details Net Sale: 13.8 Difference: -0.210000000000001 Order Date:03/05/2017 Time:12:46 PM
-Transaction is duplicate. Transaction Code: MWP2
-Store: Chino Hills Orders Count: 440 Time: 7/23/2018 9:59:42 PM
-Store: Costa Mesa Orders Count: 318 Time: 7/23/2018 10:02:31 PM
-Transaction is duplicate. Transaction Code: WMY8
-Transaction is duplicate. Transaction Code: B71W
-Transaction is duplicate. Transaction Code: J7XC
-Total Records: 19089
-File saved successfully. 7/23/2018 10:04:26 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/05/2017 00:00:00 End Date: 03/06/2017 00:00:00 Time: 7/23/2018 10:04:26 PM
-Download Store Revenue Report method completed for Start Date: 03/05/2017 00:00:00 End Date: 03/06/2017 00:00:00 Time: 7/23/2018 10:04:42 PM
-Start Date: 03/06/2017 00:00:00 End Date: 03/07/2017 00:00:00
-Store: Fountain Valley Orders Count: 808 Time: 7/23/2018 10:04:45 PM
-Transaction is duplicate. Transaction Code: JYX0
-Transaction is duplicate. Transaction Code: 8C3X
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 2DG2
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 41SD
-Store: Huntington Beach Orders Count: 421 Time: 7/23/2018 10:09:24 PM
-Transaction is duplicate. Transaction Code: NXD1
-Transaction is duplicate. Transaction Code: XZX5
-Transaction is duplicate. Transaction Code: R582
-Transaction is duplicate. Transaction Code: GF5T
-Store: Tustin Orders Count: 440 Time: 7/23/2018 10:11:49 PM
-Transaction is duplicate. Transaction Code: 4VQ5
-Transaction is duplicate. Transaction Code: 3I8C
-Transaction is duplicate. Transaction Code: V4KB
-Store: Westminster Orders Count: 472 Time: 7/23/2018 10:14:18 PM
-Store: Cypress Orders Count: 659 Time: 7/23/2018 10:17:00 PM
-Transaction is duplicate. Transaction Code: 8P7I
-Store: Irvine Orders Count: 578 Time: 7/23/2018 10:20:51 PM
-Store: Euclid Orders Count: 788 Time: 7/23/2018 10:24:12 PM
-Ticket no: 4FU0 Order ID:10156672619135 Order NetSale: 5.95 Order Details Net Sale: 7 Difference: -1.05 Order Date:03/06/2017 Time:06:22 PM
-Transaction is duplicate. Transaction Code: XYV7
-Ticket no: E9CX Order ID:10156672615084 Order NetSale: 2.79 Order Details Net Sale: 3 Difference: -0.21 Order Date:03/06/2017 Time:12:31 PM
-Store: Chino Hills Orders Count: 285 Time: 7/23/2018 10:29:06 PM
-Store: Costa Mesa Orders Count: 463 Time: 7/23/2018 10:30:50 PM
-Transaction is duplicate. Transaction Code: F9WP
-Transaction is duplicate. Transaction Code: RFG8
-Transaction is duplicate. Transaction Code: F252
-Total Records: 15575
-File saved successfully. 7/23/2018 10:33:30 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/06/2017 00:00:00 End Date: 03/07/2017 00:00:00 Time: 7/23/2018 10:33:30 PM
-Download Store Revenue Report method completed for Start Date: 03/06/2017 00:00:00 End Date: 03/07/2017 00:00:00 Time: 7/23/2018 10:33:46 PM
-Start Date: 03/07/2017 00:00:00 End Date: 03/08/2017 00:00:00
-Store: Fountain Valley Orders Count: 828 Time: 7/23/2018 10:33:48 PM
-Transaction is duplicate. Transaction Code: AB0A
-Transaction is duplicate. Transaction Code: 70PN
-Transaction is duplicate. Transaction Code: C9U9
-Transaction is duplicate. Transaction Code: J9WP
-Store: Huntington Beach Orders Count: 451 Time: 7/23/2018 10:38:32 PM
-Transaction is duplicate. Transaction Code: D4FW
-Store: Tustin Orders Count: 493 Time: 7/23/2018 10:41:06 PM
-Transaction is duplicate. Transaction Code: 3U4Y
-Store: Westminster Orders Count: 451 Time: 7/23/2018 10:43:56 PM
-Transaction is duplicate. Transaction Code: EKT4
-Transaction is duplicate. Transaction Code: TTM7
-Transaction is duplicate. Transaction Code: P13B
-Transaction is duplicate. Transaction Code: KPY1
-Store: Cypress Orders Count: 671 Time: 7/23/2018 10:46:30 PM
-Transaction is duplicate. Transaction Code: CBB4
-Transaction is duplicate. Transaction Code: DPI9
-Store: Irvine Orders Count: 657 Time: 7/23/2018 10:50:22 PM
-Transaction is duplicate. Transaction Code: H2EV
-Transaction is duplicate. Transaction Code: Q9DV
-Transaction is duplicate. Transaction Code: 2XME
-Store: Euclid Orders Count: 845 Time: 7/23/2018 10:54:08 PM
-Transaction is duplicate. Transaction Code: UHF1
-Ticket no: 7PTS Order ID:10156672625793 Order NetSale: 6.94 Order Details Net Sale: 7.5 Difference: -0.56 Order Date:03/07/2017 Time:12:53 PM
-Transaction is duplicate. Transaction Code: PSW2
-Store: Chino Hills Orders Count: 329 Time: 7/23/2018 10:59:28 PM
-Store: Costa Mesa Orders Count: 471 Time: 7/23/2018 11:01:37 PM
-Transaction is duplicate. Transaction Code: BNZ9
-Total Records: 16654
-File saved successfully. 7/23/2018 11:04:26 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/07/2017 00:00:00 End Date: 03/08/2017 00:00:00 Time: 7/23/2018 11:04:26 PM
-Download Store Revenue Report method completed for Start Date: 03/07/2017 00:00:00 End Date: 03/08/2017 00:00:00 Time: 7/23/2018 11:04:41 PM
-Start Date: 03/08/2017 00:00:00 End Date: 03/09/2017 00:00:00
-Store: Fountain Valley Orders Count: 876 Time: 7/23/2018 11:04:44 PM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 8SFX
-Transaction is duplicate. Transaction Code: 3YH4
-Transaction is duplicate. Transaction Code: 7NCD
-Transaction is duplicate. Transaction Code: 0GF9
-Store: Huntington Beach Orders Count: 447 Time: 7/23/2018 11:09:45 PM
-Store: Tustin Orders Count: 545 Time: 7/23/2018 11:12:22 PM
-Transaction is duplicate. Transaction Code: 35WX
-Transaction is duplicate. Transaction Code: 32AZ
-Transaction is duplicate. Transaction Code: 7S54
-Transaction is duplicate. Transaction Code: J9CZ
-Store: Westminster Orders Count: 554 Time: 7/23/2018 11:15:28 PM
-Transaction is duplicate. Transaction Code: ST81
-Transaction is duplicate. Transaction Code: 0ED5
-Store: Cypress Orders Count: 701 Time: 7/23/2018 11:18:41 PM
-Transaction is duplicate. Transaction Code: ZTX4
-Store: Irvine Orders Count: 724 Time: 7/23/2018 11:22:42 PM
-Transaction is duplicate. Transaction Code: XI2R
-Transaction is duplicate. Transaction Code: B7WR
-Store: Euclid Orders Count: 869 Time: 7/23/2018 11:26:51 PM
-Transaction is duplicate. Transaction Code: WIS1
-Transaction is duplicate. Transaction Code: C8HP
-Transaction is duplicate. Transaction Code: 183C
-Transaction is duplicate. Transaction Code: LNJ5
-Store: Chino Hills Orders Count: 345 Time: 7/23/2018 11:32:07 PM
-Transaction is duplicate. Transaction Code: 0BA6
-Transaction is duplicate. Transaction Code: GR90
-Store: Costa Mesa Orders Count: 509 Time: 7/23/2018 11:34:10 PM
-Transaction is duplicate. Transaction Code: WL9X
-Total Records: 18418
-File saved successfully. 7/23/2018 11:37:07 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/08/2017 00:00:00 End Date: 03/09/2017 00:00:00 Time: 7/23/2018 11:37:07 PM
-Download Store Revenue Report method completed for Start Date: 03/08/2017 00:00:00 End Date: 03/09/2017 00:00:00 Time: 7/23/2018 11:37:22 PM
-Start Date: 03/09/2017 00:00:00 End Date: 03/10/2017 00:00:00
-Store: Fountain Valley Orders Count: 900 Time: 7/23/2018 11:37:26 PM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: ILT0
-Transaction is duplicate. Transaction Code: LPN3
-Store: Huntington Beach Orders Count: 498 Time: 7/23/2018 11:42:34 PM
-Store: Tustin Orders Count: 650 Time: 7/23/2018 11:45:24 PM
-Transaction is duplicate. Transaction Code: MHQ0
-Transaction is duplicate. Transaction Code: CHM3
-Store: Westminster Orders Count: 523 Time: 7/23/2018 11:49:05 PM
-Transaction is duplicate. Transaction Code: 7JD8
-Store: Cypress Orders Count: 703 Time: 7/23/2018 11:52:06 PM
-Transaction is duplicate. Transaction Code: 433A
-Transaction is duplicate. Transaction Code: 4XD7
-Store: Irvine Orders Count: 769 Time: 7/23/2018 11:56:05 PM
-Transaction is duplicate. Transaction Code: UMN5
-Transaction is duplicate. Transaction Code: V16P
-Transaction is duplicate. Transaction Code: I8E5
-Transaction is duplicate. Transaction Code: H091
-Store: Euclid Orders Count: 874 Time: 7/24/2018 12:00:27 AM
-Ticket no: 5HCX Order ID:10156672649966 Order NetSale: 4.29 Order Details Net Sale: 4.5 Difference: -0.21 Order Date:03/09/2017 Time:07:57 PM
-Transaction is duplicate. Transaction Code: ACE9
-Store: Chino Hills Orders Count: 339 Time: 7/24/2018 12:06:00 AM
-Transaction is duplicate. Transaction Code: DYZ1
-Store: Costa Mesa Orders Count: 474 Time: 7/24/2018 12:08:01 AM
-Total Records: 18939
-File saved successfully. 7/24/2018 12:10:48 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/09/2017 00:00:00 End Date: 03/10/2017 00:00:00 Time: 7/24/2018 12:10:48 AM
-Download Store Revenue Report method completed for Start Date: 03/09/2017 00:00:00 End Date: 03/10/2017 00:00:00 Time: 7/24/2018 12:11:05 AM
-Start Date: 03/10/2017 00:00:00 End Date: 03/11/2017 00:00:00
-Store: Fountain Valley Orders Count: 1022 Time: 7/24/2018 12:11:08 AM
-Transaction is duplicate. Transaction Code: KLS4
-Transaction is duplicate. Transaction Code: XMS8
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: HFR3
-Transaction is duplicate. Transaction Code: TIV6
-Transaction is duplicate. Transaction Code: 6Y99
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 4B7U
-Store: Huntington Beach Orders Count: 448 Time: 7/24/2018 12:16:58 AM
-Store: Tustin Orders Count: 758 Time: 7/24/2018 12:19:35 AM
-Transaction is duplicate. Transaction Code: S6GK
-Transaction is duplicate. Transaction Code: IXZ2
-Transaction is duplicate. Transaction Code: 7DGJ
-Transaction is duplicate. Transaction Code: TWY7
-Store: Westminster Orders Count: 656 Time: 7/24/2018 12:23:55 AM
-Transaction is duplicate. Transaction Code: UDA0
-Transaction is duplicate. Transaction Code: DNR0
-Transaction is duplicate. Transaction Code: 5H51
-Transaction is duplicate. Transaction Code: 2RYF
-Store: Cypress Orders Count: 666 Time: 7/24/2018 12:27:36 AM
-Transaction is duplicate. Transaction Code: H5MZ
-Transaction is duplicate. Transaction Code: 1T7K
-Store: Irvine Orders Count: 842 Time: 7/24/2018 12:31:26 AM
-Transaction is duplicate. Transaction Code: BCM7
-Transaction is duplicate. Transaction Code: C4KR
-Transaction is duplicate. Transaction Code: BE4M
-Transaction is duplicate. Transaction Code: VQP5
-Transaction is duplicate. Transaction Code: BI2X
-Store: Euclid Orders Count: 960 Time: 7/24/2018 12:36:13 AM
-Transaction is duplicate. Transaction Code: 5M63
-Transaction is duplicate. Transaction Code: MQP9
-Transaction is duplicate. Transaction Code: P0H3
-Transaction is duplicate. Transaction Code: 4XWA
-Store: Chino Hills Orders Count: 492 Time: 7/24/2018 12:42:10 AM
-Store: Costa Mesa Orders Count: 444 Time: 7/24/2018 12:45:05 AM
-Total Records: 21130
-File saved successfully. 7/24/2018 12:47:43 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/10/2017 00:00:00 End Date: 03/11/2017 00:00:00 Time: 7/24/2018 12:47:43 AM
-Download Store Revenue Report method completed for Start Date: 03/10/2017 00:00:00 End Date: 03/11/2017 00:00:00 Time: 7/24/2018 12:48:00 AM
-Start Date: 03/11/2017 00:00:00 End Date: 03/12/2017 00:00:00
-Store: Fountain Valley Orders Count: 1004 Time: 7/24/2018 12:48:03 AM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: N3JA
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Store: Huntington Beach Orders Count: 470 Time: 7/24/2018 12:53:54 AM
-Transaction is duplicate. Transaction Code: NYX4
-Store: Tustin Orders Count: 692 Time: 7/24/2018 12:56:38 AM
-Transaction is duplicate. Transaction Code: KHG6
-Transaction is duplicate. Transaction Code: 0D52
-Store: Westminster Orders Count: 634 Time: 7/24/2018 1:00:36 AM
-Transaction is duplicate. Transaction Code: 81ZG
-Store: Cypress Orders Count: 603 Time: 7/24/2018 1:04:17 AM
-Store: Irvine Orders Count: 815 Time: 7/24/2018 1:07:45 AM
-Store: Euclid Orders Count: 958 Time: 7/24/2018 1:12:24 AM
-Transaction is duplicate. Transaction Code: 0B52
-Transaction is duplicate. Transaction Code: 2SMR
-Store: Chino Hills Orders Count: 531 Time: 7/24/2018 1:18:19 AM
-Transaction is duplicate. Transaction Code: 3KW4
-Transaction is duplicate. Transaction Code: WC5B
-Store: Costa Mesa Orders Count: 462 Time: 7/24/2018 1:21:30 AM
-Transaction is duplicate. Transaction Code: MZY7
-Total Records: 22976
-File saved successfully. 7/24/2018 1:24:11 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/11/2017 00:00:00 End Date: 03/12/2017 00:00:00 Time: 7/24/2018 1:24:11 AM
-Download Store Revenue Report method completed for Start Date: 03/11/2017 00:00:00 End Date: 03/12/2017 00:00:00 Time: 7/24/2018 1:24:27 AM
-Start Date: 03/12/2017 00:00:00 End Date: 03/13/2017 00:00:00
-Store: Fountain Valley Orders Count: 896 Time: 7/24/2018 1:24:31 AM
-Transaction is duplicate. Transaction Code: 3B95
-Transaction is duplicate. Transaction Code: IT7I
-AddOns Item: Quantity: 2,Printed Quantity: 3,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 5089
-Store: Huntington Beach Orders Count: 468 Time: 7/24/2018 1:29:45 AM
-Store: Tustin Orders Count: 583 Time: 7/24/2018 1:32:30 AM
-Transaction is duplicate. Transaction Code: IXJ8
-Transaction is duplicate. Transaction Code: WX91
-Transaction is duplicate. Transaction Code: I7W6
-Store: Westminster Orders Count: 590 Time: 7/24/2018 1:35:48 AM
-Store: Cypress Orders Count: 565 Time: 7/24/2018 1:39:13 AM
-Store: Irvine Orders Count: 776 Time: 7/24/2018 1:42:28 AM
-Store: Euclid Orders Count: 808 Time: 7/24/2018 1:46:56 AM
-Store: Chino Hills Orders Count: 507 Time: 7/24/2018 1:52:05 AM
-Store: Costa Mesa Orders Count: 370 Time: 7/24/2018 1:55:05 AM
-Transaction is duplicate. Transaction Code: 4M99
-Total Records: 21160
-File saved successfully. 7/24/2018 1:57:17 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/12/2017 00:00:00 End Date: 03/13/2017 00:00:00 Time: 7/24/2018 1:57:17 AM
-Download Store Revenue Report method completed for Start Date: 03/12/2017 00:00:00 End Date: 03/13/2017 00:00:00 Time: 7/24/2018 1:57:32 AM
-Start Date: 03/13/2017 00:00:00 End Date: 03/14/2017 00:00:00
-Store: Fountain Valley Orders Count: 886 Time: 7/24/2018 1:57:36 AM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: LNV3
-Transaction is duplicate. Transaction Code: KFB8
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Store: Huntington Beach Orders Count: 432 Time: 7/24/2018 2:02:44 AM
-Store: Tustin Orders Count: 503 Time: 7/24/2018 2:05:13 AM
-Transaction is duplicate. Transaction Code: AVU6
-Store: Westminster Orders Count: 482 Time: 7/24/2018 2:08:07 AM
-Store: Cypress Orders Count: 643 Time: 7/24/2018 2:10:50 AM
-Transaction is duplicate. Transaction Code: 79NY
-Store: Irvine Orders Count: 657 Time: 7/24/2018 2:14:32 AM
-Transaction is duplicate. Transaction Code: 8BEQ
-Store: Euclid Orders Count: 798 Time: 7/24/2018 2:18:16 AM
-Transaction is duplicate. Transaction Code: 6T5U
-Transaction is duplicate. Transaction Code: WU58
-Store: Chino Hills Orders Count: 348 Time: 7/24/2018 2:23:06 AM
-Transaction is duplicate. Transaction Code: D2HH
-Store: Costa Mesa Orders Count: 451 Time: 7/24/2018 2:25:11 AM
-Transaction is duplicate. Transaction Code: D359
-Total Records: 16936
-File saved successfully. 7/24/2018 2:27:49 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/13/2017 00:00:00 End Date: 03/14/2017 00:00:00 Time: 7/24/2018 2:27:49 AM
-Download Store Revenue Report method completed for Start Date: 03/13/2017 00:00:00 End Date: 03/14/2017 00:00:00 Time: 7/24/2018 2:28:04 AM
-Start Date: 03/14/2017 00:00:00 End Date: 03/15/2017 00:00:00
-Store: Fountain Valley Orders Count: 889 Time: 7/24/2018 2:28:08 AM
-Transaction is duplicate. Transaction Code: HS5R
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: C8J9
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: J3C5
-Transaction is duplicate. Transaction Code: 7XV6
-Transaction is duplicate. Transaction Code: IC2T
-Transaction is duplicate. Transaction Code: RFC7
-Transaction is duplicate. Transaction Code: T3GB
-Transaction is duplicate. Transaction Code: 2V6W
-Store: Huntington Beach Orders Count: 488 Time: 7/24/2018 2:33:18 AM
-Transaction is duplicate. Transaction Code: RAW7
-Transaction is duplicate. Transaction Code: G6IX
-Store: Tustin Orders Count: 535 Time: 7/24/2018 2:36:03 AM
-Transaction is duplicate. Transaction Code: U0TT
-Transaction is duplicate. Transaction Code: CYZ7
-Transaction is duplicate. Transaction Code: 9YJI
-Store: Westminster Orders Count: 475 Time: 7/24/2018 2:39:06 AM
-Transaction is duplicate. Transaction Code: EWS1
-Transaction is duplicate. Transaction Code: 977H
-Store: Cypress Orders Count: 630 Time: 7/24/2018 2:41:49 AM
-Store: Irvine Orders Count: 689 Time: 7/24/2018 2:45:22 AM
-Transaction is duplicate. Transaction Code: KRL2
-Transaction is duplicate. Transaction Code: LSF5
-Transaction is duplicate. Transaction Code: Z02I
-Transaction is duplicate. Transaction Code: EEN5
-Store: Euclid Orders Count: 830 Time: 7/24/2018 2:49:21 AM
-Transaction is duplicate. Transaction Code: EWZ2
-Transaction is duplicate. Transaction Code: 4R4E
-Store: Chino Hills Orders Count: 400 Time: 7/24/2018 2:54:36 AM
-Store: Costa Mesa Orders Count: 461 Time: 7/24/2018 2:56:57 AM
-Total Records: 17613
-File saved successfully. 7/24/2018 2:59:40 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/14/2017 00:00:00 End Date: 03/15/2017 00:00:00 Time: 7/24/2018 2:59:40 AM
-Download Store Revenue Report method completed for Start Date: 03/14/2017 00:00:00 End Date: 03/15/2017 00:00:00 Time: 7/24/2018 2:59:55 AM
-Start Date: 03/15/2017 00:00:00 End Date: 03/16/2017 00:00:00
-Store: Fountain Valley Orders Count: 883 Time: 7/24/2018 2:59:59 AM
-Transaction is duplicate. Transaction Code: 3LVY
-Transaction is duplicate. Transaction Code: DER6
-Transaction is duplicate. Transaction Code: S2G4
-Transaction is duplicate. Transaction Code: L9M3
-Transaction is duplicate. Transaction Code: 66F5
-Transaction is duplicate. Transaction Code: S1T6
-Transaction is duplicate. Transaction Code: WY1Q
-Transaction is duplicate. Transaction Code: BMJ6
-AddOns Item: Quantity: 1,Printed Quantity: 3,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 3,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 3,Refunded Quantity: 0
-Ticket no: GP51 Order ID:10075533290608 Order NetSale: 0 Order Details Net Sale: 3 Difference: -3 Order Date:03/06/2017 Time:03:25 PM
-Store: Huntington Beach Orders Count: 446 Time: 7/24/2018 3:05:02 AM
-Store: Tustin Orders Count: 574 Time: 7/24/2018 3:07:36 AM
-Transaction is duplicate. Transaction Code: B0BH
-Transaction is duplicate. Transaction Code: UJH3
-Transaction is duplicate. Transaction Code: KKE9
-Store: Westminster Orders Count: 508 Time: 7/24/2018 3:10:51 AM
-Transaction is duplicate. Transaction Code: BZR9
-Transaction is duplicate. Transaction Code: C9XN
-Transaction is duplicate. Transaction Code: HSK1
-Store: Cypress Orders Count: 678 Time: 7/24/2018 3:13:45 AM
-Transaction is duplicate. Transaction Code: T65W
-Transaction is duplicate. Transaction Code: M7A5
-Store: Irvine Orders Count: 735 Time: 7/24/2018 3:17:38 AM
-Transaction is duplicate. Transaction Code: H7Z5
-Transaction is duplicate. Transaction Code: C5ZQ
-Transaction is duplicate. Transaction Code: 53N8
-Transaction is duplicate. Transaction Code: 53N8
-Store: Euclid Orders Count: 861 Time: 7/24/2018 3:21:48 AM
-Transaction is duplicate. Transaction Code: NTF0
-Transaction is duplicate. Transaction Code: 7E60
-Store: Chino Hills Orders Count: 387 Time: 7/24/2018 3:27:05 AM
-Store: Costa Mesa Orders Count: 511 Time: 7/24/2018 3:29:26 AM
-Transaction is duplicate. Transaction Code: R2PB
-Transaction is duplicate. Transaction Code: 8XJ2
-Transaction is duplicate. Transaction Code: 6AQ3
-Transaction is duplicate. Transaction Code: RS87
-Transaction is duplicate. Transaction Code: WZS5
-Transaction is duplicate. Transaction Code: 2L2Q
-Total Records: 18818
-File saved successfully. 7/24/2018 3:32:22 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/15/2017 00:00:00 End Date: 03/16/2017 00:00:00 Time: 7/24/2018 3:32:22 AM
-Download Store Revenue Report method completed for Start Date: 03/15/2017 00:00:00 End Date: 03/16/2017 00:00:00 Time: 7/24/2018 3:32:39 AM
-Start Date: 03/16/2017 00:00:00 End Date: 03/17/2017 00:00:00
-Store: Fountain Valley Orders Count: 880 Time: 7/24/2018 3:32:42 AM
-Transaction is duplicate. Transaction Code: LNE5
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: UVM5
-Transaction is duplicate. Transaction Code: ZRF5
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Store: Huntington Beach Orders Count: 482 Time: 7/24/2018 3:37:42 AM
-Transaction is duplicate. Transaction Code: VXM0
-Transaction is duplicate. Transaction Code: UN5V
-Transaction is duplicate. Transaction Code: UN5V
-Store: Tustin Orders Count: 576 Time: 7/24/2018 3:40:27 AM
-Transaction is duplicate. Transaction Code: 1YQ3
-Store: Westminster Orders Count: 460 Time: 7/24/2018 3:43:45 AM
-Transaction is duplicate. Transaction Code: RVP6
-Transaction is duplicate. Transaction Code: YVB5
-Store: Cypress Orders Count: 694 Time: 7/24/2018 3:46:22 AM
-Transaction is duplicate. Transaction Code: GDQ0
-Store: Irvine Orders Count: 801 Time: 7/24/2018 3:50:19 AM
-Transaction is duplicate. Transaction Code: YXT5
-Transaction is duplicate. Transaction Code: KBP3
-Transaction is duplicate. Transaction Code: FL54
-Store: Euclid Orders Count: 884 Time: 7/24/2018 3:54:52 AM
-Transaction is duplicate. Transaction Code: 57RI
-Transaction is duplicate. Transaction Code: 36AL
-Store: Chino Hills Orders Count: 396 Time: 7/24/2018 4:00:30 AM
-Transaction is duplicate. Transaction Code: RRH7
-Transaction is duplicate. Transaction Code: 1YHI
-Store: Costa Mesa Orders Count: 538 Time: 7/24/2018 4:02:53 AM
-Transaction is duplicate. Transaction Code: UNH1
-Total Records: 19111
-File saved successfully. 7/24/2018 4:06:01 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/16/2017 00:00:00 End Date: 03/17/2017 00:00:00 Time: 7/24/2018 4:06:01 AM
-Download Store Revenue Report method completed for Start Date: 03/16/2017 00:00:00 End Date: 03/17/2017 00:00:00 Time: 7/24/2018 4:06:17 AM
-Start Date: 03/17/2017 00:00:00 End Date: 03/18/2017 00:00:00
-Store: Fountain Valley Orders Count: 1074 Time: 7/24/2018 4:06:20 AM
-Transaction is duplicate. Transaction Code: 2R3R
-Transaction is duplicate. Transaction Code: UAL2
-AddOns Item: Quantity: 1,Printed Quantity: 3,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: WQT1
-Transaction is duplicate. Transaction Code: MRL4
-Store: Huntington Beach Orders Count: 451 Time: 7/24/2018 4:12:30 AM
-Store: Tustin Orders Count: 686 Time: 7/24/2018 4:15:03 AM
-Transaction is duplicate. Transaction Code: JW5C
-Transaction is duplicate. Transaction Code: 7W43
-Transaction is duplicate. Transaction Code: TZW6
-Ticket no: GVK1 Order ID:10080662366268 Order NetSale: 3 Order Details Net Sale: 0 Difference: 3 Order Date:03/17/2017 Time:09:01 AM
-Transaction is duplicate. Transaction Code: BRX8
-Store: Westminster Orders Count: 601 Time: 7/24/2018 4:18:59 AM
-Transaction is duplicate. Transaction Code: WQD7
-Transaction is duplicate. Transaction Code: KC57
-Transaction is duplicate. Transaction Code: VDT5
-Transaction is duplicate. Transaction Code: E7AA
-Transaction is duplicate. Transaction Code: TN6I
-Transaction is duplicate. Transaction Code: F9BY
-Store: Cypress Orders Count: 591 Time: 7/24/2018 4:22:22 AM
-Transaction is duplicate. Transaction Code: U0IT
-Store: Irvine Orders Count: 799 Time: 7/24/2018 4:25:46 AM
-Transaction is duplicate. Transaction Code: KZ6B
-Store: Euclid Orders Count: 898 Time: 7/24/2018 4:30:17 AM
-Transaction is duplicate. Transaction Code: Y079
-Transaction is duplicate. Transaction Code: CZA6
-Store: Chino Hills Orders Count: 488 Time: 7/24/2018 4:35:48 AM
-Transaction is duplicate. Transaction Code: 34S5
-Transaction is duplicate. Transaction Code: H5M3
-Transaction is duplicate. Transaction Code: WYJ7
-Store: Costa Mesa Orders Count: 474 Time: 7/24/2018 4:38:43 AM
-Transaction is duplicate. Transaction Code: URB2
-Transaction is duplicate. Transaction Code: XRD2
-Total Records: 20592
-File saved successfully. 7/24/2018 4:41:28 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/17/2017 00:00:00 End Date: 03/18/2017 00:00:00 Time: 7/24/2018 4:41:28 AM
-Download Store Revenue Report method completed for Start Date: 03/17/2017 00:00:00 End Date: 03/18/2017 00:00:00 Time: 7/24/2018 4:41:45 AM
-Start Date: 03/18/2017 00:00:00 End Date: 03/19/2017 00:00:00
-Store: Fountain Valley Orders Count: 969 Time: 7/24/2018 4:41:49 AM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 9GH1
-Transaction is duplicate. Transaction Code: 4104
-Store: Huntington Beach Orders Count: 466 Time: 7/24/2018 4:47:26 AM
-Store: Tustin Orders Count: 632 Time: 7/24/2018 4:50:06 AM
-Store: Westminster Orders Count: 601 Time: 7/24/2018 4:53:41 AM
-Transaction is duplicate. Transaction Code: XDQ0
-Store: Cypress Orders Count: 577 Time: 7/24/2018 4:57:08 AM
-Transaction is duplicate. Transaction Code: 74PZ
-Transaction is duplicate. Transaction Code: DBD6
-Store: Irvine Orders Count: 822 Time: 7/24/2018 5:00:27 AM
-Store: Euclid Orders Count: 935 Time: 7/24/2018 5:05:10 AM
-Transaction is duplicate. Transaction Code: JTP3
-Store: Chino Hills Orders Count: 479 Time: 7/24/2018 5:11:04 AM
-Store: Costa Mesa Orders Count: 448 Time: 7/24/2018 5:13:57 AM
-Transaction is duplicate. Transaction Code: J74Z
-Transaction is duplicate. Transaction Code: D4NN
-Transaction is duplicate. Transaction Code: CWP2
-Total Records: 22299
-File saved successfully. 7/24/2018 5:16:32 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/18/2017 00:00:00 End Date: 03/19/2017 00:00:00 Time: 7/24/2018 5:16:32 AM
-Download Store Revenue Report method completed for Start Date: 03/18/2017 00:00:00 End Date: 03/19/2017 00:00:00 Time: 7/24/2018 5:16:49 AM
-Start Date: 03/19/2017 00:00:00 End Date: 03/20/2017 00:00:00
-Store: Fountain Valley Orders Count: 919 Time: 7/24/2018 5:16:53 AM
-Transaction is duplicate. Transaction Code: VWD1
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 2,Printed Quantity: 3,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Store: Huntington Beach Orders Count: 478 Time: 7/24/2018 5:22:11 AM
-Store: Tustin Orders Count: 570 Time: 7/24/2018 5:24:55 AM
-Transaction is duplicate. Transaction Code: 09C4
-Store: Westminster Orders Count: 647 Time: 7/24/2018 5:28:08 AM
-Transaction is duplicate. Transaction Code: 3ANA
-Transaction is duplicate. Transaction Code: FLX5
-Transaction is duplicate. Transaction Code: U0XK
-Transaction is duplicate. Transaction Code: UNH9
-Transaction is duplicate. Transaction Code: 5U37
-Store: Cypress Orders Count: 577 Time: 7/24/2018 5:31:49 AM
-Store: Irvine Orders Count: 721 Time: 7/24/2018 5:35:07 AM
-Store: Euclid Orders Count: 817 Time: 7/24/2018 5:39:17 AM
-Ticket no: P9B2 Order ID:10156672752708 Order NetSale: 7.07 Order Details Net Sale: 7.5 Difference: -0.43 Order Date:03/19/2017 Time:08:24 PM
-Transaction is duplicate. Transaction Code: 39MH
-Store: Chino Hills Orders Count: 496 Time: 7/24/2018 5:44:24 AM
-Transaction is duplicate. Transaction Code: 9G1R
-Transaction is duplicate. Transaction Code: WFD3
-Transaction is duplicate. Transaction Code: Z3SF
-Store: Costa Mesa Orders Count: 392 Time: 7/24/2018 5:47:20 AM
-Transaction is duplicate. Transaction Code: 1UN2
-Total Records: 20922
-File saved successfully. 7/24/2018 5:49:37 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/19/2017 00:00:00 End Date: 03/20/2017 00:00:00 Time: 7/24/2018 5:49:37 AM
-Download Store Revenue Report method completed for Start Date: 03/19/2017 00:00:00 End Date: 03/20/2017 00:00:00 Time: 7/24/2018 5:49:53 AM
-Start Date: 03/20/2017 00:00:00 End Date: 03/21/2017 00:00:00
-Store: Fountain Valley Orders Count: 905 Time: 7/24/2018 5:49:56 AM
-AddOns Item: Quantity: 1,Printed Quantity: 3,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: QAS0
-Store: Huntington Beach Orders Count: 458 Time: 7/24/2018 5:55:09 AM
-Transaction is duplicate. Transaction Code: VXF0
-Transaction is duplicate. Transaction Code: PJ0M
-Store: Tustin Orders Count: 489 Time: 7/24/2018 5:57:45 AM
-Transaction is duplicate. Transaction Code: SVD5
-Transaction is duplicate. Transaction Code: 68T1
-Store: Westminster Orders Count: 489 Time: 7/24/2018 6:00:33 AM
-Store: Cypress Orders Count: 654 Time: 7/24/2018 6:03:37 AM
-Transaction is duplicate. Transaction Code: WYR7
-Transaction is duplicate. Transaction Code: QU88
-Store: Irvine Orders Count: 654 Time: 7/24/2018 6:07:21 AM
-Transaction is duplicate. Transaction Code: 8KID
-Transaction is duplicate. Transaction Code: PY7F
-Store: Euclid Orders Count: 773 Time: 7/24/2018 6:11:04 AM
-Store: Chino Hills Orders Count: 307 Time: 7/24/2018 6:15:57 AM
-Transaction is duplicate. Transaction Code: 9EFJ
-Transaction is duplicate. Transaction Code: 9EFJ
-Transaction is duplicate. Transaction Code: 9EFJ
-Store: Costa Mesa Orders Count: 471 Time: 7/24/2018 6:17:47 AM
-Transaction is duplicate. Transaction Code: FT5S
-Transaction is duplicate. Transaction Code: 0MVP
-Transaction is duplicate. Transaction Code: 48QX
-Total Records: 16940
-File saved successfully. 7/24/2018 6:20:30 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/20/2017 00:00:00 End Date: 03/21/2017 00:00:00 Time: 7/24/2018 6:20:30 AM
-Download Store Revenue Report method completed for Start Date: 03/20/2017 00:00:00 End Date: 03/21/2017 00:00:00 Time: 7/24/2018 6:20:45 AM
-Start Date: 03/21/2017 00:00:00 End Date: 03/22/2017 00:00:00
-Store: Fountain Valley Orders Count: 783 Time: 7/24/2018 6:20:47 AM
-Transaction is duplicate. Transaction Code: E231
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: UXC6
-Store: Huntington Beach Orders Count: 402 Time: 7/24/2018 6:25:17 AM
-Store: Tustin Orders Count: 504 Time: 7/24/2018 6:27:36 AM
-Transaction is duplicate. Transaction Code: QKS8
-Transaction is duplicate. Transaction Code: FR22
-Store: Westminster Orders Count: 470 Time: 7/24/2018 6:30:32 AM
-Transaction is duplicate. Transaction Code: 7W1S
-Transaction is duplicate. Transaction Code: NNE8
-Store: Cypress Orders Count: 624 Time: 7/24/2018 6:33:12 AM
-Ticket no: CEK9 Order ID:10266450542579 Order NetSale: 19.67 Order Details Net Sale: 20 Difference: -0.329999999999998 Order Date:03/21/2017 Time:03:19 PM
-Store: Irvine Orders Count: 674 Time: 7/24/2018 6:36:43 AM
-Transaction is duplicate. Transaction Code: L9AX
-Transaction is duplicate. Transaction Code: VFT3
-Transaction is duplicate. Transaction Code: 9ZIV
-Transaction is duplicate. Transaction Code: T2J8
-Transaction is duplicate. Transaction Code: ZUD9
-Store: Euclid Orders Count: 797 Time: 7/24/2018 6:40:32 AM
-Ticket no: 23BP Order ID:10156672765919 Order NetSale: -0.369999999999999 Order Details Net Sale: 0 Difference: -0.369999999999999 Order Date:03/21/2017 Time:12:01 PM
-Transaction is duplicate. Transaction Code: GEU1
-Store: Chino Hills Orders Count: 277 Time: 7/24/2018 6:45:31 AM
-Store: Costa Mesa Orders Count: 465 Time: 7/24/2018 6:47:11 AM
-Transaction is duplicate. Transaction Code: DFQ0
-Transaction is duplicate. Transaction Code: A14H
-Total Records: 16231
-File saved successfully. 7/24/2018 6:49:54 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/21/2017 00:00:00 End Date: 03/22/2017 00:00:00 Time: 7/24/2018 6:49:54 AM
-Download Store Revenue Report method completed for Start Date: 03/21/2017 00:00:00 End Date: 03/22/2017 00:00:00 Time: 7/24/2018 6:50:11 AM
-Start Date: 03/22/2017 00:00:00 End Date: 03/23/2017 00:00:00
-Store: Fountain Valley Orders Count: 881 Time: 7/24/2018 6:50:15 AM
-Transaction is duplicate. Transaction Code: FP7U
-Transaction is duplicate. Transaction Code: CHC7
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: K5N9
-Store: Huntington Beach Orders Count: 458 Time: 7/24/2018 6:55:15 AM
-Transaction is duplicate. Transaction Code: VDL6
-Store: Tustin Orders Count: 616 Time: 7/24/2018 6:57:54 AM
-Transaction is duplicate. Transaction Code: A5JF
-Store: Westminster Orders Count: 526 Time: 7/24/2018 7:01:35 AM
-Transaction is duplicate. Transaction Code: FUL3
-Store: Cypress Orders Count: 683 Time: 7/24/2018 7:04:38 AM
-Transaction is duplicate. Transaction Code: T9WN
-Transaction is duplicate. Transaction Code: J1D3
-Transaction is duplicate. Transaction Code: ELE4
-Store: Irvine Orders Count: 715 Time: 7/24/2018 7:08:32 AM
-Store: Euclid Orders Count: 864 Time: 7/24/2018 7:12:39 AM
-Transaction is duplicate. Transaction Code: K856
-Transaction is duplicate. Transaction Code: X2IW
-Ticket no: TLU9 Order ID:10156672775308 Order NetSale: 3.04 Order Details Net Sale: 3.25 Difference: -0.21 Order Date:03/22/2017 Time:12:34 PM
-Transaction is duplicate. Transaction Code: 7FEE
-Transaction is duplicate. Transaction Code: MCU1
-Store: Chino Hills Orders Count: 323 Time: 7/24/2018 7:17:55 AM
-Store: Costa Mesa Orders Count: 483 Time: 7/24/2018 7:19:53 AM
-Transaction is duplicate. Transaction Code: 32GL
-Total Records: 18882
-File saved successfully. 7/24/2018 7:22:44 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/22/2017 00:00:00 End Date: 03/23/2017 00:00:00 Time: 7/24/2018 7:22:44 AM
-Download Store Revenue Report method completed for Start Date: 03/22/2017 00:00:00 End Date: 03/23/2017 00:00:00 Time: 7/24/2018 7:23:00 AM
-Start Date: 03/23/2017 00:00:00 End Date: 03/24/2017 00:00:00
-Store: Fountain Valley Orders Count: 933 Time: 7/24/2018 7:23:02 AM
-Ticket no: 2HKA Order ID:10075533429504 Order NetSale: 10.5 Order Details Net Sale: 9.5 Difference: 1 Order Date:03/23/2017 Time:03:47 PM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: BGX1
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: BEV8
-Transaction is duplicate. Transaction Code: B4VI
-Transaction is duplicate. Transaction Code: J7Q3
-Store: Huntington Beach Orders Count: 484 Time: 7/24/2018 7:28:24 AM
-Store: Tustin Orders Count: 515 Time: 7/24/2018 7:31:11 AM
-Transaction is duplicate. Transaction Code: 4SEK
-Transaction is duplicate. Transaction Code: IX3V
-Store: Westminster Orders Count: 543 Time: 7/24/2018 7:34:10 AM
-Transaction is duplicate. Transaction Code: DFW6
-Transaction is duplicate. Transaction Code: V555
-Store: Cypress Orders Count: 690 Time: 7/24/2018 7:37:15 AM
-Transaction is duplicate. Transaction Code: 2U1Y
-Transaction is duplicate. Transaction Code: 1U6C
-Store: Irvine Orders Count: 754 Time: 7/24/2018 7:41:11 AM
-Store: Euclid Orders Count: 863 Time: 7/24/2018 7:45:28 AM
-Ticket no: 95FS Order ID:10156672789142 Order NetSale: -0.56 Order Details Net Sale: 0 Difference: -0.56 Order Date:03/23/2017 Time:05:25 PM
-Transaction is duplicate. Transaction Code: SWW4
-Ticket no: 3LIK Order ID:10156672786195 Order NetSale: 7.29 Order Details Net Sale: 7.5 Difference: -0.21 Order Date:03/23/2017 Time:02:05 PM
-Transaction is duplicate. Transaction Code: DVV8
-Store: Chino Hills Orders Count: 404 Time: 7/24/2018 7:50:49 AM
-Store: Costa Mesa Orders Count: 509 Time: 7/24/2018 7:53:11 AM
-Transaction is duplicate. Transaction Code: H064
-Transaction is duplicate. Transaction Code: 8FFV
-Total Records: 19197
-File saved successfully. 7/24/2018 7:56:12 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/23/2017 00:00:00 End Date: 03/24/2017 00:00:00 Time: 7/24/2018 7:56:12 AM
-Download Store Revenue Report method completed for Start Date: 03/23/2017 00:00:00 End Date: 03/24/2017 00:00:00 Time: 7/24/2018 7:56:28 AM
-Start Date: 03/24/2017 00:00:00 End Date: 03/25/2017 00:00:00
-Store: Fountain Valley Orders Count: 1062 Time: 7/24/2018 7:56:33 AM
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 9Q5X
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: T75U
-AddOns Item: Quantity: 1,Printed Quantity: 3,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: H7AV
-Transaction is duplicate. Transaction Code: G065
-Transaction is duplicate. Transaction Code: NLH3
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: KXD7
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: QZ5S
-Store: Huntington Beach Orders Count: 488 Time: 7/24/2018 8:02:47 AM
-Store: Tustin Orders Count: 501 Time: 7/24/2018 8:05:37 AM
-Transaction is duplicate. Transaction Code: MZ2P
-Transaction is duplicate. Transaction Code: 6HBA
-Transaction is duplicate. Transaction Code: S015
-Store: Westminster Orders Count: 616 Time: 7/24/2018 8:08:29 AM
-Transaction is duplicate. Transaction Code: D3CS
-Transaction is duplicate. Transaction Code: D5GI
-Store: Cypress Orders Count: 646 Time: 7/24/2018 8:12:01 AM
-Transaction is duplicate. Transaction Code: LKW8
-Transaction is duplicate. Transaction Code: 9YRA
-Transaction is duplicate. Transaction Code: 1KS2
-Store: Irvine Orders Count: 820 Time: 7/24/2018 8:15:51 AM
-Transaction is duplicate. Transaction Code: 173J
-Transaction is duplicate. Transaction Code: 0TQK
-Store: Euclid Orders Count: 932 Time: 7/24/2018 8:20:41 AM
-Transaction is duplicate. Transaction Code: ZAA1
-Store: Chino Hills Orders Count: 442 Time: 7/24/2018 8:26:33 AM
-Store: Costa Mesa Orders Count: 454 Time: 7/24/2018 8:29:13 AM
-Transaction is duplicate. Transaction Code: 49ET
-Total Records: 20660
-File saved successfully. 7/24/2018 8:31:52 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/24/2017 00:00:00 End Date: 03/25/2017 00:00:00 Time: 7/24/2018 8:31:52 AM
-Download Store Revenue Report method completed for Start Date: 03/24/2017 00:00:00 End Date: 03/25/2017 00:00:00 Time: 7/24/2018 8:32:09 AM
-Start Date: 03/25/2017 00:00:00 End Date: 03/26/2017 00:00:00
-Store: Fountain Valley Orders Count: 998 Time: 7/24/2018 8:32:12 AM
-Transaction is duplicate. Transaction Code: 01GU
-Transaction is duplicate. Transaction Code: 1TJH
-Transaction is duplicate. Transaction Code: KRN9
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Ticket no: FMU6 Order ID:10075533445728 Order NetSale: 11 Order Details Net Sale: 10 Difference: 1 Order Date:03/25/2017 Time:02:38 PM
-Transaction is duplicate. Transaction Code: NEN6
-Store: Huntington Beach Orders Count: 474 Time: 7/24/2018 8:37:56 AM
-Store: Tustin Orders Count: 657 Time: 7/24/2018 8:41:41 AM
-Transaction is duplicate. Transaction Code: UVL8
-Transaction is duplicate. Transaction Code: UVL8
-Transaction is duplicate. Transaction Code: KY2Q
-Transaction is duplicate. Transaction Code: KY2Q
-Transaction is duplicate. Transaction Code: Y2V6
-Transaction is duplicate. Transaction Code: NEY1
-Transaction is duplicate. Transaction Code: ZWV9
-Store: Westminster Orders Count: 656 Time: 7/24/2018 8:45:26 AM
-Transaction is duplicate. Transaction Code: GB1F
-Transaction is duplicate. Transaction Code: X37Y
-Transaction is duplicate. Transaction Code: VY9M
-Store: Cypress Orders Count: 616 Time: 7/24/2018 8:49:10 AM
-Transaction is duplicate. Transaction Code: MVY2
-Transaction is duplicate. Transaction Code: 2NWZ
-Store: Irvine Orders Count: 699 Time: 7/24/2018 8:52:44 AM
-Transaction is duplicate. Transaction Code: AW8D
-Store: Euclid Orders Count: 900 Time: 7/24/2018 8:56:47 AM
-Transaction is duplicate. Transaction Code: XV5Y
-Store: Chino Hills Orders Count: 512 Time: 7/24/2018 9:02:38 AM
-Transaction is duplicate. Transaction Code: RE0K
-Store: Costa Mesa Orders Count: 402 Time: 7/24/2018 9:05:44 AM
-Transaction is duplicate. Transaction Code: 283S
-Transaction is duplicate. Transaction Code: NE7U
-Transaction is duplicate. Transaction Code: IT3G
-Total Records: 21583
-File saved successfully. 7/24/2018 9:08:05 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/25/2017 00:00:00 End Date: 03/26/2017 00:00:00 Time: 7/24/2018 9:08:05 AM
-Download Store Revenue Report method completed for Start Date: 03/25/2017 00:00:00 End Date: 03/26/2017 00:00:00 Time: 7/24/2018 9:08:23 AM
-Start Date: 03/26/2017 00:00:00 End Date: 03/27/2017 00:00:00
-Store: Fountain Valley Orders Count: 942 Time: 7/24/2018 9:08:27 AM
-Transaction is duplicate. Transaction Code: CXG2
-Ticket no: 7MKN Order ID:10075533457728 Order NetSale: 8 Order Details Net Sale: 7.5 Difference: 0.5 Order Date:03/26/2017 Time:08:29 PM
-Transaction is duplicate. Transaction Code: SBQ7
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: MG9I
-Transaction is duplicate. Transaction Code: 18R8
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: 2SA1
-Store: Huntington Beach Orders Count: 428 Time: 7/24/2018 9:13:51 AM
-Store: Tustin Orders Count: 591 Time: 7/24/2018 9:16:21 AM
-Transaction is duplicate. Transaction Code: VPM8
-Transaction is duplicate. Transaction Code: MHN2
-Store: Westminster Orders Count: 631 Time: 7/24/2018 9:19:48 AM
-Transaction is duplicate. Transaction Code: FD8D
-Transaction is duplicate. Transaction Code: J6UN
-Transaction is duplicate. Transaction Code: JFY0
-Store: Cypress Orders Count: 571 Time: 7/24/2018 9:23:27 AM
-Transaction is duplicate. Transaction Code: P021
-Transaction is duplicate. Transaction Code: 1S82
-Transaction is duplicate. Transaction Code: WIE3
-Transaction is duplicate. Transaction Code: W963
-Transaction is duplicate. Transaction Code: N7QS
-Store: Irvine Orders Count: 682 Time: 7/24/2018 9:26:43 AM
-Transaction is duplicate. Transaction Code: 252I
-Store: Euclid Orders Count: 777 Time: 7/24/2018 9:30:40 AM
-Store: Chino Hills Orders Count: 518 Time: 7/24/2018 9:35:38 AM
-Transaction is duplicate. Transaction Code: BI14
-Transaction is duplicate. Transaction Code: G5K9
-Transaction is duplicate. Transaction Code: PSS0
-Transaction is duplicate. Transaction Code: Q40Y
-Store: Costa Mesa Orders Count: 396 Time: 7/24/2018 9:38:43 AM
-Transaction is duplicate. Transaction Code: XJH8
-Total Records: 21193
-File saved successfully. 7/24/2018 9:41:05 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/26/2017 00:00:00 End Date: 03/27/2017 00:00:00 Time: 7/24/2018 9:41:05 AM
-Download Store Revenue Report method completed for Start Date: 03/26/2017 00:00:00 End Date: 03/27/2017 00:00:00 Time: 7/24/2018 9:41:22 AM
-Start Date: 03/27/2017 00:00:00 End Date: 03/28/2017 00:00:00
-Store: Fountain Valley Orders Count: 900 Time: 7/24/2018 9:41:26 AM
-Transaction is duplicate. Transaction Code: PMH0
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Store: Huntington Beach Orders Count: 383 Time: 7/24/2018 9:46:39 AM
-Store: Tustin Orders Count: 558 Time: 7/24/2018 9:48:51 AM
-Transaction is duplicate. Transaction Code: XHA9
-Transaction is duplicate. Transaction Code: XHA9
-Store: Westminster Orders Count: 510 Time: 7/24/2018 9:52:02 AM
-Transaction is duplicate. Transaction Code: 57WM
-Store: Cypress Orders Count: 634 Time: 7/24/2018 9:55:01 AM
-Transaction is duplicate. Transaction Code: AZS1
-Store: Irvine Orders Count: 658 Time: 7/24/2018 9:58:40 AM
-Transaction is duplicate. Transaction Code: YQF2
-Store: Euclid Orders Count: 853 Time: 7/24/2018 10:02:36 AM
-Transaction is duplicate. Transaction Code: HFX6
-Transaction is duplicate. Transaction Code: B0MD
-Store: Chino Hills Orders Count: 382 Time: 7/24/2018 10:08:02 AM
-Transaction is duplicate. Transaction Code: PA0C
-Store: Costa Mesa Orders Count: 347 Time: 7/24/2018 10:10:21 AM
-Transaction is duplicate. Transaction Code: E2ZI
-Transaction is duplicate. Transaction Code: Q7JM
-Total Records: 17075
-File saved successfully. 7/24/2018 10:12:26 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/27/2017 00:00:00 End Date: 03/28/2017 00:00:00 Time: 7/24/2018 10:12:26 AM
-Download Store Revenue Report method completed for Start Date: 03/27/2017 00:00:00 End Date: 03/28/2017 00:00:00 Time: 7/24/2018 10:12:42 AM
-Start Date: 03/28/2017 00:00:00 End Date: 03/29/2017 00:00:00
-Store: Fountain Valley Orders Count: 881 Time: 7/24/2018 10:12:45 AM
-Transaction is duplicate. Transaction Code: D0HK
-Transaction is duplicate. Transaction Code: 58Z4
-Transaction is duplicate. Transaction Code: 58Z4
-Transaction is duplicate. Transaction Code: IQ4Q
-Transaction is duplicate. Transaction Code: 232H
-Transaction is duplicate. Transaction Code: 378F
-Transaction is duplicate. Transaction Code: LAV1
-Transaction is duplicate. Transaction Code: C5FH
-Store: Huntington Beach Orders Count: 414 Time: 7/24/2018 10:17:55 AM
-Store: Tustin Orders Count: 606 Time: 7/24/2018 10:20:21 AM
-Transaction is duplicate. Transaction Code: 3UGX
-Transaction is duplicate. Transaction Code: Q1H4
-Transaction is duplicate. Transaction Code: HK11
-Store: Westminster Orders Count: 508 Time: 7/24/2018 10:23:48 AM
-Transaction is duplicate. Transaction Code: D0XT
-Store: Cypress Orders Count: 705 Time: 7/24/2018 10:26:45 AM
-Transaction is duplicate. Transaction Code: EUJ3
-Transaction is duplicate. Transaction Code: QT39
-Store: Irvine Orders Count: 732 Time: 7/24/2018 10:30:47 AM
-Transaction is duplicate. Transaction Code: LDF9
-Transaction is duplicate. Transaction Code: W6YJ
-Transaction is duplicate. Transaction Code: SD4M
-Store: Euclid Orders Count: 941 Time: 7/24/2018 10:34:58 AM
-Store: Chino Hills Orders Count: 393 Time: 7/24/2018 10:40:47 AM
-Transaction is duplicate. Transaction Code: NDR8
-Transaction is duplicate. Transaction Code: 4KLK
-Store: Costa Mesa Orders Count: 399 Time: 7/24/2018 10:43:48 AM
-Transaction is duplicate. Transaction Code: 1166
-Total Records: 18597
-File saved successfully. 7/24/2018 10:46:36 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/28/2017 00:00:00 End Date: 03/29/2017 00:00:00 Time: 7/24/2018 10:46:36 AM
-Download Store Revenue Report method completed for Start Date: 03/28/2017 00:00:00 End Date: 03/29/2017 00:00:00 Time: 7/24/2018 10:46:53 AM
-Start Date: 03/29/2017 00:00:00 End Date: 03/30/2017 00:00:00
-Store: Fountain Valley Orders Count: 972 Time: 7/24/2018 10:46:56 AM
-Transaction is duplicate. Transaction Code: 36R5
-AddOns Item: Quantity: 1,Printed Quantity: 2,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: U4VI
-Transaction is duplicate. Transaction Code: XH03
-Transaction is duplicate. Transaction Code: NDF1
-AddOns Item: Quantity: 1,Printed Quantity: 4,Refunded Quantity: 0
-Transaction is duplicate. Transaction Code: P22F
-Transaction is duplicate. Transaction Code: 5XYG
-Store: Huntington Beach Orders Count: 385 Time: 7/24/2018 10:52:33 AM
-Store: Tustin Orders Count: 613 Time: 7/24/2018 10:54:50 AM
-Transaction is duplicate. Transaction Code: L727
-Transaction is duplicate. Transaction Code: P6WY
-Transaction is duplicate. Transaction Code: F1CC
-Store: Westminster Orders Count: 629 Time: 7/24/2018 10:58:20 AM
-Transaction is duplicate. Transaction Code: RW64
-Transaction is duplicate. Transaction Code: 7UP9
-Store: Cypress Orders Count: 719 Time: 7/24/2018 11:02:12 AM
-Transaction is duplicate. Transaction Code: 9SXF
-Transaction is duplicate. Transaction Code: 9SXF
-Store: Irvine Orders Count: 702 Time: 7/24/2018 11:06:27 AM
-Transaction is duplicate. Transaction Code: QG5N
-Transaction is duplicate. Transaction Code: 3TWK
-Store: Euclid Orders Count: 852 Time: 7/24/2018 11:10:29 AM
-Transaction is duplicate. Transaction Code: 4W9K
-Store: Chino Hills Orders Count: 416 Time: 7/24/2018 11:15:41 AM
-Transaction is duplicate. Transaction Code: UTS4
-Transaction is duplicate. Transaction Code: XGA5
-Store: Costa Mesa Orders Count: 364 Time: 7/24/2018 11:18:14 AM
-Transaction is duplicate. Transaction Code: E7KW
-Transaction is duplicate. Transaction Code: T5F8
-Transaction is duplicate. Transaction Code: T5F8
-Total Records: 19187
-File saved successfully. 7/24/2018 11:20:25 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/29/2017 00:00:00 End Date: 03/30/2017 00:00:00 Time: 7/24/2018 11:20:25 AM
-Download Store Revenue Report method completed for Start Date: 03/29/2017 00:00:00 End Date: 03/30/2017 00:00:00 Time: 7/24/2018 11:20:42 AM
-Start Date: 03/30/2017 00:00:00 End Date: 03/31/2017 00:00:00
-Store: Fountain Valley Orders Count: 891 Time: 7/24/2018 11:20:45 AM
-Transaction is duplicate. Transaction Code: AIT8
-Transaction is duplicate. Transaction Code: 48M4
-Transaction is duplicate. Transaction Code: 6IEK
-Store: Huntington Beach Orders Count: 431 Time: 7/24/2018 11:25:58 AM
-Store: Tustin Orders Count: 603 Time: 7/24/2018 11:28:26 AM
-Transaction is duplicate. Transaction Code: HEA1
-Transaction is duplicate. Transaction Code: AZ6E
-Transaction is duplicate. Transaction Code: ZS4A
-Transaction is duplicate. Transaction Code: U1UL
-Store: Westminster Orders Count: 591 Time: 7/24/2018 11:31:54 AM
-Transaction is duplicate. Transaction Code: HII9
-Transaction is duplicate. Transaction Code: D6QA
-Store: Cypress Orders Count: 705 Time: 7/24/2018 11:35:22 AM
-Transaction is duplicate. Transaction Code: Q1JE
-Store: Irvine Orders Count: 729 Time: 7/24/2018 11:39:27 AM
-Transaction is duplicate. Transaction Code: 8F0N
-Transaction is duplicate. Transaction Code: ELE3
-Transaction is duplicate. Transaction Code: ELE3
-Store: Euclid Orders Count: 910 Time: 7/24/2018 11:43:39 AM
-Transaction is duplicate. Transaction Code: M8CS
-Transaction is duplicate. Transaction Code: B54V
-Transaction is duplicate. Transaction Code: X8U0
-Transaction is duplicate. Transaction Code: A1R5
-Store: Chino Hills Orders Count: 388 Time: 7/24/2018 11:49:24 AM
-Store: Costa Mesa Orders Count: 404 Time: 7/24/2018 11:51:46 AM
-Transaction is duplicate. Transaction Code: AAW9
-Total Records: 19004
-File saved successfully. 7/24/2018 11:54:12 AM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/30/2017 00:00:00 End Date: 03/31/2017 00:00:00 Time: 7/24/2018 11:54:12 AM
-Download Store Revenue Report method completed for Start Date: 03/30/2017 00:00:00 End Date: 03/31/2017 00:00:00 Time: 7/24/2018 11:54:29 AM
-Start Date: 03/31/2017 00:00:00 End Date: 03/31/2017 23:59:59
-Store: Fountain Valley Orders Count: 1071 Time: 7/24/2018 11:54:33 AM
-Transaction is duplicate. Transaction Code: XWU7
-Transaction is duplicate. Transaction Code: 0K1S
-Transaction is duplicate. Transaction Code: LUI8
-Transaction is duplicate. Transaction Code: 8CLS
-Transaction is duplicate. Transaction Code: 4E78
-Transaction is duplicate. Transaction Code: 9MJT
-Transaction is duplicate. Transaction Code: 531B
-Transaction is duplicate. Transaction Code: GUE9
-Store: Huntington Beach Orders Count: 466 Time: 7/24/2018 12:00:45 PM
-Transaction is duplicate. Transaction Code: 6BSR
-Store: Tustin Orders Count: 738 Time: 7/24/2018 12:03:50 PM
-Transaction is duplicate. Transaction Code: G8MZ
-Store: Westminster Orders Count: 602 Time: 7/24/2018 12:08:07 PM
-Store: Cypress Orders Count: 698 Time: 7/24/2018 12:11:38 PM
-Transaction is duplicate. Transaction Code: 15RR
-Transaction is duplicate. Transaction Code: EXY8
-Store: Irvine Orders Count: 724 Time: 7/24/2018 12:15:43 PM
-Transaction is duplicate. Transaction Code: 3GMD
-Transaction is duplicate. Transaction Code: DBB8
-Transaction is duplicate. Transaction Code: IG33
-Transaction is duplicate. Transaction Code: L1EG
-Transaction is duplicate. Transaction Code: 1ZDZ
-Transaction is duplicate. Transaction Code: CZB1
-Transaction is duplicate. Transaction Code: HBI0
-Store: Euclid Orders Count: 1039 Time: 7/24/2018 12:19:51 PM
-Transaction is duplicate. Transaction Code: KK0G
-Transaction is duplicate. Transaction Code: 19YQ
-Store: Chino Hills Orders Count: 502 Time: 7/24/2018 12:26:21 PM
-Store: Costa Mesa Orders Count: 448 Time: 7/24/2018 12:29:24 PM
-Transaction is duplicate. Transaction Code: FYA8
-Transaction is duplicate. Transaction Code: EXQ4
-Total Records: 21283
-File saved successfully. 7/24/2018 12:32:01 PM
-GetOrderHistoryByCriteriaTestNew method completed for Start Date: 03/31/2017 00:00:00 End Date: 03/31/2017 23:59:59 Time: 7/24/2018 12:32:01 PM
-Download Store Revenue Report method completed for Start Date: 03/31/2017 00:00:00 End Date: 03/31/2017 23:59:59 Time: 7/24/2018 12:32:19 PM
-Execute Task completed. 7/24/2018 12:32:19 PM
-Service executed on daily. Time:19:20
-Next Service execution, after 6 hours 47 Minutes 40 seconds
+Access token:206282874/gCjUdVSytryfaEGHPXiTe3Yq Expires in:1800 token_type:Bearer
+Merchant Store Count: 11 Time: 7/25/2018 7:16:01 PM
+Menu Item and Category method completed. Count: 186 Time: 7/25/2018 7:16:13 PM
+Start Date: 05/01/2017 00:00:00 End Date: 05/01/2017 23:59:59
+Store: Fountain Valley Orders Count: 929 Time: 7/25/2018 7:16:16 PM
+Transaction is duplicate. Transaction Code: 6AB0
+Store: Huntington Beach Orders Count: 492 Time: 7/25/2018 7:21:39 PM
+Transaction is duplicate. Transaction Code: J3YZ
+Store: Tustin Orders Count: 584 Time: 7/25/2018 7:24:31 PM
+Transaction is duplicate. Transaction Code: MIA8
+Transaction is duplicate. Transaction Code: YZX9
+Transaction is duplicate. Transaction Code: 3L5R
+Transaction is duplicate. Transaction Code: A41F
+Transaction is duplicate. Transaction Code: MKQ7
+Store: Westminster Orders Count: 565 Time: 7/25/2018 7:27:51 PM
+Transaction is duplicate. Transaction Code: 2G5D
+Transaction is duplicate. Transaction Code: HSM0
+Store: Cypress Orders Count: 691 Time: 7/25/2018 7:31:15 PM
+Transaction is duplicate. Transaction Code: ZZ3D
+Transaction is duplicate. Transaction Code: 3EBV
+Transaction is duplicate. Transaction Code: XQJ4
+Transaction is duplicate. Transaction Code: FZH9
+Transaction is duplicate. Transaction Code: JC2N
+Store: Irvine Orders Count: 728 Time: 7/25/2018 7:35:15 PM
+Transaction is duplicate. Transaction Code: 06YC
+Store: Euclid Orders Count: 867 Time: 7/25/2018 7:39:27 PM
+Transaction is duplicate. Transaction Code: 6JZP
+Transaction is duplicate. Transaction Code: 9WJ1
+Store: Chino Hills Orders Count: 329 Time: 7/25/2018 7:44:55 PM
+Transaction is duplicate. Transaction Code: 2EXN
+Transaction is duplicate. Transaction Code: AN7W
+Transaction is duplicate. Transaction Code: AN7W
+Store: Costa Mesa Orders Count: 485 Time: 7/25/2018 7:46:54 PM
+Total Records: 18949
+File saved successfully. 7/25/2018 7:49:46 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/01/2017 00:00:00 End Date: 05/01/2017 23:59:59 Time: 7/25/2018 7:49:46 PM
+Download Store Revenue Report method completed for Start Date: 05/01/2017 00:00:00 End Date: 05/01/2017 23:59:59 Time: 7/25/2018 7:50:06 PM
+Start Date: 05/02/2017 00:00:00 End Date: 05/02/2017 23:59:59
+Store: Fountain Valley Orders Count: 924 Time: 7/25/2018 7:50:10 PM
+Transaction is duplicate. Transaction Code: A9JC
+Transaction is duplicate. Transaction Code: T0EP
+Transaction is duplicate. Transaction Code: 6RFW
+Transaction is duplicate. Transaction Code: UNC2
+Transaction is duplicate. Transaction Code: Y3D1
+Store: Huntington Beach Orders Count: 527 Time: 7/25/2018 7:55:29 PM
+Transaction is duplicate. Transaction Code: KK58
+Transaction is duplicate. Transaction Code: AU4H
+Transaction is duplicate. Transaction Code: H955
+Store: Tustin Orders Count: 622 Time: 7/25/2018 7:58:31 PM
+Transaction is duplicate. Transaction Code: 1HNE
+Transaction is duplicate. Transaction Code: XAA8
+Transaction is duplicate. Transaction Code: S0GR
+Store: Westminster Orders Count: 532 Time: 7/25/2018 8:02:26 PM
+Transaction is duplicate. Transaction Code: LLU4
+Store: Cypress Orders Count: 705 Time: 7/25/2018 8:05:54 PM
+Transaction is duplicate. Transaction Code: IVV6
+Store: Irvine Orders Count: 830 Time: 7/25/2018 8:10:24 PM
+Transaction is duplicate. Transaction Code: RQR6
+Transaction is duplicate. Transaction Code: 2DXZ
+Transaction is duplicate. Transaction Code: QPV2
+Store: Euclid Orders Count: 864 Time: 7/25/2018 8:15:08 PM
+Transaction is duplicate. Transaction Code: UKD7
+Store: Chino Hills Orders Count: 410 Time: 7/25/2018 8:20:37 PM
+Transaction is duplicate. Transaction Code: TF79
+Store: Costa Mesa Orders Count: 525 Time: 7/25/2018 8:23:06 PM
+Transaction is duplicate. Transaction Code: MSE8
+Transaction is duplicate. Transaction Code: 1EVF
+Transaction is duplicate. Transaction Code: 3H8B
+Transaction is duplicate. Transaction Code: UZU3
+Total Records: 19821
+File saved successfully. 7/25/2018 8:26:12 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/02/2017 00:00:00 End Date: 05/02/2017 23:59:59 Time: 7/25/2018 8:26:12 PM
+Download Store Revenue Report method completed for Start Date: 05/02/2017 00:00:00 End Date: 05/02/2017 23:59:59 Time: 7/25/2018 8:26:29 PM
+Start Date: 05/03/2017 00:00:00 End Date: 05/03/2017 23:59:59
+Store: Fountain Valley Orders Count: 949 Time: 7/25/2018 8:26:33 PM
+Transaction is duplicate. Transaction Code: W6TA
+Transaction is duplicate. Transaction Code: N39E
+Transaction is duplicate. Transaction Code: 0H6V
+Transaction is duplicate. Transaction Code: 1I6U
+Transaction is duplicate. Transaction Code: W0WY
+Transaction is duplicate. Transaction Code: KKM3
+Store: Huntington Beach Orders Count: 519 Time: 7/25/2018 8:32:16 PM
+Transaction is duplicate. Transaction Code: JF2L
+Transaction is duplicate. Transaction Code: TS05
+Transaction is duplicate. Transaction Code: TS05
+Store: Tustin Orders Count: 616 Time: 7/25/2018 8:35:17 PM
+Transaction is duplicate. Transaction Code: D68S
+Transaction is duplicate. Transaction Code: RWM4
+Store: Westminster Orders Count: 525 Time: 7/25/2018 8:38:48 PM
+Store: Cypress Orders Count: 652 Time: 7/25/2018 8:41:53 PM
+Transaction is duplicate. Transaction Code: 4CKM
+Transaction is duplicate. Transaction Code: PPG7
+Store: Irvine Orders Count: 876 Time: 7/25/2018 8:45:39 PM
+Transaction is duplicate. Transaction Code: B8M6
+Transaction is duplicate. Transaction Code: ZUH8
+Store: Euclid Orders Count: 881 Time: 7/25/2018 8:50:40 PM
+Transaction is duplicate. Transaction Code: QEI3
+Transaction is duplicate. Transaction Code: Q13A
+Transaction is duplicate. Transaction Code: H15Q
+Store: Chino Hills Orders Count: 382 Time: 7/25/2018 8:55:59 PM
+Store: Costa Mesa Orders Count: 529 Time: 7/25/2018 8:58:16 PM
+Total Records: 19764
+File saved successfully. 7/25/2018 9:01:52 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/03/2017 00:00:00 End Date: 05/03/2017 23:59:59 Time: 7/25/2018 9:01:52 PM
+Download Store Revenue Report method completed for Start Date: 05/03/2017 00:00:00 End Date: 05/03/2017 23:59:59 Time: 7/25/2018 9:02:09 PM
+Start Date: 05/04/2017 00:00:00 End Date: 05/04/2017 23:59:59
+Store: Fountain Valley Orders Count: 1006 Time: 7/25/2018 9:02:12 PM
+Transaction is duplicate. Transaction Code: 83UC
+Transaction is duplicate. Transaction Code: 83UC
+Transaction is duplicate. Transaction Code: NJX1
+Transaction is duplicate. Transaction Code: 99N7
+Transaction is duplicate. Transaction Code: PQ46
+Store: Huntington Beach Orders Count: 525 Time: 7/25/2018 9:07:56 PM
+Transaction is duplicate. Transaction Code: 26U8
+Store: Tustin Orders Count: 639 Time: 7/25/2018 9:10:56 PM
+Transaction is duplicate. Transaction Code: 1D9B
+Store: Westminster Orders Count: 562 Time: 7/25/2018 9:14:38 PM
+Transaction is duplicate. Transaction Code: XPF6
+Transaction is duplicate. Transaction Code: DCC0
+Transaction is duplicate. Transaction Code: 8D3H
+Transaction is duplicate. Transaction Code: FDW9
+Store: Cypress Orders Count: 675 Time: 7/25/2018 9:17:49 PM
+Transaction is duplicate. Transaction Code: 8ZIV
+Store: Irvine Orders Count: 839 Time: 7/25/2018 9:21:41 PM
+Transaction is duplicate. Transaction Code: RFS5
+Transaction is duplicate. Transaction Code: ICM7
+Transaction is duplicate. Transaction Code: JDR9
+Transaction is duplicate. Transaction Code: BYD7
+Store: Euclid Orders Count: 886 Time: 7/25/2018 9:26:32 PM
+Transaction is duplicate. Transaction Code: CNV0
+Ticket no: WG19 Order ID:10156673232417 Order NetSale: 5.79 Order Details Net Sale: 6 Difference: -0.21 Order Date:05/04/2017 Time:03:58 PM
+Transaction is duplicate. Transaction Code: 4QAV
+Transaction is duplicate. Transaction Code: 0ED4
+Transaction is duplicate. Transaction Code: A6X2
+Store: Chino Hills Orders Count: 375 Time: 7/25/2018 9:32:12 PM
+Transaction is duplicate. Transaction Code: 1K07
+Transaction is duplicate. Transaction Code: NYX3
+Store: Costa Mesa Orders Count: 559 Time: 7/25/2018 9:34:30 PM
+Transaction is duplicate. Transaction Code: ZDE9
+Transaction is duplicate. Transaction Code: IZQ1
+Transaction is duplicate. Transaction Code: YDZ6
+Total Records: 20472
+File saved successfully. 7/25/2018 9:37:46 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/04/2017 00:00:00 End Date: 05/04/2017 23:59:59 Time: 7/25/2018 9:37:46 PM
+Download Store Revenue Report method completed for Start Date: 05/04/2017 00:00:00 End Date: 05/04/2017 23:59:59 Time: 7/25/2018 9:38:02 PM
+Start Date: 05/05/2017 00:00:00 End Date: 05/05/2017 23:59:59
+Store: Fountain Valley Orders Count: 998 Time: 7/25/2018 9:38:07 PM
+Transaction is duplicate. Transaction Code: 82IK
+Transaction is duplicate. Transaction Code: BWN1
+Transaction is duplicate. Transaction Code: BWN1
+Transaction is duplicate. Transaction Code: QLS5
+Transaction is duplicate. Transaction Code: GPL9
+Transaction is duplicate. Transaction Code: XQC2
+Store: Huntington Beach Orders Count: 455 Time: 7/25/2018 9:43:52 PM
+Transaction is duplicate. Transaction Code: K1B7
+Transaction is duplicate. Transaction Code: WAS4
+Store: Tustin Orders Count: 620 Time: 7/25/2018 9:46:52 PM
+Transaction is duplicate. Transaction Code: BPT3
+Store: Westminster Orders Count: 619 Time: 7/25/2018 9:50:36 PM
+Transaction is duplicate. Transaction Code: NGX0
+Transaction is duplicate. Transaction Code: WKY8
+Transaction is duplicate. Transaction Code: 03ZM
+Store: Cypress Orders Count: 561 Time: 7/25/2018 9:54:09 PM
+Store: Irvine Orders Count: 797 Time: 7/25/2018 9:57:48 PM
+Transaction is duplicate. Transaction Code: ZTG2
+Transaction is duplicate. Transaction Code: 68U3
+Transaction is duplicate. Transaction Code: UG1D
+Store: Euclid Orders Count: 890 Time: 7/25/2018 10:02:46 PM
+Transaction is duplicate. Transaction Code: AZT0
+Store: Chino Hills Orders Count: 491 Time: 7/25/2018 10:08:27 PM
+Store: Costa Mesa Orders Count: 501 Time: 7/25/2018 10:11:23 PM
+Transaction is duplicate. Transaction Code: UVA7
+Transaction is duplicate. Transaction Code: 4Y67
+Total Records: 20789
+File saved successfully. 7/25/2018 10:14:20 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/05/2017 00:00:00 End Date: 05/05/2017 23:59:59 Time: 7/25/2018 10:14:20 PM
+Download Store Revenue Report method completed for Start Date: 05/05/2017 00:00:00 End Date: 05/05/2017 23:59:59 Time: 7/25/2018 10:14:37 PM
+Start Date: 05/06/2017 00:00:00 End Date: 05/06/2017 23:59:59
+Store: Fountain Valley Orders Count: 920 Time: 7/25/2018 10:14:41 PM
+Transaction is duplicate. Transaction Code: SET8
+Store: Huntington Beach Orders Count: 440 Time: 7/25/2018 10:20:51 PM
+Transaction is duplicate. Transaction Code: 0WQ3
+Transaction is duplicate. Transaction Code: 2ZI5
+Transaction is duplicate. Transaction Code: 4KLM
+Store: Tustin Orders Count: 583 Time: 7/25/2018 10:23:24 PM
+Transaction is duplicate. Transaction Code: UCD5
+Transaction is duplicate. Transaction Code: GCF4
+Store: Westminster Orders Count: 546 Time: 7/25/2018 10:26:47 PM
+Transaction is duplicate. Transaction Code: VQX1
+Transaction is duplicate. Transaction Code: IKM5
+Store: Cypress Orders Count: 506 Time: 7/25/2018 10:29:54 PM
+Transaction is duplicate. Transaction Code: 80VN
+Store: Irvine Orders Count: 797 Time: 7/25/2018 10:33:05 PM
+Transaction is duplicate. Transaction Code: 6Z7N
+Store: Euclid Orders Count: 900 Time: 7/25/2018 10:37:42 PM
+Ticket no: 22DP Order ID:10156673250549 Order NetSale: 3.4 Order Details Net Sale: 3.75 Difference: -0.35 Order Date:05/06/2017 Time:01:01 PM
+Store: Chino Hills Orders Count: 389 Time: 7/25/2018 10:43:09 PM
+Transaction is duplicate. Transaction Code: LQS1
+Transaction is duplicate. Transaction Code: 6YRZ
+Store: Costa Mesa Orders Count: 405 Time: 7/25/2018 10:45:28 PM
+Transaction is duplicate. Transaction Code: REP3
+Transaction is duplicate. Transaction Code: 9HZV
+Transaction is duplicate. Transaction Code: 4EWU
+Total Records: 20867
+File saved successfully. 7/25/2018 10:47:52 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/06/2017 00:00:00 End Date: 05/06/2017 23:59:59 Time: 7/25/2018 10:47:52 PM
+Download Store Revenue Report method completed for Start Date: 05/06/2017 00:00:00 End Date: 05/06/2017 23:59:59 Time: 7/25/2018 10:48:08 PM
+Start Date: 05/07/2017 00:00:00 End Date: 05/07/2017 23:59:59
+Store: Fountain Valley Orders Count: 887 Time: 7/25/2018 10:48:12 PM
+Transaction is duplicate. Transaction Code: NN82
+Transaction is duplicate. Transaction Code: A5E0
+Transaction is duplicate. Transaction Code: A5E0
+Store: Huntington Beach Orders Count: 418 Time: 7/25/2018 10:53:22 PM
+Store: Tustin Orders Count: 563 Time: 7/25/2018 10:55:49 PM
+Transaction is duplicate. Transaction Code: Z9B4
+Transaction is duplicate. Transaction Code: 77YG
+Store: Westminster Orders Count: 596 Time: 7/25/2018 10:59:04 PM
+Store: Cypress Orders Count: 506 Time: 7/25/2018 11:02:45 PM
+Store: Irvine Orders Count: 714 Time: 7/25/2018 11:05:40 PM
+Transaction is duplicate. Transaction Code: K7XF
+Store: Euclid Orders Count: 740 Time: 7/25/2018 11:09:49 PM
+Transaction is duplicate. Transaction Code: IHT4
+Ticket no: S21P Order ID:10156673260805 Order NetSale: -0.699999999999999 Order Details Net Sale: 0 Difference: -0.699999999999999 Order Date:05/07/2017 Time:01:21 PM
+Transaction is duplicate. Transaction Code: 63DD
+Store: Chino Hills Orders Count: 430 Time: 7/25/2018 11:14:20 PM
+Transaction is duplicate. Transaction Code: C01R
+Store: Costa Mesa Orders Count: 342 Time: 7/25/2018 11:16:51 PM
+Transaction is duplicate. Transaction Code: PQQ6
+Total Records: 19813
+File saved successfully. 7/25/2018 11:18:56 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/07/2017 00:00:00 End Date: 05/07/2017 23:59:59 Time: 7/25/2018 11:18:56 PM
+Download Store Revenue Report method completed for Start Date: 05/07/2017 00:00:00 End Date: 05/07/2017 23:59:59 Time: 7/25/2018 11:19:11 PM
+Start Date: 05/08/2017 00:00:00 End Date: 05/08/2017 23:59:59
+Store: Fountain Valley Orders Count: 897 Time: 7/25/2018 11:19:16 PM
+Transaction is duplicate. Transaction Code: AMY9
+Transaction is duplicate. Transaction Code: UM7U
+Transaction is duplicate. Transaction Code: AZY3
+Transaction is duplicate. Transaction Code: 82KQ
+Transaction is duplicate. Transaction Code: 82KQ
+Store: Huntington Beach Orders Count: 484 Time: 7/25/2018 11:24:22 PM
+Store: Tustin Orders Count: 520 Time: 7/25/2018 11:27:11 PM
+Store: Westminster Orders Count: 513 Time: 7/25/2018 11:30:35 PM
+Transaction is duplicate. Transaction Code: G2HP
+Transaction is duplicate. Transaction Code: RI2F
+Store: Cypress Orders Count: 645 Time: 7/25/2018 11:33:38 PM
+Transaction is duplicate. Transaction Code: Q3E6
+Transaction is duplicate. Transaction Code: XAD6
+Transaction is duplicate. Transaction Code: FUG7
+Transaction is duplicate. Transaction Code: PUI6
+Store: Irvine Orders Count: 711 Time: 7/25/2018 11:37:18 PM
+Transaction is duplicate. Transaction Code: 4ZEM
+Transaction is duplicate. Transaction Code: 5PGE
+Transaction is duplicate. Transaction Code: WE1F
+Transaction is duplicate. Transaction Code: JCB5
+Store: Euclid Orders Count: 791 Time: 7/25/2018 11:41:21 PM
+Transaction is duplicate. Transaction Code: RIQ3
+Transaction is duplicate. Transaction Code: V44H
+Ticket no: UC6M Order ID:10156530218035 Order NetSale: 6.6 Order Details Net Sale: 6.95 Difference: -0.350000000000001 Order Date:05/08/2017 Time:11:11 AM
+Store: Chino Hills Orders Count: 360 Time: 7/25/2018 11:46:19 PM
+Transaction is duplicate. Transaction Code: MSH2
+Transaction is duplicate. Transaction Code: 7EK2
+Store: Costa Mesa Orders Count: 452 Time: 7/25/2018 11:48:26 PM
+Total Records: 17904
+File saved successfully. 7/25/2018 11:51:05 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/08/2017 00:00:00 End Date: 05/08/2017 23:59:59 Time: 7/25/2018 11:51:05 PM
+Download Store Revenue Report method completed for Start Date: 05/08/2017 00:00:00 End Date: 05/08/2017 23:59:59 Time: 7/25/2018 11:51:22 PM
+Start Date: 05/09/2017 00:00:00 End Date: 05/09/2017 23:59:59
+Store: Fountain Valley Orders Count: 836 Time: 7/25/2018 11:51:25 PM
+Transaction is duplicate. Transaction Code: 85YK
+Transaction is duplicate. Transaction Code: 8PEB
+Transaction is duplicate. Transaction Code: 79WQ
+Transaction is duplicate. Transaction Code: NKF6
+Transaction is duplicate. Transaction Code: 6EDR
+Transaction is duplicate. Transaction Code: 6RYQ
+Store: Huntington Beach Orders Count: 507 Time: 7/25/2018 11:56:13 PM
+Store: Tustin Orders Count: 536 Time: 7/25/2018 11:59:31 PM
+Transaction is duplicate. Transaction Code: TSJ3
+Transaction is duplicate. Transaction Code: 5J37
+Store: Westminster Orders Count: 474 Time: 7/26/2018 12:02:49 AM
+Transaction is duplicate. Transaction Code: 8VLI
+Store: Cypress Orders Count: 624 Time: 7/26/2018 12:06:37 AM
+Store: Irvine Orders Count: 722 Time: 7/26/2018 12:10:13 AM
+Transaction is duplicate. Transaction Code: 2S5C
+Transaction is duplicate. Transaction Code: 1IB7
+Transaction is duplicate. Transaction Code: DDD1
+Store: Euclid Orders Count: 789 Time: 7/26/2018 12:14:17 AM
+Store: Chino Hills Orders Count: 324 Time: 7/26/2018 12:19:14 AM
+Transaction is duplicate. Transaction Code: JU59
+Transaction is duplicate. Transaction Code: CWS0
+Transaction is duplicate. Transaction Code: TUW6
+Store: Costa Mesa Orders Count: 471 Time: 7/26/2018 12:21:10 AM
+Transaction is duplicate. Transaction Code: BTG1
+Transaction is duplicate. Transaction Code: HWB1
+Total Records: 17505
+File saved successfully. 7/26/2018 12:23:55 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/09/2017 00:00:00 End Date: 05/09/2017 23:59:59 Time: 7/26/2018 12:23:55 AM
+Download Store Revenue Report method completed for Start Date: 05/09/2017 00:00:00 End Date: 05/09/2017 23:59:59 Time: 7/26/2018 12:24:11 AM
+Start Date: 05/10/2017 00:00:00 End Date: 05/10/2017 23:59:59
+Store: Fountain Valley Orders Count: 921 Time: 7/26/2018 12:24:14 AM
+Transaction is duplicate. Transaction Code: 5W06
+Transaction is duplicate. Transaction Code: 7IRU
+Transaction is duplicate. Transaction Code: R06S
+Transaction is duplicate. Transaction Code: A1I7
+Transaction is duplicate. Transaction Code: U3E6
+Transaction is duplicate. Transaction Code: FAP8
+Transaction is duplicate. Transaction Code: GRR0
+Store: Huntington Beach Orders Count: 536 Time: 7/26/2018 12:29:31 AM
+Transaction is duplicate. Transaction Code: 8KEX
+Store: Tustin Orders Count: 529 Time: 7/26/2018 12:32:45 AM
+Transaction is duplicate. Transaction Code: S012
+Store: Westminster Orders Count: 521 Time: 7/26/2018 12:35:48 AM
+Store: Cypress Orders Count: 666 Time: 7/26/2018 12:39:10 AM
+Transaction is duplicate. Transaction Code: 1573
+Transaction is duplicate. Transaction Code: ICS3
+Store: Irvine Orders Count: 752 Time: 7/26/2018 12:43:00 AM
+Transaction is duplicate. Transaction Code: F53V
+Store: Euclid Orders Count: 777 Time: 7/26/2018 12:47:21 AM
+Transaction is duplicate. Transaction Code: ZZR3
+Transaction is duplicate. Transaction Code: 30LD
+Transaction is duplicate. Transaction Code: 50XC
+Store: Chino Hills Orders Count: 399 Time: 7/26/2018 12:52:06 AM
+Transaction is duplicate. Transaction Code: 25K8
+Store: Costa Mesa Orders Count: 443 Time: 7/26/2018 12:54:28 AM
+Transaction is duplicate. Transaction Code: 0S2S
+Transaction is duplicate. Transaction Code: BBI9
+Total Records: 19073
+File saved successfully. 7/26/2018 12:57:05 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/10/2017 00:00:00 End Date: 05/10/2017 23:59:59 Time: 7/26/2018 12:57:05 AM
+Download Store Revenue Report method completed for Start Date: 05/10/2017 00:00:00 End Date: 05/10/2017 23:59:59 Time: 7/26/2018 12:57:21 AM
+Start Date: 05/11/2017 00:00:00 End Date: 05/11/2017 23:59:59
+Store: Fountain Valley Orders Count: 965 Time: 7/26/2018 12:57:25 AM
+Transaction is duplicate. Transaction Code: S6J9
+Transaction is duplicate. Transaction Code: AEB5
+Transaction is duplicate. Transaction Code: SXQ7
+Transaction is duplicate. Transaction Code: A8HC
+Transaction is duplicate. Transaction Code: UD36
+Transaction is duplicate. Transaction Code: QR4E
+Store: Huntington Beach Orders Count: 497 Time: 7/26/2018 1:03:08 AM
+Transaction is duplicate. Transaction Code: 8GQR
+Store: Tustin Orders Count: 612 Time: 7/26/2018 1:06:02 AM
+Transaction is duplicate. Transaction Code: 90PP
+Transaction is duplicate. Transaction Code: Q0QC
+Transaction is duplicate. Transaction Code: SF9K
+Store: Westminster Orders Count: 505 Time: 7/26/2018 1:09:34 AM
+Transaction is duplicate. Transaction Code: U3P6
+Store: Cypress Orders Count: 694 Time: 7/26/2018 1:12:30 AM
+Transaction is duplicate. Transaction Code: B2BI
+Transaction is duplicate. Transaction Code: 91BG
+Store: Irvine Orders Count: 839 Time: 7/26/2018 1:16:32 AM
+Transaction is duplicate. Transaction Code: BDD1
+Transaction is duplicate. Transaction Code: KQZ8
+Store: Euclid Orders Count: 852 Time: 7/26/2018 1:21:21 AM
+Transaction is duplicate. Transaction Code: 8WN5
+Ticket no: 2S9C Order ID:10156673294343 Order NetSale: -0.23 Order Details Net Sale: 0 Difference: -0.23 Order Date:05/11/2017 Time:08:14 AM
+Store: Chino Hills Orders Count: 412 Time: 7/26/2018 1:26:38 AM
+Transaction is duplicate. Transaction Code: NB2N
+Store: Costa Mesa Orders Count: 508 Time: 7/26/2018 1:29:07 AM
+Transaction is duplicate. Transaction Code: DGB1
+Transaction is duplicate. Transaction Code: 7K5G
+Transaction is duplicate. Transaction Code: 137T
+Total Records: 20278
+File saved successfully. 7/26/2018 1:32:19 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/11/2017 00:00:00 End Date: 05/11/2017 23:59:59 Time: 7/26/2018 1:32:19 AM
+Download Store Revenue Report method completed for Start Date: 05/11/2017 00:00:00 End Date: 05/11/2017 23:59:59 Time: 7/26/2018 1:32:35 AM
+Start Date: 05/12/2017 00:00:00 End Date: 05/12/2017 23:59:59
+Store: Fountain Valley Orders Count: 1085 Time: 7/26/2018 1:32:39 AM
+Transaction is duplicate. Transaction Code: FEN1
+Transaction is duplicate. Transaction Code: MAX1
+Store: Huntington Beach Orders Count: 497 Time: 7/26/2018 1:39:10 AM
+Store: Tustin Orders Count: 706 Time: 7/26/2018 1:42:04 AM
+Transaction is duplicate. Transaction Code: S23H
+Transaction is duplicate. Transaction Code: HVC3
+Transaction is duplicate. Transaction Code: 6SZU
+Store: Westminster Orders Count: 638 Time: 7/26/2018 1:46:07 AM
+Transaction is duplicate. Transaction Code: QE7B
+Transaction is duplicate. Transaction Code: T46L
+Transaction is duplicate. Transaction Code: AKS3
+Store: Cypress Orders Count: 647 Time: 7/26/2018 1:50:07 AM
+Transaction is duplicate. Transaction Code: FQ9F
+Transaction is duplicate. Transaction Code: TZQ6
+Store: Irvine Orders Count: 837 Time: 7/26/2018 1:53:53 AM
+Transaction is duplicate. Transaction Code: SEY3
+Transaction is duplicate. Transaction Code: 2XJE
+Store: Euclid Orders Count: 925 Time: 7/26/2018 1:58:45 AM
+Store: Chino Hills Orders Count: 491 Time: 7/26/2018 2:04:35 AM
+Transaction is duplicate. Transaction Code: 0P3H
+Store: Costa Mesa Orders Count: 474 Time: 7/26/2018 2:07:32 AM
+Transaction is duplicate. Transaction Code: VFJ1
+Transaction is duplicate. Transaction Code: 9EY8
+Total Records: 22123
+File saved successfully. 7/26/2018 2:10:20 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/12/2017 00:00:00 End Date: 05/12/2017 23:59:59 Time: 7/26/2018 2:10:20 AM
+Download Store Revenue Report method completed for Start Date: 05/12/2017 00:00:00 End Date: 05/12/2017 23:59:59 Time: 7/26/2018 2:10:36 AM
+Start Date: 05/13/2017 00:00:00 End Date: 05/13/2017 23:59:59
+Store: Fountain Valley Orders Count: 1008 Time: 7/26/2018 2:10:39 AM
+Transaction is duplicate. Transaction Code: Z5J7
+Transaction is duplicate. Transaction Code: GZH4
+Transaction is duplicate. Transaction Code: GZH4
+Transaction is duplicate. Transaction Code: GZH4
+Transaction is duplicate. Transaction Code: Z6AG
+Transaction is duplicate. Transaction Code: WEU5
+Transaction is duplicate. Transaction Code: D3RU
+Store: Huntington Beach Orders Count: 485 Time: 7/26/2018 2:16:29 AM
+Transaction is duplicate. Transaction Code: XSL8
+Transaction is duplicate. Transaction Code: NEK4
+Store: Tustin Orders Count: 695 Time: 7/26/2018 2:19:20 AM
+Transaction is duplicate. Transaction Code: 10S7
+Transaction is duplicate. Transaction Code: A15K
+Store: Westminster Orders Count: 633 Time: 7/26/2018 2:23:23 AM
+Transaction is duplicate. Transaction Code: 0XQI
+Transaction is duplicate. Transaction Code: Q4W0
+Transaction is duplicate. Transaction Code: XT57
+Transaction is duplicate. Transaction Code: CYW2
+Store: Cypress Orders Count: 606 Time: 7/26/2018 2:27:04 AM
+Transaction is duplicate. Transaction Code: MJD4
+Store: Irvine Orders Count: 771 Time: 7/26/2018 2:30:41 AM
+Transaction is duplicate. Transaction Code: 9BHR
+Transaction is duplicate. Transaction Code: PB6Z
+Store: Euclid Orders Count: 930 Time: 7/26/2018 2:35:10 AM
+Transaction is duplicate. Transaction Code: 5SHQ
+Transaction is duplicate. Transaction Code: 7DA6
+Transaction is duplicate. Transaction Code: 8J3I
+Store: Chino Hills Orders Count: 535 Time: 7/26/2018 2:41:06 AM
+Transaction is duplicate. Transaction Code: Y3MS
+Transaction is duplicate. Transaction Code: 066U
+Store: Costa Mesa Orders Count: 499 Time: 7/26/2018 2:44:17 AM
+Transaction is duplicate. Transaction Code: 0IGY
+Transaction is duplicate. Transaction Code: 4H2W
+Transaction is duplicate. Transaction Code: ZX93
+Transaction is duplicate. Transaction Code: RP96
+Transaction is duplicate. Transaction Code: HYI8
+Transaction is duplicate. Transaction Code: DDE6
+Total Records: 23674
+File saved successfully. 7/26/2018 2:47:13 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/13/2017 00:00:00 End Date: 05/13/2017 23:59:59 Time: 7/26/2018 2:47:13 AM
+Download Store Revenue Report method completed for Start Date: 05/13/2017 00:00:00 End Date: 05/13/2017 23:59:59 Time: 7/26/2018 2:47:30 AM
+Start Date: 05/14/2017 00:00:00 End Date: 05/14/2017 23:59:59
+Store: Fountain Valley Orders Count: 939 Time: 7/26/2018 2:47:34 AM
+Transaction is duplicate. Transaction Code: 7JJJ
+Store: Huntington Beach Orders Count: 428 Time: 7/26/2018 2:53:04 AM
+Transaction is duplicate. Transaction Code: W73E
+Transaction is duplicate. Transaction Code: 5BLD
+Store: Tustin Orders Count: 591 Time: 7/26/2018 2:55:33 AM
+Transaction is duplicate. Transaction Code: 49ZH
+Transaction is duplicate. Transaction Code: S1LX
+Store: Westminster Orders Count: 631 Time: 7/26/2018 2:58:57 AM
+Store: Cypress Orders Count: 608 Time: 7/26/2018 3:02:48 AM
+Transaction is duplicate. Transaction Code: H93X
+Transaction is duplicate. Transaction Code: 4LX2
+Transaction is duplicate. Transaction Code: 30DD
+Store: Irvine Orders Count: 767 Time: 7/26/2018 3:06:18 AM
+Transaction is duplicate. Transaction Code: 7R0U
+Store: Euclid Orders Count: 805 Time: 7/26/2018 3:10:46 AM
+Transaction is duplicate. Transaction Code: TIU1
+Transaction is duplicate. Transaction Code: TRP2
+Transaction is duplicate. Transaction Code: HF4V
+Transaction is duplicate. Transaction Code: QI52
+Store: Chino Hills Orders Count: 413 Time: 7/26/2018 3:15:54 AM
+Transaction is duplicate. Transaction Code: 3TMJ
+Store: Costa Mesa Orders Count: 375 Time: 7/26/2018 3:18:20 AM
+Transaction is duplicate. Transaction Code: EAU4
+Total Records: 22279
+File saved successfully. 7/26/2018 3:20:34 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/14/2017 00:00:00 End Date: 05/14/2017 23:59:59 Time: 7/26/2018 3:20:34 AM
+Download Store Revenue Report method completed for Start Date: 05/14/2017 00:00:00 End Date: 05/14/2017 23:59:59 Time: 7/26/2018 3:20:50 AM
+Start Date: 05/15/2017 00:00:00 End Date: 05/15/2017 23:59:59
+Store: Fountain Valley Orders Count: 910 Time: 7/26/2018 3:20:53 AM
+Transaction is duplicate. Transaction Code: RS5P
+Transaction is duplicate. Transaction Code: RS5P
+Transaction is duplicate. Transaction Code: FGB6
+Transaction is duplicate. Transaction Code: ESP4
+Store: Huntington Beach Orders Count: 485 Time: 7/26/2018 3:26:07 AM
+Transaction is duplicate. Transaction Code: 1KRU
+Transaction is duplicate. Transaction Code: H2UJ
+Store: Tustin Orders Count: 548 Time: 7/26/2018 3:28:55 AM
+Transaction is duplicate. Transaction Code: U8SL
+Transaction is duplicate. Transaction Code: 4C05
+Store: Westminster Orders Count: 549 Time: 7/26/2018 3:32:31 AM
+Transaction is duplicate. Transaction Code: ZIS5
+Store: Cypress Orders Count: 638 Time: 7/26/2018 3:35:39 AM
+Store: Irvine Orders Count: 715 Time: 7/26/2018 3:39:18 AM
+Transaction is duplicate. Transaction Code: P50C
+Transaction is duplicate. Transaction Code: 5DMI
+Store: Euclid Orders Count: 794 Time: 7/26/2018 3:43:26 AM
+Transaction is duplicate. Transaction Code: F4I3
+Transaction is duplicate. Transaction Code: ICN0
+Transaction is duplicate. Transaction Code: R64G
+Store: Chino Hills Orders Count: 305 Time: 7/26/2018 3:48:30 AM
+Transaction is duplicate. Transaction Code: VTI0
+Store: Costa Mesa Orders Count: 521 Time: 7/26/2018 3:50:19 AM
+Transaction is duplicate. Transaction Code: VB36
+Transaction is duplicate. Transaction Code: F026
+Total Records: 18277
+File saved successfully. 7/26/2018 3:53:23 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/15/2017 00:00:00 End Date: 05/15/2017 23:59:59 Time: 7/26/2018 3:53:23 AM
+Download Store Revenue Report method completed for Start Date: 05/15/2017 00:00:00 End Date: 05/15/2017 23:59:59 Time: 7/26/2018 3:53:38 AM
+Start Date: 05/16/2017 00:00:00 End Date: 05/16/2017 23:59:59
+Store: Fountain Valley Orders Count: 918 Time: 7/26/2018 3:53:42 AM
+Transaction is duplicate. Transaction Code: FKP7
+Transaction is duplicate. Transaction Code: XFX2
+Transaction is duplicate. Transaction Code: RP0J
+Transaction is duplicate. Transaction Code: SJ53
+Transaction is duplicate. Transaction Code: 4CSP
+Transaction is duplicate. Transaction Code: 1H77
+Store: Huntington Beach Orders Count: 536 Time: 7/26/2018 3:58:59 AM
+Transaction is duplicate. Transaction Code: 60HL
+Store: Tustin Orders Count: 626 Time: 7/26/2018 4:02:15 AM
+Transaction is duplicate. Transaction Code: W4EB
+Transaction is duplicate. Transaction Code: IKX6
+Transaction is duplicate. Transaction Code: P4TC
+Transaction is duplicate. Transaction Code: SC4X
+Transaction is duplicate. Transaction Code: ZKR9
+Transaction is duplicate. Transaction Code: B1TP
+Store: Westminster Orders Count: 552 Time: 7/26/2018 4:05:50 AM
+Transaction is duplicate. Transaction Code: 31DD
+Transaction is duplicate. Transaction Code: TCS5
+Transaction is duplicate. Transaction Code: 1AKT
+Store: Cypress Orders Count: 659 Time: 7/26/2018 4:09:03 AM
+Transaction is duplicate. Transaction Code: 7UV6
+Transaction is duplicate. Transaction Code: LVQ9
+Store: Irvine Orders Count: 794 Time: 7/26/2018 4:12:50 AM
+Transaction is duplicate. Transaction Code: R87A
+Transaction is duplicate. Transaction Code: AT2F
+Transaction is duplicate. Transaction Code: 98YA
+Transaction is duplicate. Transaction Code: XR14
+Store: Euclid Orders Count: 855 Time: 7/26/2018 4:17:22 AM
+Transaction is duplicate. Transaction Code: WK0T
+Transaction is duplicate. Transaction Code: HJ6V
+Store: Chino Hills Orders Count: 348 Time: 7/26/2018 4:22:41 AM
+Transaction is duplicate. Transaction Code: Q5V5
+Store: Costa Mesa Orders Count: 523 Time: 7/26/2018 4:24:46 AM
+Total Records: 19380
+File saved successfully. 7/26/2018 4:27:49 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/16/2017 00:00:00 End Date: 05/16/2017 23:59:59 Time: 7/26/2018 4:27:49 AM
+Download Store Revenue Report method completed for Start Date: 05/16/2017 00:00:00 End Date: 05/16/2017 23:59:59 Time: 7/26/2018 4:28:05 AM
+Start Date: 05/17/2017 00:00:00 End Date: 05/17/2017 23:59:59
+Store: Fountain Valley Orders Count: 910 Time: 7/26/2018 4:28:08 AM
+Transaction is duplicate. Transaction Code: YPM3
+Transaction is duplicate. Transaction Code: SGZ8
+Store: Huntington Beach Orders Count: 513 Time: 7/26/2018 4:33:30 AM
+Store: Tustin Orders Count: 561 Time: 7/26/2018 4:36:27 AM
+Transaction is duplicate. Transaction Code: PER5
+Store: Westminster Orders Count: 609 Time: 7/26/2018 4:39:40 AM
+Transaction is duplicate. Transaction Code: JUF4
+Transaction is duplicate. Transaction Code: U52V
+Transaction is duplicate. Transaction Code: 01F3
+Store: Cypress Orders Count: 668 Time: 7/26/2018 4:43:09 AM
+Transaction is duplicate. Transaction Code: UU8F
+Transaction is duplicate. Transaction Code: LMC0
+Store: Irvine Orders Count: 803 Time: 7/26/2018 4:47:01 AM
+Transaction is duplicate. Transaction Code: AJZ4
+Transaction is duplicate. Transaction Code: Q6W2
+Transaction is duplicate. Transaction Code: Q6W2
+Transaction is duplicate. Transaction Code: ASP4
+Transaction is duplicate. Transaction Code: ASP4
+Store: Euclid Orders Count: 827 Time: 7/26/2018 4:51:40 AM
+Transaction is duplicate. Transaction Code: REX2
+Transaction is duplicate. Transaction Code: RT79
+Store: Chino Hills Orders Count: 345 Time: 7/26/2018 4:56:40 AM
+Transaction is duplicate. Transaction Code: 31GT
+Transaction is duplicate. Transaction Code: 1F4F
+Store: Costa Mesa Orders Count: 534 Time: 7/26/2018 4:58:43 AM
+Transaction is duplicate. Transaction Code: UC99
+Transaction is duplicate. Transaction Code: 2D3G
+Total Records: 19726
+File saved successfully. 7/26/2018 5:02:09 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/17/2017 00:00:00 End Date: 05/17/2017 23:59:59 Time: 7/26/2018 5:02:09 AM
+Download Store Revenue Report method completed for Start Date: 05/17/2017 00:00:00 End Date: 05/17/2017 23:59:59 Time: 7/26/2018 5:02:26 AM
+Start Date: 05/18/2017 00:00:00 End Date: 05/18/2017 23:59:59
+Store: Fountain Valley Orders Count: 986 Time: 7/26/2018 5:02:29 AM
+Transaction is duplicate. Transaction Code: 00LT
+Transaction is duplicate. Transaction Code: FJV7
+Transaction is duplicate. Transaction Code: D92Q
+Transaction is duplicate. Transaction Code: JKT0
+Transaction is duplicate. Transaction Code: 5GBD
+Store: Huntington Beach Orders Count: 554 Time: 7/26/2018 5:08:11 AM
+Store: Tustin Orders Count: 602 Time: 7/26/2018 5:11:20 AM
+Transaction is duplicate. Transaction Code: 4HDT
+Transaction is duplicate. Transaction Code: PN5T
+Transaction is duplicate. Transaction Code: FDD1
+Transaction is duplicate. Transaction Code: H0JW
+Store: Westminster Orders Count: 611 Time: 7/26/2018 5:14:48 AM
+Transaction is duplicate. Transaction Code: 663N
+Transaction is duplicate. Transaction Code: QQH4
+Transaction is duplicate. Transaction Code: KUK5
+Transaction is duplicate. Transaction Code: 7G13
+Store: Cypress Orders Count: 763 Time: 7/26/2018 5:18:20 AM
+Store: Irvine Orders Count: 825 Time: 7/26/2018 5:22:42 AM
+Transaction is duplicate. Transaction Code: 79GM
+Transaction is duplicate. Transaction Code: EXM4
+Transaction is duplicate. Transaction Code: 4TK3
+Transaction is duplicate. Transaction Code: RF2L
+Store: Euclid Orders Count: 902 Time: 7/26/2018 5:27:29 AM
+Store: Chino Hills Orders Count: 402 Time: 7/26/2018 5:33:21 AM
+Transaction is duplicate. Transaction Code: JRP5
+Transaction is duplicate. Transaction Code: 0X8Y
+Store: Costa Mesa Orders Count: 539 Time: 7/26/2018 5:35:49 AM
+Transaction is duplicate. Transaction Code: REF6
+Transaction is duplicate. Transaction Code: F0QY
+Total Records: 20964
+File saved successfully. 7/26/2018 5:39:01 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/18/2017 00:00:00 End Date: 05/18/2017 23:59:59 Time: 7/26/2018 5:39:01 AM
+Download Store Revenue Report method completed for Start Date: 05/18/2017 00:00:00 End Date: 05/18/2017 23:59:59 Time: 7/26/2018 5:39:17 AM
+Start Date: 05/19/2017 00:00:00 End Date: 05/19/2017 23:59:59
+Store: Fountain Valley Orders Count: 1102 Time: 7/26/2018 5:39:21 AM
+Transaction is duplicate. Transaction Code: X259
+Transaction is duplicate. Transaction Code: KDG2
+Transaction is duplicate. Transaction Code: GWE0
+Store: Huntington Beach Orders Count: 530 Time: 7/26/2018 5:45:43 AM
+Store: Tustin Orders Count: 839 Time: 7/26/2018 5:48:48 AM
+Transaction is duplicate. Transaction Code: PFN7
+Store: Westminster Orders Count: 667 Time: 7/26/2018 5:53:40 AM
+Store: Cypress Orders Count: 707 Time: 7/26/2018 5:57:31 AM
+Transaction is duplicate. Transaction Code: 671Z
+Transaction is duplicate. Transaction Code: 957R
+Transaction is duplicate. Transaction Code: 37CY
+Store: Irvine Orders Count: 888 Time: 7/26/2018 6:01:55 AM
+Transaction is duplicate. Transaction Code: BEP9
+Transaction is duplicate. Transaction Code: DHC0
+Store: Euclid Orders Count: 971 Time: 7/26/2018 6:07:04 AM
+Transaction is duplicate. Transaction Code: Z9BI
+Transaction is duplicate. Transaction Code: LSY4
+Transaction is duplicate. Transaction Code: BV1H
+Store: Chino Hills Orders Count: 508 Time: 7/26/2018 6:13:13 AM
+Transaction is duplicate. Transaction Code: N7MJ
+Transaction is duplicate. Transaction Code: 25L7
+Store: Costa Mesa Orders Count: 582 Time: 7/26/2018 6:16:18 AM
+Transaction is duplicate. Transaction Code: TYE6
+Transaction is duplicate. Transaction Code: TYE6
+Total Records: 23949
+File saved successfully. 7/26/2018 6:19:46 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/19/2017 00:00:00 End Date: 05/19/2017 23:59:59 Time: 7/26/2018 6:19:46 AM
+Download Store Revenue Report method completed for Start Date: 05/19/2017 00:00:00 End Date: 05/19/2017 23:59:59 Time: 7/26/2018 6:20:03 AM
+Start Date: 05/20/2017 00:00:00 End Date: 05/20/2017 23:59:59
+Store: Fountain Valley Orders Count: 1026 Time: 7/26/2018 6:20:07 AM
+Transaction is duplicate. Transaction Code: 6CYX
+Transaction is duplicate. Transaction Code: FCD0
+Store: Huntington Beach Orders Count: 542 Time: 7/26/2018 6:26:10 AM
+Store: Tustin Orders Count: 751 Time: 7/26/2018 6:29:21 AM
+Store: Westminster Orders Count: 671 Time: 7/26/2018 6:33:53 AM
+Transaction is duplicate. Transaction Code: DLH5
+Transaction is duplicate. Transaction Code: 851A
+Transaction is duplicate. Transaction Code: L3V9
+Transaction is duplicate. Transaction Code: VV43
+Transaction is duplicate. Transaction Code: EN1S
+Transaction is duplicate. Transaction Code: 895Z
+Store: Cypress Orders Count: 657 Time: 7/26/2018 6:37:42 AM
+Transaction is duplicate. Transaction Code: ZL1J
+Store: Irvine Orders Count: 796 Time: 7/26/2018 6:41:52 AM
+Transaction is duplicate. Transaction Code: AWI2
+Transaction is duplicate. Transaction Code: D9VT
+Store: Euclid Orders Count: 899 Time: 7/26/2018 6:46:31 AM
+Transaction is duplicate. Transaction Code: R62J
+Transaction is duplicate. Transaction Code: HSW8
+Transaction is duplicate. Transaction Code: NG53
+Store: Chino Hills Orders Count: 527 Time: 7/26/2018 6:52:02 AM
+Store: Costa Mesa Orders Count: 564 Time: 7/26/2018 6:55:09 AM
+Transaction is duplicate. Transaction Code: IS01
+Total Records: 24874
+File saved successfully. 7/26/2018 6:58:35 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/20/2017 00:00:00 End Date: 05/20/2017 23:59:59 Time: 7/26/2018 6:58:35 AM
+Download Store Revenue Report method completed for Start Date: 05/20/2017 00:00:00 End Date: 05/20/2017 23:59:59 Time: 7/26/2018 6:58:51 AM
+Start Date: 05/21/2017 00:00:00 End Date: 05/21/2017 23:59:59
+Store: Fountain Valley Orders Count: 956 Time: 7/26/2018 6:58:54 AM
+Transaction is duplicate. Transaction Code: L18D
+Transaction is duplicate. Transaction Code: 2G70
+Transaction is duplicate. Transaction Code: IRB7
+Transaction is duplicate. Transaction Code: HTY6
+Transaction is duplicate. Transaction Code: M8M7
+Store: Huntington Beach Orders Count: 464 Time: 7/26/2018 7:04:38 AM
+Transaction is duplicate. Transaction Code: IUG0
+Transaction is duplicate. Transaction Code: FUH5
+Store: Tustin Orders Count: 664 Time: 7/26/2018 7:07:21 AM
+Transaction is duplicate. Transaction Code: XB9N
+Transaction is duplicate. Transaction Code: WEZ7
+Transaction is duplicate. Transaction Code: K4KB
+Store: Westminster Orders Count: 645 Time: 7/26/2018 7:11:12 AM
+Transaction is duplicate. Transaction Code: 073X
+Transaction is duplicate. Transaction Code: 987W
+Transaction is duplicate. Transaction Code: 22T5
+Store: Cypress Orders Count: 649 Time: 7/26/2018 7:14:56 AM
+Transaction is duplicate. Transaction Code: DQL3
+Store: Irvine Orders Count: 792 Time: 7/26/2018 7:18:42 AM
+Transaction is duplicate. Transaction Code: Z7S9
+Transaction is duplicate. Transaction Code: TPC8
+Store: Euclid Orders Count: 848 Time: 7/26/2018 7:23:21 AM
+Store: Chino Hills Orders Count: 512 Time: 7/26/2018 7:28:47 AM
+Transaction is duplicate. Transaction Code: 1UP6
+Transaction is duplicate. Transaction Code: BBE0
+Store: Costa Mesa Orders Count: 427 Time: 7/26/2018 7:31:57 AM
+Total Records: 23272
+File saved successfully. 7/26/2018 7:34:31 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/21/2017 00:00:00 End Date: 05/21/2017 23:59:59 Time: 7/26/2018 7:34:31 AM
+Download Store Revenue Report method completed for Start Date: 05/21/2017 00:00:00 End Date: 05/21/2017 23:59:59 Time: 7/26/2018 7:34:48 AM
+Start Date: 05/22/2017 00:00:00 End Date: 05/22/2017 23:59:59
+Store: Fountain Valley Orders Count: 935 Time: 7/26/2018 7:34:51 AM
+Transaction is duplicate. Transaction Code: 14PD
+Transaction is duplicate. Transaction Code: C2NF
+Transaction is duplicate. Transaction Code: DUW4
+Transaction is duplicate. Transaction Code: DUW4
+Transaction is duplicate. Transaction Code: D406
+Transaction is duplicate. Transaction Code: KFR4
+Transaction is duplicate. Transaction Code: UN0W
+Store: Huntington Beach Orders Count: 540 Time: 7/26/2018 7:40:18 AM
+Transaction is duplicate. Transaction Code: WJT9
+Store: Tustin Orders Count: 576 Time: 7/26/2018 7:43:28 AM
+Transaction is duplicate. Transaction Code: KWV7
+Transaction is duplicate. Transaction Code: KWV7
+Transaction is duplicate. Transaction Code: 3BFR
+Store: Westminster Orders Count: 597 Time: 7/26/2018 7:46:48 AM
+Transaction is duplicate. Transaction Code: MU5V
+Transaction is duplicate. Transaction Code: 7XGB
+Store: Cypress Orders Count: 683 Time: 7/26/2018 7:50:15 AM
+Transaction is duplicate. Transaction Code: 36SI
+Transaction is duplicate. Transaction Code: UC8F
+Transaction is duplicate. Transaction Code: 0SK9
+Transaction is duplicate. Transaction Code: SDL3
+Transaction is duplicate. Transaction Code: PEY8
+Store: Irvine Orders Count: 761 Time: 7/26/2018 7:54:10 AM
+Transaction is duplicate. Transaction Code: I8TU
+Transaction is duplicate. Transaction Code: FLU3
+Transaction is duplicate. Transaction Code: 1I6M
+Store: Euclid Orders Count: 820 Time: 7/26/2018 7:58:41 AM
+Transaction is duplicate. Transaction Code: 1WG7
+Transaction is duplicate. Transaction Code: U93S
+Store: Chino Hills Orders Count: 342 Time: 7/26/2018 8:04:14 AM
+Transaction is duplicate. Transaction Code: CIW0
+Transaction is duplicate. Transaction Code: FJ5X
+Transaction is duplicate. Transaction Code: 59G6
+Transaction is duplicate. Transaction Code: FW41
+Store: Costa Mesa Orders Count: 512 Time: 7/26/2018 8:06:16 AM
+Transaction is duplicate. Transaction Code: FAQ0
+Transaction is duplicate. Transaction Code: 2JDP
+Total Records: 19520
+File saved successfully. 7/26/2018 8:09:21 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/22/2017 00:00:00 End Date: 05/22/2017 23:59:59 Time: 7/26/2018 8:09:21 AM
+Download Store Revenue Report method completed for Start Date: 05/22/2017 00:00:00 End Date: 05/22/2017 23:59:59 Time: 7/26/2018 8:09:37 AM
+Start Date: 05/23/2017 00:00:00 End Date: 05/23/2017 23:59:59
+Store: Fountain Valley Orders Count: 1011 Time: 7/26/2018 8:09:41 AM
+Transaction is duplicate. Transaction Code: SRV3
+Transaction is duplicate. Transaction Code: 1TPH
+Transaction is duplicate. Transaction Code: 1RXG
+Transaction is duplicate. Transaction Code: IFJ0
+Transaction is duplicate. Transaction Code: IFJ0
+Store: Huntington Beach Orders Count: 584 Time: 7/26/2018 8:15:35 AM
+Transaction is duplicate. Transaction Code: SJG3
+Transaction is duplicate. Transaction Code: SBH1
+Store: Tustin Orders Count: 615 Time: 7/26/2018 8:18:57 AM
+Transaction is duplicate. Transaction Code: 8TKH
+Store: Westminster Orders Count: 578 Time: 7/26/2018 8:22:53 AM
+Transaction is duplicate. Transaction Code: 6FG3
+Transaction is duplicate. Transaction Code: 5KA9
+Transaction is duplicate. Transaction Code: MQY7
+Transaction is duplicate. Transaction Code: N73I
+Transaction is duplicate. Transaction Code: HNS2
+Store: Cypress Orders Count: 801 Time: 7/26/2018 8:26:16 AM
+Transaction is duplicate. Transaction Code: D86Q
+Transaction is duplicate. Transaction Code: 99B4
+Transaction is duplicate. Transaction Code: UIN7
+Transaction is duplicate. Transaction Code: IXG5
+Store: Irvine Orders Count: 827 Time: 7/26/2018 8:31:02 AM
+Transaction is duplicate. Transaction Code: L0IZ
+Store: Euclid Orders Count: 885 Time: 7/26/2018 8:35:58 AM
+Transaction is duplicate. Transaction Code: NJ4A
+Transaction is duplicate. Transaction Code: HA2G
+Transaction is duplicate. Transaction Code: FQF5
+Transaction is duplicate. Transaction Code: J5I9
+Store: Chino Hills Orders Count: 394 Time: 7/26/2018 8:41:36 AM
+Transaction is duplicate. Transaction Code: 0QPR
+Store: Costa Mesa Orders Count: 588 Time: 7/26/2018 8:43:59 AM
+Transaction is duplicate. Transaction Code: PGX3
+Transaction is duplicate. Transaction Code: G5IG
+Transaction is duplicate. Transaction Code: NMZ3
+Total Records: 21561
+File saved successfully. 7/26/2018 8:47:46 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/23/2017 00:00:00 End Date: 05/23/2017 23:59:59 Time: 7/26/2018 8:47:46 AM
+Download Store Revenue Report method completed for Start Date: 05/23/2017 00:00:00 End Date: 05/23/2017 23:59:59 Time: 7/26/2018 8:48:04 AM
+Start Date: 05/24/2017 00:00:00 End Date: 05/24/2017 23:59:59
+Store: Fountain Valley Orders Count: 1009 Time: 7/26/2018 8:48:08 AM
+Store: Huntington Beach Orders Count: 536 Time: 7/26/2018 8:53:57 AM
+Transaction is duplicate. Transaction Code: DDU8
+Transaction is duplicate. Transaction Code: 9K9E
+Transaction is duplicate. Transaction Code: W36W
+Store: Tustin Orders Count: 662 Time: 7/26/2018 8:57:06 AM
+Transaction is duplicate. Transaction Code: RSE1
+Transaction is duplicate. Transaction Code: 5UUS
+Transaction is duplicate. Transaction Code: LYM6
+Transaction is duplicate. Transaction Code: FGP6
+Store: Westminster Orders Count: 558 Time: 7/26/2018 9:01:04 AM
+Transaction is duplicate. Transaction Code: V72B
+Transaction is duplicate. Transaction Code: 795D
+Transaction is duplicate. Transaction Code: KMH3
+Store: Cypress Orders Count: 681 Time: 7/26/2018 9:04:40 AM
+Transaction is duplicate. Transaction Code: Z710
+Transaction is duplicate. Transaction Code: Y9WH
+Transaction is duplicate. Transaction Code: TUW6
+Store: Irvine Orders Count: 822 Time: 7/26/2018 9:08:37 AM
+Transaction is duplicate. Transaction Code: W5MV
+Transaction is duplicate. Transaction Code: K7MP
+Transaction is duplicate. Transaction Code: BDQ3
+Transaction is duplicate. Transaction Code: 4S9A
+Transaction is duplicate. Transaction Code: QYD0
+Store: Euclid Orders Count: 868 Time: 7/26/2018 9:13:26 AM
+Transaction is duplicate. Transaction Code: CEA4
+Store: Chino Hills Orders Count: 422 Time: 7/26/2018 9:18:49 AM
+Transaction is duplicate. Transaction Code: WBJ6
+Transaction is duplicate. Transaction Code: ULM9
+Transaction is duplicate. Transaction Code: 1JWN
+Store: Costa Mesa Orders Count: 466 Time: 7/26/2018 9:21:21 AM
+Total Records: 20254
+File saved successfully. 7/26/2018 9:24:08 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/24/2017 00:00:00 End Date: 05/24/2017 23:59:59 Time: 7/26/2018 9:24:08 AM
+Download Store Revenue Report method completed for Start Date: 05/24/2017 00:00:00 End Date: 05/24/2017 23:59:59 Time: 7/26/2018 9:24:25 AM
+Start Date: 05/25/2017 00:00:00 End Date: 05/25/2017 23:59:59
+Store: Fountain Valley Orders Count: 827 Time: 7/26/2018 9:24:29 AM
+Transaction is duplicate. Transaction Code: FYZ1
+Transaction is duplicate. Transaction Code: 8JED
+Transaction is duplicate. Transaction Code: 01JB
+Store: Huntington Beach Orders Count: 516 Time: 7/26/2018 9:29:18 AM
+Transaction is duplicate. Transaction Code: 1SQF
+Transaction is duplicate. Transaction Code: AK91
+Transaction is duplicate. Transaction Code: D5GG
+Store: Tustin Orders Count: 567 Time: 7/26/2018 9:32:28 AM
+Transaction is duplicate. Transaction Code: RBN1
+Store: Westminster Orders Count: 516 Time: 7/26/2018 9:35:45 AM
+Store: Cypress Orders Count: 645 Time: 7/26/2018 9:38:47 AM
+Transaction is duplicate. Transaction Code: 9CZJ
+Store: Irvine Orders Count: 826 Time: 7/26/2018 9:42:34 AM
+Transaction is duplicate. Transaction Code: FLX4
+Transaction is duplicate. Transaction Code: DYR5
+Store: Euclid Orders Count: 842 Time: 7/26/2018 9:47:49 AM
+Ticket no: 43FB Order ID:10156673434310 Order NetSale: 17.9 Order Details Net Sale: 18.25 Difference: -0.350000000000001 Order Date:05/25/2017 Time:11:00 AM
+Transaction is duplicate. Transaction Code: TUE7
+Store: Chino Hills Orders Count: 399 Time: 7/26/2018 9:53:31 AM
+Transaction is duplicate. Transaction Code: Z8MC
+Transaction is duplicate. Transaction Code: 7HW2
+Transaction is duplicate. Transaction Code: 08LJ
+Store: Costa Mesa Orders Count: 454 Time: 7/26/2018 9:55:54 AM
+Transaction is duplicate. Transaction Code: 90LY
+Total Records: 19385
+File saved successfully. 7/26/2018 9:58:38 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/25/2017 00:00:00 End Date: 05/25/2017 23:59:59 Time: 7/26/2018 9:58:38 AM
+Download Store Revenue Report method completed for Start Date: 05/25/2017 00:00:00 End Date: 05/25/2017 23:59:59 Time: 7/26/2018 9:58:56 AM
+Start Date: 05/26/2017 00:00:00 End Date: 05/26/2017 23:59:59
+Store: Fountain Valley Orders Count: 1077 Time: 7/26/2018 9:58:59 AM
+Transaction is duplicate. Transaction Code: J810
+Transaction is duplicate. Transaction Code: 686V
+Transaction is duplicate. Transaction Code: 9NA6
+Transaction is duplicate. Transaction Code: VG1F
+Transaction is duplicate. Transaction Code: WF9Q
+Store: Huntington Beach Orders Count: 516 Time: 7/26/2018 10:05:28 AM
+Transaction is duplicate. Transaction Code: ULW2
+Store: Tustin Orders Count: 781 Time: 7/26/2018 10:08:27 AM
+Transaction is duplicate. Transaction Code: IFS2
+Transaction is duplicate. Transaction Code: FB0M
+Transaction is duplicate. Transaction Code: R5AT
+Transaction is duplicate. Transaction Code: PC0Y
+Store: Westminster Orders Count: 709 Time: 7/26/2018 10:13:01 AM
+Transaction is duplicate. Transaction Code: N2V6
+Transaction is duplicate. Transaction Code: 35BF
+Transaction is duplicate. Transaction Code: DMF5
+Store: Cypress Orders Count: 673 Time: 7/26/2018 10:17:09 AM
+Store: Irvine Orders Count: 888 Time: 7/26/2018 10:21:07 AM
+Transaction is duplicate. Transaction Code: RGI8
+Transaction is duplicate. Transaction Code: 2IPS
+Transaction is duplicate. Transaction Code: SAA7
+Store: Euclid Orders Count: 949 Time: 7/26/2018 10:26:23 AM
+Transaction is duplicate. Transaction Code: QNW4
+Transaction is duplicate. Transaction Code: EAJ1
+Transaction is duplicate. Transaction Code: 6WIH
+Store: Chino Hills Orders Count: 520 Time: 7/26/2018 10:32:26 AM
+Transaction is duplicate. Transaction Code: CVR4
+Store: Costa Mesa Orders Count: 490 Time: 7/26/2018 10:35:35 AM
+Transaction is duplicate. Transaction Code: FE0F
+Total Records: 23165
+File saved successfully. 7/26/2018 10:38:33 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/26/2017 00:00:00 End Date: 05/26/2017 23:59:59 Time: 7/26/2018 10:38:33 AM
+Download Store Revenue Report method completed for Start Date: 05/26/2017 00:00:00 End Date: 05/26/2017 23:59:59 Time: 7/26/2018 10:38:51 AM
+Start Date: 05/27/2017 00:00:00 End Date: 05/27/2017 23:59:59
+Store: Fountain Valley Orders Count: 995 Time: 7/26/2018 10:38:55 AM
+Transaction is duplicate. Transaction Code: I9LJ
+Transaction is duplicate. Transaction Code: 55ES
+Store: Huntington Beach Orders Count: 516 Time: 7/26/2018 10:44:49 AM
+Transaction is duplicate. Transaction Code: 33VT
+Store: Tustin Orders Count: 698 Time: 7/26/2018 10:48:02 AM
+Transaction is duplicate. Transaction Code: IMK6
+Store: Westminster Orders Count: 694 Time: 7/26/2018 10:52:18 AM
+Transaction is duplicate. Transaction Code: L710
+Store: Cypress Orders Count: 626 Time: 7/26/2018 10:56:24 AM
+Transaction is duplicate. Transaction Code: 8MSE
+Transaction is duplicate. Transaction Code: TKJ7
+Store: Irvine Orders Count: 760 Time: 7/26/2018 11:00:33 AM
+Transaction is duplicate. Transaction Code: X4W3
+Transaction is duplicate. Transaction Code: BIC9
+Transaction is duplicate. Transaction Code: LAM1
+Transaction is duplicate. Transaction Code: 180Z
+Store: Euclid Orders Count: 925 Time: 7/26/2018 11:05:31 AM
+Transaction is duplicate. Transaction Code: 95WN
+Transaction is duplicate. Transaction Code: 83FK
+Store: Chino Hills Orders Count: 486 Time: 7/26/2018 11:11:23 AM
+Transaction is duplicate. Transaction Code: Q1QJ
+Transaction is duplicate. Transaction Code: CJ22
+Store: Costa Mesa Orders Count: 480 Time: 7/26/2018 11:14:17 AM
+Transaction is duplicate. Transaction Code: ZZM6
+Transaction is duplicate. Transaction Code: 5JJC
+Transaction is duplicate. Transaction Code: IMT4
+Total Records: 23637
+File saved successfully. 7/26/2018 11:17:12 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/27/2017 00:00:00 End Date: 05/27/2017 23:59:59 Time: 7/26/2018 11:17:12 AM
+Download Store Revenue Report method completed for Start Date: 05/27/2017 00:00:00 End Date: 05/27/2017 23:59:59 Time: 7/26/2018 11:17:30 AM
+Start Date: 05/28/2017 00:00:00 End Date: 05/28/2017 23:59:59
+Store: Fountain Valley Orders Count: 898 Time: 7/26/2018 11:17:34 AM
+Transaction is duplicate. Transaction Code: S5K1
+Transaction is duplicate. Transaction Code: 5EVA
+Transaction is duplicate. Transaction Code: LQ5L
+Transaction is duplicate. Transaction Code: UEA5
+Transaction is duplicate. Transaction Code: Y0N6
+Transaction is duplicate. Transaction Code: T9DH
+Transaction is duplicate. Transaction Code: 4ABR
+Store: Huntington Beach Orders Count: 485 Time: 7/26/2018 11:23:02 AM
+Transaction is duplicate. Transaction Code: 9X4Q
+Transaction is duplicate. Transaction Code: AHA3
+Store: Tustin Orders Count: 626 Time: 7/26/2018 11:26:25 AM
+Transaction is duplicate. Transaction Code: WNT9
+Transaction is duplicate. Transaction Code: 2LRG
+Store: Westminster Orders Count: 645 Time: 7/26/2018 11:30:08 AM
+Transaction is duplicate. Transaction Code: 3ZTL
+Transaction is duplicate. Transaction Code: 9AKZ
+Store: Cypress Orders Count: 568 Time: 7/26/2018 11:34:11 AM
+Transaction is duplicate. Transaction Code: NRZ9
+Transaction is duplicate. Transaction Code: HAG9
+Store: Irvine Orders Count: 745 Time: 7/26/2018 11:37:31 AM
+Transaction is duplicate. Transaction Code: 6HUG
+Transaction is duplicate. Transaction Code: KPK7
+Store: Euclid Orders Count: 803 Time: 7/26/2018 11:41:55 AM
+Transaction is duplicate. Transaction Code: 5S2H
+Transaction is duplicate. Transaction Code: K5MY
+Store: Chino Hills Orders Count: 476 Time: 7/26/2018 11:47:04 AM
+Transaction is duplicate. Transaction Code: M09M
+Transaction is duplicate. Transaction Code: CKK2
+Store: Costa Mesa Orders Count: 442 Time: 7/26/2018 11:49:54 AM
+Total Records: 22277
+File saved successfully. 7/26/2018 11:52:33 AM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/28/2017 00:00:00 End Date: 05/28/2017 23:59:59 Time: 7/26/2018 11:52:33 AM
+Download Store Revenue Report method completed for Start Date: 05/28/2017 00:00:00 End Date: 05/28/2017 23:59:59 Time: 7/26/2018 11:52:51 AM
+Start Date: 05/29/2017 00:00:00 End Date: 05/29/2017 23:59:59
+Store: Fountain Valley Orders Count: 861 Time: 7/26/2018 11:52:54 AM
+Transaction is duplicate. Transaction Code: P4WB
+Transaction is duplicate. Transaction Code: 61KG
+Store: Huntington Beach Orders Count: 436 Time: 7/26/2018 11:58:04 AM
+Transaction is duplicate. Transaction Code: T5NU
+Transaction is duplicate. Transaction Code: LPY5
+Transaction is duplicate. Transaction Code: W5FN
+Transaction is duplicate. Transaction Code: XGY8
+Transaction is duplicate. Transaction Code: NRN9
+Store: Tustin Orders Count: 588 Time: 7/26/2018 12:00:53 PM
+Transaction is duplicate. Transaction Code: QQX0
+Store: Westminster Orders Count: 664 Time: 7/26/2018 12:04:38 PM
+Transaction is duplicate. Transaction Code: WR40
+Store: Cypress Orders Count: 528 Time: 7/26/2018 12:08:32 PM
+Transaction is duplicate. Transaction Code: 5A4T
+Transaction is duplicate. Transaction Code: KHX5
+Transaction is duplicate. Transaction Code: PDB4
+Transaction is duplicate. Transaction Code: BWH7
+Transaction is duplicate. Transaction Code: KYP9
+Store: Irvine Orders Count: 780 Time: 7/26/2018 12:11:40 PM
+Store: Euclid Orders Count: 839 Time: 7/26/2018 12:16:15 PM
+Transaction is duplicate. Transaction Code: DNC8
+Transaction is duplicate. Transaction Code: DNC8
+Store: Chino Hills Orders Count: 452 Time: 7/26/2018 12:21:33 PM
+Transaction is duplicate. Transaction Code: IB13
+Transaction is duplicate. Transaction Code: YB7X
+Store: Costa Mesa Orders Count: 364 Time: 7/26/2018 12:24:15 PM
+Transaction is duplicate. Transaction Code: NWN7
+Total Records: 21293
+File saved successfully. 7/26/2018 12:26:26 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/29/2017 00:00:00 End Date: 05/29/2017 23:59:59 Time: 7/26/2018 12:26:26 PM
+Download Store Revenue Report method completed for Start Date: 05/29/2017 00:00:00 End Date: 05/29/2017 23:59:59 Time: 7/26/2018 12:26:45 PM
+Start Date: 05/30/2017 00:00:00 End Date: 05/30/2017 23:59:59
+Store: Fountain Valley Orders Count: 886 Time: 7/26/2018 12:26:48 PM
+Transaction is duplicate. Transaction Code: CCQ5
+Transaction is duplicate. Transaction Code: CCQ5
+Store: Huntington Beach Orders Count: 360 Time: 7/26/2018 12:32:09 PM
+Store: Tustin Orders Count: 542 Time: 7/26/2018 12:34:14 PM
+Transaction is duplicate. Transaction Code: DAI7
+Store: Westminster Orders Count: 485 Time: 7/26/2018 12:37:22 PM
+Transaction is duplicate. Transaction Code: W2SR
+Transaction is duplicate. Transaction Code: GR7I
+Store: Cypress Orders Count: 509 Time: 7/26/2018 12:40:13 PM
+Transaction is duplicate. Transaction Code: RD0P
+Transaction is duplicate. Transaction Code: TXP9
+Store: Irvine Orders Count: 732 Time: 7/26/2018 12:43:08 PM
+Transaction is duplicate. Transaction Code: LB1L
+Transaction is duplicate. Transaction Code: 1BH6
+Store: Euclid Orders Count: 843 Time: 7/26/2018 12:47:20 PM
+Transaction is duplicate. Transaction Code: KUF2
+Transaction is duplicate. Transaction Code: HPQ9
+Store: Chino Hills Orders Count: 368 Time: 7/26/2018 12:52:39 PM
+Transaction is duplicate. Transaction Code: Q3TL
+Transaction is duplicate. Transaction Code: TXB6
+Transaction is duplicate. Transaction Code: Y1VE
+Store: Costa Mesa Orders Count: 378 Time: 7/26/2018 12:55:10 PM
+Total Records: 17105
+File saved successfully. 7/26/2018 12:57:27 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/30/2017 00:00:00 End Date: 05/30/2017 23:59:59 Time: 7/26/2018 12:57:27 PM
+Download Store Revenue Report method completed for Start Date: 05/30/2017 00:00:00 End Date: 05/30/2017 23:59:59 Time: 7/26/2018 12:57:44 PM
+Start Date: 05/31/2017 00:00:00 End Date: 05/31/2017 23:59:59
+Store: Fountain Valley Orders Count: 812 Time: 7/26/2018 12:57:47 PM
+Transaction is duplicate. Transaction Code: QPD4
+Transaction is duplicate. Transaction Code: DHD3
+Transaction is duplicate. Transaction Code: Q0B6
+Transaction is duplicate. Transaction Code: P5VP
+Store: Huntington Beach Orders Count: 385 Time: 7/26/2018 1:02:59 PM
+Transaction is duplicate. Transaction Code: JM43
+Store: Tustin Orders Count: 586 Time: 7/26/2018 1:05:16 PM
+Transaction is duplicate. Transaction Code: VDE7
+Transaction is duplicate. Transaction Code: G6YS
+Transaction is duplicate. Transaction Code: Y2ZD
+Store: Westminster Orders Count: 524 Time: 7/26/2018 1:09:03 PM
+Transaction is duplicate. Transaction Code: 7W3T
+Transaction is duplicate. Transaction Code: 9XEF
+Transaction is duplicate. Transaction Code: DIT5
+Store: Cypress Orders Count: 483 Time: 7/26/2018 1:12:27 PM
+Transaction is duplicate. Transaction Code: L32F
+Transaction is duplicate. Transaction Code: AK0S
+Transaction is duplicate. Transaction Code: N450
+Transaction is duplicate. Transaction Code: MHA0
+Store: Irvine Orders Count: 781 Time: 7/26/2018 1:15:17 PM
+Transaction is duplicate. Transaction Code: 2T22
+Transaction is duplicate. Transaction Code: D9MW
+Transaction is duplicate. Transaction Code: PCT2
+Store: Euclid Orders Count: 804 Time: 7/26/2018 1:19:53 PM
+Store: Chino Hills Orders Count: 369 Time: 7/26/2018 1:24:51 PM
+Transaction is duplicate. Transaction Code: 51B5
+Transaction is duplicate. Transaction Code: VH0V
+Store: Costa Mesa Orders Count: 353 Time: 7/26/2018 1:27:04 PM
+Transaction is duplicate. Transaction Code: EA1C
+Transaction is duplicate. Transaction Code: 1SBB
+Total Records: 17358
+File saved successfully. 7/26/2018 1:29:13 PM
+GetOrderHistoryByCriteriaTestNew method completed for Start Date: 05/31/2017 00:00:00 End Date: 05/31/2017 23:59:59 Time: 7/26/2018 1:29:13 PM
+Download Store Revenue Report method completed for Start Date: 05/31/2017 00:00:00 End Date: 05/31/2017 23:59:59 Time: 7/26/2018 1:29:30 PM
+Execute Task completed. 7/26/2018 1:29:30 PM
+Service executed on daily. Time:19:16
+Next Service execution, after 5 hours 46 Minutes 29 seconds
 service stopped
