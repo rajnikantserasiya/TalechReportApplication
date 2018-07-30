@@ -49,25 +49,90 @@ namespace FetchDataFromTalechPOS_BLL
                 //LogHelper.Log("Get Employee list method completed. Time: " + DateTime.Now);
 
                 //cypress,fountain valley,alhambra,artesia,chino hills,westminster,tustin,irvine,euclid,huntington beach,costa mesa                
-                //lstAllMerchantStoreInformation = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "fountain valley").ToList();
+                lstAllMerchantStoreInformation = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "tustin").ToList();  
+
 
                 int Year = 2017;
-                int Month = 2;
-                int StartDay = 1;
-                int EndDay = 2;
+                int Month = 7;              
+                string startdate = string.Empty;
+                string enddate = string.Empty;                         
 
-                for (int i = StartDay; i < 29; i++)
-                {
-                    string startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, StartDay)).ToString("MM/dd/yyyy HH:mm:ss");
-                    string enddate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, EndDay)).ToString("MM/dd/yyyy HH:mm:ss");
-                    await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
-                    LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 20)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 20)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
+                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
-                    await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
-                    LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
-                    StartDay = EndDay; EndDay = EndDay + 1;
-                }
+                //int Year = 2017;
+                //int Month = 8;
+                //int StartDay = 01;
+                //string startdate = string.Empty;
+                //string enddate = string.Empty;
+
+                //for (int i = StartDay; i < 32; i++)
+                //{
+                //    startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                //    await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                //}
+
+
+                //Month = 9;                             
+                //for (int i = StartDay; i < 31; i++)
+                //{
+                //    startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                //    await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                //}
+
+                //Month = 10;
+                //for (int i = StartDay; i < 32; i++)
+                //{
+                //    startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                //    await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                //}
+
+                //Month = 11;
+                //for (int i = StartDay; i < 31; i++)
+                //{
+                //    startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                //    await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                //}
+
+                //Month = 12;
+                //for (int i = StartDay; i < 32; i++)
+                //{
+                //    startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, i)).ToString("MM/dd/yyyy HH:mm:ss");
+                //    await GetOrderHistoryByCriteriaTestNew(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                //    await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
+                //    LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+                //}
+
+
+
 
 
                 //await DownloadStoreRevenueReport(lstAllMerchantStoreInformation, startdate, enddate);
@@ -194,11 +259,23 @@ namespace FetchDataFromTalechPOS_BLL
                                         if (objResult != null && objResult.Count() > 0)
                                         {
                                             lstStoreResult.AddRange(objResult);
+
                                             double ItemDetailsSum = objResult.Sum(s => s.NetSale);
-                                            double difference = objOrderDetailsExportFields.NetSale - ItemDetailsSum;
-                                            if (!objOrderDetailsExportFields.NetSale.Equals3DigitPrecision(ItemDetailsSum))
+                                            //double difference = objOrderDetailsExportFields.NetSale - ItemDetailsSum;
+                                            //if (!objOrderDetailsExportFields.NetSale.Equals3DigitPrecision(ItemDetailsSum))
+                                            //{
+                                            if (Math.Abs(objOrderDetailsExportFields.NetSale - ItemDetailsSum) > 0.1)
                                             {
+                                                double difference = objOrderDetailsExportFields.NetSale - ItemDetailsSum;
                                                 LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order NetSale: " + objOrderDetailsExportFields.NetSale + " Order Details Net Sale: " + ItemDetailsSum + " Difference: " + difference + " Order Date:" + objOrderDetailsExportFields.Date + " Time:" + objOrderDetailsExportFields.Time);
+                                            }
+
+                                            double GrossSaleSum = objResult.Sum(s => s.GrossSale);
+                                            //double GrossSaledifference = objOrderDetailsExportFields.GrossSale - GrossSaleSum;
+                                            if (Math.Abs(objOrderDetailsExportFields.GrossSale - GrossSaleSum) > 0.1)
+                                            {
+                                                double GrossSaledifference = objOrderDetailsExportFields.GrossSale - GrossSaleSum;
+                                                LogHelper.Log("Ticket no: " + objOrderHistory.transactionCode + " Order ID:" + objOrderHistory.orderId + " Order GrossSale: " + objOrderDetailsExportFields.GrossSale + " Order Details Gross Sale: " + GrossSaleSum + " Difference: " + GrossSaledifference + " Order Date:" + objOrderDetailsExportFields.Date + " Time:" + objOrderDetailsExportFields.Time);
                                             }
                                         }
                                     }
@@ -232,7 +309,7 @@ namespace FetchDataFromTalechPOS_BLL
 
                 LogHelper.Log("Total Records: " + lstFinalResult.Count());
                 //lstFinalResult = lstFinalResult.OrderBy(s => s.TicketNo).ToList();
-                SaveOrderDetailsIntoExcel(lstFinalResult, "ItemDetails_All_Stores_" + Convert.ToDateTime(startdate).ToString("MM-dd-yyyy") + "_" + Convert.ToDateTime(enddate).ToString("MM-dd-yyyy"));
+                SaveOrderDetailsIntoExcel(lstFinalResult, "ItemDetails_All_Stores_" + Convert.ToDateTime(startdate).ToString("MM-dd-yyyy"));
                 LogHelper.Log("File saved successfully. " + DateTime.Now);
             }
             catch (Exception ex)
@@ -922,7 +999,7 @@ namespace FetchDataFromTalechPOS_BLL
                     worksheet.Cells["E4:E14"].Style.Font.Color.SetColor(Color.Red);
                     worksheet.Cells["F4:F14"].Style.Font.Color.SetColor(Color.Red);
 
-                    FileInfo objFile = GetFileInfo(AppDomain.CurrentDomain.BaseDirectory, "Summary_" + Convert.ToDateTime(startDate).ToString("MM-dd-yyyy") + "_" + Convert.ToDateTime(endDate).ToString("MM-dd-yyyy") + ".xlsx");
+                    FileInfo objFile = GetFileInfo(AppDomain.CurrentDomain.BaseDirectory, "Summary_" + Convert.ToDateTime(startDate).ToString("MM-dd-yyyy") + ".xlsx");
                     package.SaveAs(objFile);
                 }
             }
@@ -941,6 +1018,11 @@ namespace FetchDataFromTalechPOS_BLL
                 if (response.IsSuccessStatusCode)
                 {
                     SetRefreshToken(response);
+
+
+
+
+
                     var objRes = await response.Content.ReadAsStringAsync();
                     objResult = JsonConvert.DeserializeObject<AllMerchantStoreInfoModel>(await response.Content.ReadAsStringAsync());
 
@@ -1037,6 +1119,7 @@ namespace FetchDataFromTalechPOS_BLL
                 LogHelper.Log("Refresh Token Method Response code: " + response.StatusCode);
                 if (response.IsSuccessStatusCode)
                 {
+                    string res = await response.Content.ReadAsStringAsync();
                     obj = await response.Content.ReadAsAsync<AuthenticationMethodResultModel>();
                 }
             }
