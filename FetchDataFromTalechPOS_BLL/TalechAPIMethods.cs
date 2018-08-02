@@ -49,39 +49,77 @@ namespace FetchDataFromTalechPOS_BLL
                 //LogHelper.Log("Get Employee list method completed. Time: " + DateTime.Now);
 
                 //cypress,fountain valley,alhambra,artesia,chino hills,westminster,tustin,irvine,euclid,huntington beach,costa mesa                
-                var lstTustin = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "tustin").ToList();
+                //cypress,fountain valley,alhambra,artesia,chino hills,westminster,tustin,irvine,euclid,huntington beach,costa mesa             
+                var lstWestminster = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "westminster").ToList();
+                var lstCypress = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "cypress").ToList();
+                var lstIrvine = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "irvine").ToList();
+                var lstcostamesa = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "costa mesa").ToList();
                 var lstAlhambra = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "alhambra").ToList();
-                var lstEuclid = lstAllMerchantStoreInformation.Where(s => s.merchantStoreName.ToLower() == "euclid").ToList();
 
 
                 int Year = 2017;
-                int Month = 10;
+                int Month = 11;
                 string startdate = string.Empty;
                 string enddate = string.Empty;
 
-                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 13)).ToString("MM/dd/yyyy HH:mm:ss");
-                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 13)).ToString("MM/dd/yyyy HH:mm:ss");
-                await GetOrderHistoryByCriteriaTestNew(lstTustin, startdate, enddate);
+                // WestMinster
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 1)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 1)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstWestminster, startdate, enddate);
                 LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
-                await DownloadStoreRevenueReport(lstTustin, startdate, enddate);
+                await DownloadStoreRevenueReport(lstWestminster, startdate, enddate);
+                LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                // Cypress
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 4)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 4)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstCypress, startdate, enddate);
+                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                await DownloadStoreRevenueReport(lstCypress, startdate, enddate);
+                LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                // Irvine
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 10)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 10)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstIrvine, startdate, enddate);
+                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                await DownloadStoreRevenueReport(lstIrvine, startdate, enddate);
                 LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
 
-
-                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 30)).ToString("MM/dd/yyyy HH:mm:ss");
-                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 30)).ToString("MM/dd/yyyy HH:mm:ss");
-                await GetOrderHistoryByCriteriaTestNew(lstEuclid, startdate, enddate);
+                // costa mesa
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 5)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 5)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstcostamesa, startdate, enddate);
                 LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
-                await DownloadStoreRevenueReport(lstEuclid, startdate, enddate);
+                await DownloadStoreRevenueReport(lstcostamesa, startdate, enddate);
                 LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
+                // Alhambra
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 1)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 1)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstAlhambra, startdate, enddate);
+                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
+                await DownloadStoreRevenueReport(lstAlhambra, startdate, enddate);
+                LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
+                // lstAlhambra
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 6)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 6)).ToString("MM/dd/yyyy HH:mm:ss");
+                await GetOrderHistoryByCriteriaTestNew(lstAlhambra, startdate, enddate);
+                LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
-                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 15)).ToString("MM/dd/yyyy HH:mm:ss");
-                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 15)).ToString("MM/dd/yyyy HH:mm:ss");
+                await DownloadStoreRevenueReport(lstAlhambra, startdate, enddate);
+                LogHelper.Log("Download Store Revenue Report method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
+
+                // lstAlhambra
+                startdate = GeneralHelper.ResetTimeToStartOfDay(new DateTime(Year, Month, 8)).ToString("MM/dd/yyyy HH:mm:ss");
+                enddate = GeneralHelper.ResetTimeToEndOfDay(new DateTime(Year, Month, 8)).ToString("MM/dd/yyyy HH:mm:ss");
                 await GetOrderHistoryByCriteriaTestNew(lstAlhambra, startdate, enddate);
                 LogHelper.Log("GetOrderHistoryByCriteriaTestNew method completed for Start Date: " + startdate + " End Date: " + enddate + " Time: " + DateTime.Now);
 
