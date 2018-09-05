@@ -1,0 +1,26 @@
+Hi Support Team,
+
+My name is Rajnikant Serasiya. Our business name is 7 Leaves Cafe and we have registered our store
+with REVEL POS. I want to get some information related to store sales summary and revenue.
+I have REVEL Api key and crdentials. I have api documents and gone through few methods of 
+"Revel_API_1.01.1954.pdf" document. I can get response from api methods. But i can't understand response properly.
+
+Below are my queries
+1) How can i get list of all stores which we have registered with REVEL pos ? 
+
+2) I also want to access Summary reports like Sales Summary Reports,Payment Summary Reports,Hourly Sales Reports,Product Mix Report
+For example,
+
+https://****.revelup.com/reports/sales_summary/json/?posstation=&employee=&show_unpaid=1&show_irregular=1
+&range_from=2016-­‐08-­‐01+02:00&range_to=2016-­‐08-­‐02+02:00&establishment=1&format=json
+
+In above method what should be value of 
+posstation= ? and how can i get that value
+employee= ? and how can i get that value
+What is meaning of establishment=1
+
+Below are my credentials.
+api_key = "8044c4c6be464ae39bb4955ad4d1f786";
+api_secret = "cd6180d73146400ead3f7fc07a8cab0800ffffcea37d4b8db72bd12c163009c2";
+
+
