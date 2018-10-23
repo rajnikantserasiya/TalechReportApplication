@@ -1,0 +1,154 @@
+USE [7Leaves_Testing]
+GO
+/****** Object:  StoredProcedure [dbo].[GetStoreRevenueSummaryDetailsByDate]    Script Date: 10/23/2018 16:22:31 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+--[GetStoreRevenueSummaryDetailsByDate] '2017-01-02 05:00:00.000','2017-01-02 05:00:00.000',''
+ALTER PROCEDURE [dbo].[GetStoreRevenueSummaryDetailsByDate]
+	-- Add the parameters for the stored procedure here
+	@FromDate datetime,
+	@ToDate datetime,
+	@StoreName nvarchar(30)=''
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	
+	DECLARE @Query nvarchar(max)='';
+	DECLARE @UniqueStoresToPivot NVARCHAR(MAX)='';
+	SELECT @UniqueStoresToPivot =  STUFF((SELECT distinct ',' + QUOTENAME(c.StoreName) 
+				FROM StoreDetails c
+				FOR XML PATH(''), TYPE
+				).value('.', 'NVARCHAR(MAX)') 
+			,1,1,'')
+	--PRINT(@UniqueStoresToPivot)
+	
+    -- Revenue Summary All
+	SELECT
+	sd.StoreName,
+	SUM(Receipts) as 'Receipts',
+	SUM(RefundReceipts) as 'Refund Receipts',
+	SUM(GrossRevenue) as 'Gross Revenue',
+	SUM(Discount) as 'Discounts',
+	SUM(RefundAmount) as 'Refunds',
+	SUM(NetRevenue) as 'Net Revenue',
+	SUM(Tax) as 'Tax',
+	SUM(Tip) as 'Tip',
+	SUM(TotalCollected) as 'Net Collected',
+	SUM(Profitability) as 'Profitability'
+	FROM 
+	TimePeriodSummaryAll tpsa
+	INNER JOIN StoreDetails sd ON
+	tpsa.StoreID =sd.StoreID
+	WHERE 
+	Cast(tpsa.OrderDateTime as DATE) >= CAST(@FromDate AS DATE) AND
+	Cast(tpsa.OrderDateTime as DATE) <= CAST(@ToDate AS DATE) AND
+	(sd.StoreName=@StoreName OR ISNULL(@StoreName,'')='')
+	GROUP BY StoreName
+			
+	-- Net Revenue ------------
+	SET @Query=
+	'SELECT
+	(CONVERT(VARCHAR, OrderDateTime, 23) + ''-'' + CONVERT(VARCHAR, DATEPART(hh, OrderDateTime))) AS OrderDateTime
+        ,'+
+	@UniqueStoresToPivot + '
+	--[Alhambra],[Artesia],[Chino Hills],[Costa Mesa],[Cypress],[Euclid],[Fountain Valley],[Huntington Beach],[Irvine],[Tustin],[Westminster]
+	FROM
+	(
+		SELECT 
+		TPSA.OrderDateTime,
+		TPSA.NetRevenue,
+		SD.StoreName
+		FROM TimePeriodSummaryAll TPSA
+		INNER JOIN StoreDetails SD
+		ON TPSA.StoreID = SD.StoreID	
+		WHERE 
+		convert(date,TPSA.OrderDateTime ,105) >= '''+convert(nvarchar(25), @FromDate, 121)+''' AND
+		convert(date,TPSA.OrderDateTime ,105) <= '''+convert(nvarchar(25), @ToDate, 121)+''' AND
+		(SD.StoreName='''+@StoreName+''' OR ISNULL('''+@StoreName+''','''')='''')	
+	) AS SourceTable
+	pivot
+	(
+		SUM(NetRevenue) FOR
+		Storename in 
+		('+@UniqueStoresToPivot+')
+		--([Alhambra],[Artesia],[Chino Hills],[Costa Mesa],[Cypress],[Euclid],[Fountain Valley],[Huntington Beach],[Irvine],[Tustin],[Westminster])
+	) as PivotTable
+	ORDER BY PivotTable.OrderDateTime'
+
+	--PRINT(@Query)
+	EXECUTE(@Query)
+	
+	------ Receipts ------------
+	SET @Query=
+	'SELECT
+	(CONVERT(VARCHAR, OrderDateTime, 23) + ''-'' + CONVERT(VARCHAR, DATEPART(hh, OrderDateTime))) AS OrderDateTime,'+
+	@UniqueStoresToPivot + '
+	--[Alhambra],[Artesia],[Chino Hills],[Costa Mesa],[Cypress],[Euclid],[Fountain Valley],[Huntington Beach],[Irvine],[Tustin],[Westminster]
+	FROM
+	(
+		SELECT 
+		TPSA.OrderDateTime,
+		TPSA.Receipts,
+		SD.StoreName
+		FROM TimePeriodSummaryAll TPSA
+		INNER JOIN StoreDetails SD
+		ON TPSA.StoreID = SD.StoreID	
+		WHERE 
+		convert(date,TPSA.OrderDateTime ,105) >= '''+convert(nvarchar(25), @FromDate, 121)+''' AND
+		convert(date,TPSA.OrderDateTime ,105) <= '''+convert(nvarchar(25), @ToDate, 121)+''' AND
+		(SD.StoreName='''+@StoreName+''' OR ISNULL('''+@StoreName+''','''')='''')	
+	) AS SourceTable
+	pivot
+	(
+		SUM(Receipts) FOR
+		Storename in 
+		('+@UniqueStoresToPivot+')
+		--([Alhambra],[Artesia],[Chino Hills],[Costa Mesa],[Cypress],[Euclid],[Fountain Valley],[Huntington Beach],[Irvine],[Tustin],[Westminster])
+	) as PivotTable
+	ORDER BY PivotTable.OrderDateTime'
+
+	--PRINT(@Query)
+	EXECUTE(@Query)
+	
+	------- Revenue per Receipts ---------------
+	SET @Query=
+	'SELECT
+	(CONVERT(VARCHAR, OrderDateTime, 23) + ''-'' + CONVERT(VARCHAR, DATEPART(hh, OrderDateTime))) AS OrderDateTime,'+
+	@UniqueStoresToPivot + '
+	--[Alhambra],[Artesia],[Chino Hills],[Costa Mesa],[Cypress],[Euclid],[Fountain Valley],[Huntington Beach],[Irvine],[Tustin],[Westminster]
+	FROM
+	(
+		SELECT 
+		TPSA.OrderDateTime,
+		TPSA.NetRevenuePerReceipt,
+		SD.StoreName
+		FROM TimePeriodSummaryAll TPSA
+		INNER JOIN StoreDetails SD
+		ON TPSA.StoreID = SD.StoreID	
+		WHERE 
+		convert(date,TPSA.OrderDateTime ,105) >= '''+convert(nvarchar(25), @FromDate, 121)+''' AND
+		convert(date,TPSA.OrderDateTime ,105) <= '''+convert(nvarchar(25), @ToDate, 121)+''' AND
+		(SD.StoreName='''+@StoreName+''' OR ISNULL('''+@StoreName+''','''')='''')	
+	) AS SourceTable
+	pivot
+	(
+		SUM(NetRevenuePerReceipt) FOR
+		Storename in 
+		('+@UniqueStoresToPivot+')
+		--([Alhambra],[Artesia],[Chino Hills],[Costa Mesa],[Cypress],[Euclid],[Fountain Valley],[Huntington Beach],[Irvine],[Tustin],[Westminster])
+	) as PivotTable
+	ORDER BY PivotTable.OrderDateTime'
+
+	--PRINT(@Query)
+	EXECUTE(@Query)
+	
+END
