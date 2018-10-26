@@ -1,0 +1,634 @@
+Prerequisites to install Angular 4
+1) Nodejs
+- To check if nodejs is installed or not type node -v in terminal. If it does not display anything install nodejs
+  Use site "https://nodejs.org/en/download/" to install nodejs. Once nodejs is installed npm is also installed along with it.
+2) Npm
+- To check npm is installed or not type npm -v
+3) Angular CLI
+- Type npm install –g @angular/cli to install angular CLI on your system.
+4) IDE for writing your code
+- Can be used Visual Studio code, WebStorm, Atom
+
+- Angular 4 is based on component structure.
+- Angular 4 uses typescript 2.2
+
+[ngModel]="currentHero.name" is the syntax for one-way binding, while,
+[(ngModel)]="currentHero.name" is for two-way binding, and the syntax is compound from:
+[ngModel]="currentHero.name" and (ngModelChange)="currentHero.name = $event"
+If you only need to pass model, use the first one. If your model needs to listen change events (e.g. when input field value changes),
+use the second one.
+
+
+
+Component	ng g component my-new-component
+Directive	ng g directive my-new-directive
+Pipe	    ng g pipe my-new-pipe
+Service	    ng g service my-new-service
+Class	    ng g class my-new-class
+Guard	    ng g guard my-new-guard
+Interface	ng g interface my-new-interface
+Enum	    ng g enum my-new-enum
+Module	    ng g module my-module
+
+-Create angular new project
+
+1)Install Angular CLI
+>npm install @angular/cli
+
+2)Create Angular Project
+- ng new "Proect name"
+
+3) Go to Project folder and type to build project
+- ng serve
+
+4)To run project on different port
+- ng serve --port 4201
+
+5) app.module.ts
+declaration : reference to the component is stored
+imports : reference to module is stored
+providers  : reference to the service is created
+bootstrap : reference to the  default component created i.e. appComponent
+
+6) xx.spec.ts : automatically generated files contains unit test for source component
+
+7) Assets : You can save your image and js files here
+
+8) When project runs index.html calls ->
+ internally calls main.ts -> 
+ main.ts has reference to AppModule component -> 
+ bootstrap: [AppComponent] calls appComponent ->
+ app.component.ts has selector app-root which is used in index.html file ->
+ It will display content present on app.component.html file
+ 
+ ----------------------------------- Service in Angular -------------------------------------------------------------------
+ -- If you do combine a component and service in the same file, it is important to define the service first, 
+ and then the component. If you define the component before the service, you get a run-time null reference error.
+ another way of implementation : https://blog.thoughtram.io/angular/2015/09/03/forward-references-in-angular-2.html
+ 
+ - The @Injectable() is an essential ingredient in every Angular service definition. 
+ - The @Injectable() decorator marks it as a service that can be injected
+ - The injector is responsible for creating service instances and injecting them into classes like Component.
+ - When Angular creates a class whose constructor has parameters, it looks for type and injection metadata about those parameters so that it can inject the correct service.
+   If Angular can't find that parameter information, it throws an error. 
+   Angular can only find the parameter information if the class has a decorator of some kind.
+   The @Injectable() decorator is the standard decorator for service classes.
+   
+- You must make the HeroService available to the dependency injection system before Angular can inject it into the HeroesComponent, 
+  You do this by registering a provider. A provider is something that can create or deliver a servic
+- When you provide the service at the root level, Angular creates a single, shared instance of HeroService and injects into any class that asks for it. 
+  Registering the provider in the @Injectable metadata also allows Angular to optimize an app by removing the service if it turns out not to be used after all.  
+- Reserve the constructor for simple initialization such as wiring constructor parameters to properties. The constructor shouldn't do anything.
+  It certainly shouldn't call a function that makes HTTP requests to a remote server as a real data service would.  
+
+----------------------------- Objservable and of in Rxjs -----------------------------------------------------
+ you'll call HttpClient.get<Hero[]>() which also returns an Observable<Hero[]> that emits a single value, an array of heroes from the body of the HTTP response.
+ 
+ 2 ways to call requests
+ 
+ 1) getHeroes(): void {
+  this.heroes = this.heroService.getHeroes();
+ }
+ assigns an array of heroes to the component's heroes property. The assignment occurs synchronously, 
+ as if the server could return heroes instantly or the browser could freeze the UI while it waited for the server's response.
+ That won't work when the HeroService is actually making requests of a remote server
+ 
+ 2)getHeroes(): void {
+  this.heroService.getHeroes()
+      .subscribe(heroes => this.heroes = heroes);
+	}
+ the new version waits for the observable to emit object from response and then subscribe passes emitted object to callback function which sets
+ heroes property
+ This asynchronous approach will work when the HeroService requests heroes from the server.
+ 
+- HttpClient.get<T> also returns Observable<T> that emits single value of type T from body of response.
+- In constructor, you should define service property as public if you want to use it on angular template (Angular only binds to public component properties.)
+  For example
+  In component ts file constructor(public messageService: MessageService) {}
+  In component html file/template <div *ngIf="messageService.messages.length">
+
+
+  
+--------------------- Router  --------------------
+- ng generate module app-routing --flat --module=app
+  --flat puts the file in src/app instead of its own folder.
+  --module=app tells the CLI to register it in the imports array of the AppModule.
+
+- Routes
+	Routes tell the router which view to display when a user clicks a link or pastes a URL into the browser address bar.
+	
+	A typical Angular Route has two properties:
+	path: a string that matches the URL in the browser address bar.
+	component: the component that the router should create when navigating to this route.	
+
+- RouterModule.forRoot(routes)	
+  forRoot() method supplies service providers and Directives needed for routing and performs initial navigation based on current browser URL
+  
+---------------------------------Add RouterOutlet ----------------------------------------------------
+- Add <router-outlet> in app.component.html
+- <router-outlet> tells router where to display the routed view
+- Router-outlet is one of router directive which available to appComponent because appModule imports approutingModule which exports routermodule
+
+- dynamic path in app routing
+   { path: 'detail/:id', component: HeroDetailComponent } here :id is placeholder/replaceable
+- how to map dynamic path in link
+   <a routerLink="/detail/{{hero.id}}">
+- how to get id value from route
+  - import ActivationRoute from '@angular/router'
+  const id = +this.route.snapshot.paramMap.get('id');
+	- route.snapshot (holds static image of route information)
+	- paramMap (dictionary of route parameter values extracted from the URL)
+	- + convert string to number
+	
+- this.location.back() to go back 	
+
+------------HTTPClient------------------------
+All HttpClient methods return an RxJS Observable of something.
+HttpClient.get returns the body of the response as an untyped JSON object by default. 
+HTTPClient.post
+httpclinet.puts
+httpclinet.delete
+
+-----------Catch errors ---------------------
+To catch errors, you "pipe" the observable result from http.get() through an RxJS catchError() operator.
+import { catchError, map, tap } from 'rxjs/operators';
+
+extend the observable result with the .pipe() method and give it a catchError() operator.
+getHeroes (): Observable<Hero[]> {
+  return this.http.get<Hero[]>(this.heroesUrl)
+    .pipe(
+      catchError(this.handleError('getHeroes', []))
+    );
+}
+  
+--------------------------------------------- AsyncPipe -------------------------------------------------
+Async pipe subscribe to an observable or  promise and returns latest value it has emitted. When values are changed Async pipe makes component to be marks for changes
+and when component destroys it unsubscribe automatically to prevent memory leakes.
+
+<div id="search-component">
+  <h4>Hero Search</h4>
+ 
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+ 
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async" >
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<li *ngFor="let hero of heroes$ | async" >
+The $ is a convention that indicates heroes$ is an Observable, not an array. (heroes$: Observable<Hero[]>)
+The *ngFor can't do anything with an Observable. But there's also a pipe character (|) followed by async, which identifies Angular's AsyncPipe.
+The AsyncPipe subscribes to an Observable automatically so you won't have to do so in the component class.
+
+--search term Rxjs subject
+private searchTerms = new Subject<string>();
+
+// Push a search term into the observable stream.
+search(term: string): void {
+  this.searchTerms.next(term);
+}
+- subject is both source of observable values and observable itself. You can subscribe to subject as you would any observable
+- You can push values into observable stream by calling next(values) method
+- Every time the user types in the textbox, the binding calls search() with the textbox value, a "search term". 
+  The searchTerms becomes an Observable emitting a steady stream of search terms.  
+  
+Chaining RxJS operators (Why we user Subejct and AsyncPipe
+Passing a new search term directly to the searchHeroes() after every user keystroke would create an excessive amount of HTTP requests, taxing server resources and burning through the cellular network data plan.
+Instead, the ngOnInit() method pipes the searchTerms observable through a sequence of RxJS operators that reduce the number of calls to the searchHeroes(), ultimately returning an observable of timely hero search results (each a Hero[]).  
+ 
+ this.heroes$ = this.searchTerms.pipe(
+  // wait 300ms after each keystroke before considering the term
+  debounceTime(300), --  You'll never make requests more frequently than 300ms.
+
+  // ignore new term if same as previous term
+  distinctUntilChanged(), -- ensures that a request is sent only if the filter text changed.
+
+  // switch to new search observable each time the term changes
+  switchMap((term: string) => this.heroService.searchHeroes(term)),
+  switchMap() preserves the original request order while returning only the observable from the most recent HTTP method call. 
+  Results from prior calls are canceled and discarded.
+);
+
+- Remember that the component class does not subscribe to the heroes$ observable. That's the job of the AsyncPipe in the template.
+
+--------------------------Architecture------------------------------------------------
+- The basic building blocks of an Angular application are NgModules, which provide a compilation context for components.
+- Components define views -> Components use services, which provide specific functionality not directly related to views. -> Service providers can be injected into components as dependencies
+- Every Angular app has a root module, conventionally named AppModule, which provides the bootstrap mechanism that launches the application
+- Decorators : 
+	Decorators are functions that modify javascript classes. Attach specific kind of metadata to classes so system knows what those classes means and how should they work.
+- Template
+	A template combines HTML with Angular markup that can modify HTML elements before they are displayed. 
+- Angular supports two-way data binding,
+
+-----------NgModules----------------------------
+- NgModules properties
+	1) Declarations : include component, directive and pipe
+	2) Exports : subset of declaration that can be visible or useable in component of another NgModules
+	3) Imports : should include other modules whose exported classes are useable in components
+	4) providers : creation of service/collection of service at global level
+	5) Bootstrap: provide root component
+
+----------------BrowserModule------------------------
+class BrowserModule {
+  static withServerTransition(params: {...}): ModuleWithProviders<BrowserModule>
+}
+- It has static method withServerTransition : Configures browser-based app to transition from server rendered app
+static withServerTransition(params: {
+    appId: string;
+}): ModuleWithProviders<BrowserModule>
+params	
+An object containing an identifier for the app to transition. The ID must match between the client and server versions of the app.
+Returns
+ModuleWithProviders<BrowserModule>: The reconfigured BrowserModule to import into the app's root AppModule.
+
+- Angular loads as a collection of JavaScript modules. 
+
+-------------Angular  biniding-----------------
+
+1)Interpolation
+DOM <-----------------{{value}}------------ Component
+2) property binding
+DOM <-----------------[property]="value"--- Component
+3) Event binding
+DOM -----------------(event)binding---> Component
+4) 2 way data binding
+DOM <-----------------[(ngModel)]="value"---> Component
+
+--------------Pipes -------------------
+@Pipe decorator defines function which transforms input value to output value for display in view 
+For single pipe operation {{ value | pipe_name  }}
+
+https://angular.io/api?type=pipe
+
+------ Observable and Promise-----------
+- Promise handles single event when an async operation completes
+- Observable is like a stream, it handles zero or more events when callback function is called for each event
+- Observable is more preferred than Promise because Observable likes promise and many more
+- One more advantage of Observable over promise is cancelable. Objservable subscription can be cancelled at any time when you don't need anymore.
+
+-------------------Directives --------------------------------
+Component is technically directive
+Apart from Component, 2 kinds of directive
+1)Structural directives :
+	It alters layout by adding removing or replacing elements in dom
+	<li *ngFor="let hero of heroes"></li>
+	<app-hero-detail *ngIf="selectedHero"></app-hero-detail>
+2)Attribute
+	It alters behaviour of element.
+	<input [(ngModel)]="hero.name">
+
+
+-----------------------MVC------------------------------------
+https://www.c-sharpcorner.com/UploadFile/8ef97c/most-asked-Asp-Net-mvc-interview-questions-and-answers/
+Authentication in MVC : https://www.learnmvc.in/aspnet-mvc5-authentication-filters-example.php
+Dependancy injection in MVC : https://code.msdn.microsoft.com/Dependency-Injection-in-11d54863
+
+Web api token based authentication
+https://www.dotnetcurry.com/aspnet/1223/secure-aspnet-web-api-using-tokens-owin-angularjs
+
+	Login with credentials -> Authorization service interact with Middleware and generate Token -> Token pass to client
+	-> Client request with token -> authentication server and authorization server validates token and give permission to access web api controller
+
+Design pattern: http://www.abhisheksur.com/2010/05/design-patterns.html
+Design pattern is reuseable solution of common software design problems which occurs repeatedly with real world application development.
+1) Creational design pattern:
+	This pattern deals mainly with creation of object and classes.
+2) Structural design pattern
+	mainly deals with object and classes composition
+3) Behaviroal design pattern
+	Mainly deals with object classes communication.
+	
+1) Creational design pattern:
+
+		1.0) Factory method pattern:
+			Let's define an interface or abstract class for creating object, but let sub classes decide which class to instaniate
+			Usage:
+			1) When class wants that its sub class specify which class object to be created
+			
+			public abstract class Plan
+			{
+				double rate=0;
+				abstract void getPlanRate();
+				public void CalculateBill(int unit)
+				{
+					print(unit * rate)
+				}
+			}
+			
+			public class DomesticPlan : Plan
+			{
+				public override void getPlanRate()
+				{
+					rate=3.0;
+				}
+				
+			}
+			
+			public class CommercialPlan : Plan
+			{
+				public override void getPlanRate()
+				{
+					rate=5.0;
+				}
+				
+			}
+			
+			public class InstitutionalPlan : Plan
+			{
+				public override void getPlanRate()
+				{
+					rate=7.0;
+				}
+				
+			}
+			
+			public class PlanFactory
+			{
+				public Plan GetPlan(string planname)
+				{
+					if(planname == "DomesticPlan")
+						return new DomesticPlan();
+					else if(planname == "CommercialPlan")
+						return new CommercialPlan();
+					else if(planname == "InstitutionalPlan")
+						return new InstitutionalPlan();
+					else
+						return null;
+				}
+			}
+			
+			------------------Client-----------------------------------
+			public class generateBill
+			{
+				public static void Main()
+				{
+					PlanFactory obj=new PlanFactory();
+					Plan objplan=obj.GetPlan("DomesticPlan");
+					objplan.getPlanRate();
+					objplan.CalculateBill(50);
+				}
+			}
+			
+		1.1) Abstract factory pattern
+			Lets define an interface or abstract class for creating family of related objects, but without specifying their sub classes.
+			It means abstract factory is a class which defines factory of classes.
+			Abstract factory pattern is one level higher than factory pattern
+			
+			Advantage of abstract factory pattern
+			1) It isolates client code completely from its actual implementation
+			2) It provides consistency among related objects.
+			
+			Usage
+			1) When you want to develop system which is completely independent from how object is created, composed and represented.
+			2) When you want to use families of related objects togeather
+			3) When you want to use library of objects, which only shows interface and does not reveal interface.
+			
+						Abstract factory design pattern example (class) 
+									|
+									| uses
+									|
+							Factory creator class	
+									|
+									| get an object of
+									|
+							Abstract factory class
+									|
+									| extenDS
+						------------|------------
+						|                       |
+						|                       |
+					Bank interface	        loan abstract class
+						|						|			
+						|implement				|
+						|						|
+				------------------   Home Loan------------------------ Commercial Loan
+				|                |	
+				|                |
+			HDFC BANK	      ICICI BANK
+	
+	
+		public interface IBank
+		{
+			public string getBankname();
+		}
+		
+		public HDFC : IBank
+		{
+			public string getBankname()
+			{
+				return "HDFC";
+			}
+		}
+		
+		public ICICI : IBank
+		{
+			public string getBankname()
+			{
+				return "ICICI";
+			}
+		}
+		
+		public abstract class Loan
+		{
+			public abstract void GetInterestRate();
+			
+			public void calculateLoanPayment(int years, double loanAmount)
+			{
+				// logic for loan payment based on years and loan amount
+			}
+		}
+		
+		public HomeLoan : Loan
+		{
+			public double interestRate=0;
+			public override void GetInterestRate()
+			{
+				interestRate=8;
+			}
+		}
+		
+		public CommercialLoan : Loan
+		{
+			public double interestRate=0;
+			public override void GetInterestRate()
+			{
+				interestRate=10.0;
+			}
+		}
+		
+		public abstract class AbstractFactory
+		{
+			public abstract Bank GetBank(string bankname);
+			public abstract Loan GetLoan(string loanType);
+		}
+		
+		public BankFactory :AbstractFactory
+		{
+			public override Bank GetBank(string bankname)
+			{
+				if(bankname == "HDFC")
+					return new HDFC();
+				if(bankname == "ICICI")
+					return new ICICI();
+			}
+			
+			public override Loan GetLoan(string loan)
+			{
+				return null;
+			}
+		}
+		
+		public LoanFactory :AbstractFactory
+		{
+			public override Bank GetBank(string bankname)
+			{
+				return null;
+			}
+			
+			public override Loan GetLoan(string loan)
+			{
+				if(loan == "Home")
+					return new HomeLoan();
+				if(loan == "Commercial")
+					return new CommercialLoan();
+			}
+		}
+		
+		public class FactoryCreator
+		{
+			public static AbstractFactory GetFactory(string choice)
+			{
+				if(choice == "bank")
+				{
+					return new BankFactory();
+				}
+				
+				if(choice == "loan")
+				{
+					return new LoanFactory();
+				}
+			}
+		}
+		
+		public class clientClass
+		{
+			public static void Main()
+			{
+				AbstractFactory objBank=FactoryCreator.GetFactory("bank")
+				Bank b= objBank.GetBank("HDFC");
+				b.getBankname();
+				
+				AbstractFactory objLoan=FactoryCreator.GetFactory("loan");
+				Loan l= objLoan.GetLoan("Home")
+				l.getInterestRate();
+				l.CalculateLoanAmount(10,50000);
+			}
+		}
+
+
+		1.2) Singleton pattern:
+				Singleton pattern create class which can have single object through out application. If any other class or objects try to access singleton
+				object then it should have same object always.
+				
+				public sealed class Singleton // class should be sealed so can't inheritate it
+				{
+					private static Singleton _instance=new Singleton();
+					private Singleton() // default constructor should be private so can't instaniate from outside of class
+					{
+						
+					}
+					
+					public static Singleton GetInstance // one static property which returns object of class
+					{
+						get
+						{																														
+							return _instance;
+						}
+					
+					}
+					
+					// here you can define as many methods as want of non static
+				}
+				
+				//usage of singleton class
+				class Usage
+				{
+					Singleton s= Singleton.GetInstance;
+					
+					s.methodname();
+				}
+		Usage : Logging mechanism, Multi Threading
+		
+		1.3) Prototype design pattern
+			This pattern says that lets clone of an existing object rather than create new one and you can customized it as per your requirements.
+			Advantage
+			1) It reduces the need of sub classes
+			2) It hided complexity of object creation
+			3) Client can get new object without specifying type of an object
+			Usage
+			1) When system requires minimum classes
+			2) In a situation, where create new object is quite complex and expensive at that time
+			3) When you want to create new object at runtime
+			
+			public interface IEmployee
+			{
+				public IEmployee getClone();
+				public string getDetails();
+			}
+			
+			public Developer : IEmployee
+			{
+				string name;
+				string primaryskill;
+				public IEmployee getClone()
+				{
+					return (IEmployee)MemberwiseClone();
+				}
+				
+				public string getDetails()
+				{
+					return string.format("{0}-{1}-{2}",name,primaryskill);
+				}
+			}
+			
+			public Typist : IEmployee
+			{
+				string name;
+				string canTypeWordPerMinute;
+				public IEmployee getClone()
+				{
+					return (IEmployee)MemberwiseClone();
+				}
+				
+				public string getDetails()
+				{
+					return string.format("{0}-{1}",name,canTypeWordPerMinute);
+				}
+			}
+			
+			public class Client
+			{
+				public static voud Main()
+				{
+					Developer obj=new Developer();
+					obj.name="Rajni";
+					obj.primaryskill="";
+					
+					Developer obj1=(Developer)obj.getClone();
+					obj1.name="Hiral";
+					
+					Typist objTypist= new Typist()
+					objTypist.name="xyz";
+					objTypist.canTypeWordPerMinute="150";
+					
+					Typist objTypist1= (Typist)objTypist.getClone();
+					objTypist1.name="abc";
+				}
+			}
+	
