@@ -1,3 +1,92 @@
+1) SOLID Principals : 
+ http://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
+ https://www.codeproject.com/Tips/1033646/SOLID-Principle-with-Csharp-Example
+ 
+Dependency Injection basic concepts
+https://assist-software.net/blog/dependency-injection-aspnet-mvc-tutorial
+
+Dependency Injection in MVC
+http://www.csharpstar.com/dependency-injection-in-asp-net-mvc/
+
+Types of dependency injection
+https://github.com/quozd/awesome-dotnet/blob/master/README.md#ioc
+
+Castle windsor DI
+https://github.com/CopperStarSystems/DependencyInjection.GettingStarted
+
+Unit Container
+https://www.codeproject.com/Articles/1163016/Using-Unity-Framework-in-ASP-NET-MVC
+
+2)Factory method design example
+  http://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/
+  https://www.javatpoint.com/creational-design-patterns
+  https://www.geeksforgeeks.org/abstract-factory-pattern/
+
+3) Singleton Example
+http://www.c-sharpcorner.com/UploadFile/8911c4/singleton-design-pattern-in-C-Sharp/
+
+
+20) Unit of work
+https://www.c-sharpcorner.com/UploadFile/b1df45/unit-of-work-in-repository-pattern/
+http://jasonwatmore.com/post/2015/01/28/unit-of-work-repository-pattern-in-mvc5-and-web-api-2-with-fluent-nhibernate-and-ninject
+
+21) WEBAPI token system
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/individual-accounts-in-web-api
+https://github.com/aamir-poswal/ASP.NET-WEB-API-OAuth-2.0-Token-Based-Authentication
+
+JWT Token-Based-Authentication
+https://auth0.com/docs/api-auth/tutorials/verify-access-token
+https://stackoverflow.com/questions/40281050/jwt-authentication-for-asp-net-web-api?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+22) For Authentication in MVC 5
+https://www.codeproject.com/Articles/1111522/Custom-Authentication-and-Authorization-in-MVC
+
+4) Abstraction vs interface
+https://www.codeproject.com/Articles/11155/Abstract-Class-versus-Interface
+
+5) Method Overloading
+6) Encapsulation
+
+7) Method Overriding
+https://www.codeproject.com/Articles/18734/Method-Overriding-in-C
+
+8) Constant vs Readonly vs Static
+https://exceptionnotfound.net/const-vs-static-vs-readonly-in-c-sharp-applications/
+
+9) Static class
+https://stackoverflow.com/questions/7933540/c-sharp-static-class-why-use
+
+10) Pass by value or pass by reference
+https://www.codeproject.com/Articles/1037209/Story-of-Pass-By-Value-and-Pass-By-Reference-in-Cs
+
+11) Object vs Var vs Dynamic
+http://www.dotnettricks.com/learn/csharp/differences-between-object-var-and-dynamic-type
+
+12) WEBAPI
+http://www.tutorialsteacher.com/webapi/
+https://weblogs.asp.net/dwahlin/new-features-in-asp-net-web-api-2-part-i
+
+13) IEnumerable vs IQueryable
+https://www.codeproject.com/Articles/732425/IEnumerable-Vs-IQueryable
+
+14) Generic class and its usage
+https://en.wikibooks.org/wiki/C_Sharp_Programming/Generics
+
+15) Array and ArrayList
+http://www.tutorialsteacher.com/articles/difference-between-array-and-arraylist-in-csharp
+
+16) SQL Constraints
+https://www.geeksforgeeks.org/sql-constraints/
+
+17) clustered index and non clustered index
+https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/
+
+- Find second largest salary and difference between rank, denseRank and row_numer
+https://www.c-sharpcorner.com/article/rank-denserank-and-rownumber-functions-in-sql-server/
+
+18) Delete drop and truncate command
+http://www.orafaq.com/wiki/SQL_FAQ#What_are_the_difference_between_DDL.2C_DML_and_DCL_commands.3F
+
 Prerequisites to install Angular 4
 1) Nodejs
 - To check if nodejs is installed or not type node -v in terminal. If it does not display anything install nodejs
@@ -632,3 +721,4 @@ Design pattern is reuseable solution of common software design problems which oc
 				}
 			}
 	
+
