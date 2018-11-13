@@ -1,3 +1,94 @@
+jQuery Method Chaining
+Until now we have been writing jQuery statements one at a time (one after the other).
+However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+
+* Why Angular compared to mvc 
+Reference site: https://blog.angular-university.io/why-angular-angular-vs-jquery-a-beginner-friendly-explanation-on-the-advantages-of-angular-and-mvc/
+1)Seperation of cocenrns
+	MVC : Bind grid in MVC using ajax request -> First request to HTTP methods using ajax and get data -> success upon it,
+		  we are building HTML using string concetenation and then pass it to browser and browser renders it
+	Angular : We request to http method -> Get data and then bind model with data ->
+	on HTML side we iterate through this model using directives and display list
+2)Syncronization of Model and view:
+	MVC : Suppose we want to update list on button click then we need to again generate HTML and bind it into view (Manually sync process)
+	Angular: Syncronization of model and view is automatically using change detection mechanism
+3)UI Performance:  Angular is not generating HTML and passing it to browser to have parse it, but angular is generating DOM data structure directly
+4)Update DOM content partially: Angular is not replacing whole DOM data but it detects changes and then update only those DOM data structure.
+
+
+* OutputCache in MVC
+https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/output-caching-in-mvc/
+
+The main usage of output cache is to improve performance of asp.net mvc application.
+It enable us to cache output of controller method. So we don't require to call each time for same controller action method
+Advantages
+- It reduces server round trips
+- It reduces database server round trips
+- It reduces network traffic
+
+Keep in mind
+- Avoid caching contents that are unique per user
+- Avoid caching contents that are changed rarely
+- Used caching for contents that are access frequently.
+
+How to use Output cache in controller action method
+[OutputCache(duration=10,VaryByParam="none/param name"]
+public actionresult Actionname(string param name)
+{
+
+}
+OutputCache has 2 properties.
+1) Duration in section.
+2) VaryByParam is either none or param name
+		If VaryByParam is none then it will create same version of cache for contents of controller method
+		[OutputCache(duration=10,VaryByParam="none"]
+		public actionresult Actionname(string param name)
+		{}
+		in this case if you pass param name and try to find specific record then it will always display previous cached list. Nothing happens.
+  VaryByParam is param name then it will create different version of cache content for query string or form parameters values
+	  [OutputCache(duration=10,VaryByParam="param_name"]
+	  public actionresult Actionname(string param_name)
+	  {}  
+	  This will create different version of cache contents for different query string or form parameters values. 
+	  If value is same as previously then it will return cache  version of content.
+  VaryByParam is "*" then it works for all parameters. if you want to specify parameters then you should provide name with ;
+  example [OutputCache(duration=10,VaryByParam="firstName; lastName"]
+	  
+Store locations for output cache contents
+You can specify cache location using location attribute. Default value is Any
+1) Any : You can store cache contenr on service side in which request is processed. 
+2) Client
+3) Downstream
+4) Server
+5) None
+6) ServerAnd Client
+
+* How to improve MVC application performance
+https://stackoverflow.com/questions/2246251/how-do-i-improve-asp-net-mvc-application-performance
+1) Bundling and Minification
+2) Use Caching
+3) Use CDN to load scripts
+4) Use AJAX request to update your components of UI
+5) Add GZip
+6) Remove unused HTTP modules
+7) Use Asyncronous controller to implement action methods that use external resources processing
+8) Disable viewstate if you are not using it <pages buffer="true" enableViewState="false">
+
+* Delegate 
+Delegate is reference pointer which encapsulate reference to a method inside delegate object. 
+Then this delegate object can be passed to code and calls reference method.
+
+When you are defining delegate at that time you are telling to user that feel free to assign any method which has same signature as delete has. 
+And each time reference method is called when delegate object is called.
+
+Usage
+- Typical use is of cource the Events.
+
+Example
+https://stackoverflow.com/questions/2019402/when-why-to-use-delegates
+
+
 1) SOLID Principals : 
  http://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
  https://www.codeproject.com/Tips/1033646/SOLID-Principle-with-Csharp-Example
@@ -81,7 +172,7 @@ https://www.geeksforgeeks.org/sql-constraints/
 17) clustered index and non clustered index
 https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/
 
-- Find second largest salary and difference between rank, denseRank and row_numer
+- Find second largest salary and difference between rank, denseRank and row_number
 https://www.c-sharpcorner.com/article/rank-denserank-and-rownumber-functions-in-sql-server/
 
 18) Delete drop and truncate command
@@ -164,7 +255,7 @@ bootstrap : reference to the  default component created i.e. appComponent
    The @Injectable() decorator is the standard decorator for service classes.
    
 - You must make the HeroService available to the dependency injection system before Angular can inject it into the HeroesComponent, 
-  You do this by registering a provider. A provider is something that can create or deliver a servic
+  You do this by registering a provider. A provider is something that can create or deliver a service
 - When you provide the service at the root level, Angular creates a single, shared instance of HeroService and injects into any class that asks for it. 
   Registering the provider in the @Injectable metadata also allows Angular to optimize an app by removing the service if it turns out not to be used after all.  
 - Reserve the constructor for simple initialization such as wiring constructor parameters to properties. The constructor shouldn't do anything.
@@ -353,25 +444,43 @@ DOM <-----------------[(ngModel)]="value"---> Component
 @Pipe decorator defines function which transforms input value to output value for display in view 
 For single pipe operation {{ value | pipe_name  }}
 
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({name: 'reverseStr'})
+export class ReverseStr implements PipeTransform {
+  transform(value: string): string {
+    let newStr: string = "";
+    for (var i = value.length - 1; i >= 0; i--) {
+      newStr += value.charAt(i);
+    }
+    return newStr;
+  }
+}
+
+app module:
+@NgModule({
+  declarations: [
+    AppComponent,
+    ReverseStr
+  ],
+
+And call pipe like 
+{{ user.name | reverseStr }}
+
 https://angular.io/api?type=pipe
 
 ------ Observable and Promise-----------
-- Promise handles single event when an async operation completes
+- Promise works with asynchronous operations and returns single values when promise resolves or return error message when promise rejects.
+- A request initiated from promise is not cancelable.
 - Observable is like a stream, it handles zero or more events when callback function is called for each event
 - Observable is more preferred than Promise because Observable likes promise and many more
-- One more advantage of Observable over promise is cancelable. Objservable subscription can be cancelled at any time when you don't need anymore.
+- One more advantage of Observable over promise is cancelable. Observable subscription can be cancelled at any time when you don't need anymore.
 
 -------------------Directives --------------------------------
-Component is technically directive
-Apart from Component, 2 kinds of directive
-1)Structural directives :
-	It alters layout by adding removing or replacing elements in dom
-	<li *ngFor="let hero of heroes"></li>
-	<app-hero-detail *ngIf="selectedHero"></app-hero-detail>
-2)Attribute
-	It alters behaviour of element.
-	<input [(ngModel)]="hero.name">
-
+3 types of directives
+1)Component - directive with template
+2)Structural directive - can be used to change layout of DOM elements (ngFor, ngIf)
+3)Attributes directives - can be used to change behaviour of html elements (NgStyle
 
 -----------------------MVC------------------------------------
 https://www.c-sharpcorner.com/UploadFile/8ef97c/most-asked-Asp-Net-mvc-interview-questions-and-answers/
@@ -654,11 +763,20 @@ Design pattern is reuseable solution of common software design problems which oc
 				}
 		Usage : Logging mechanism, Multi Threading
 		
+		Difference between Singleton class and static class
+		
+		- One of the key advantage of singleton over static class is that it can implement interfaces and extend classes while the static class cannot (it can extend classes, but it does not inherit their instance members). If we consider a static class it can only be a nested static class as top level class cannot be a static class. Static means that it belongs to a class it is in and not to any instance. So it cannot be a top level class.
+		- Static class will have all its member as static only unlike Singleton.
+		- It can be lazily loaded whereas static will be initialized whenever it is first loaded.
+		- Singleton object stores in Heap but, static object stores in stack.
+		- We can clone the object of Singleton but, we can not clone the static class object.
+		- Singleton can use the Object Oriented feature of polymorphism but static class cannot.	
+		
 		1.3) Prototype design pattern
 			This pattern says that lets clone of an existing object rather than create new one and you can customized it as per your requirements.
 			Advantage
 			1) It reduces the need of sub classes
-			2) It hided complexity of object creation
+			2) It hides complexity of object creation
 			3) Client can get new object without specifying type of an object
 			Usage
 			1) When system requires minimum classes
