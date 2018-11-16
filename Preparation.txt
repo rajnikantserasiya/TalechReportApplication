@@ -1,3 +1,27 @@
+--------------USING OFFSET and FETCH----------------
+DECLARE @PageNumber AS INT, @RowspPage AS INT
+SET @PageNumber = 2
+SET @RowspPage = 10
+SELECT ID_EXAMPLE, NM_EXAMPLE, DT_CREATE
+FROM TB_EXAMPLE
+ORDER BY ID_EXAMPLE
+OFFSET ((@PageNumber - 1) * @RowspPage) ROWS
+FETCH NEXT @RowspPage ROWS ONLY
+GO
+
+
+-- 2 - QUERY USING "ROW_NUMBER"
+DECLARE @PageNumber AS INT, @RowspPage AS INT
+SET @PageNumber = 2
+SET @RowspPage = 10 
+SELECT * FROM (
+             SELECT ROW_NUMBER() OVER(ORDER BY ID_EXAMPLE) AS Numero,
+                    ID_EXAMPLE, NM_EXAMPLE , DT_CREATE FROM TB_EXAMPLE
+               ) AS TBL
+WHERE Numero BETWEEN ((@PageNumber - 1) * @RowspPage + 1) AND (@PageNumber * @RowspPage)
+ORDER BY ID_EXAMPLE
+GO
+
 jQuery Method Chaining
 Until now we have been writing jQuery statements one at a time (one after the other).
 However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
@@ -839,4 +863,6 @@ Design pattern is reuseable solution of common software design problems which oc
 				}
 			}
 	
+
+
 
