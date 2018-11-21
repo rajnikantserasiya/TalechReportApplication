@@ -1,105 +1,76 @@
---------------USING OFFSET and FETCH----------------
-DECLARE @PageNumber AS INT, @RowspPage AS INT
-SET @PageNumber = 2
-SET @RowspPage = 10
-SELECT ID_EXAMPLE, NM_EXAMPLE, DT_CREATE
-FROM TB_EXAMPLE
-ORDER BY ID_EXAMPLE
-OFFSET ((@PageNumber - 1) * @RowspPage) ROWS
-FETCH NEXT @RowspPage ROWS ONLY
-GO
 
 
--- 2 - QUERY USING "ROW_NUMBER"
-DECLARE @PageNumber AS INT, @RowspPage AS INT
-SET @PageNumber = 2
-SET @RowspPage = 10 
-SELECT * FROM (
-             SELECT ROW_NUMBER() OVER(ORDER BY ID_EXAMPLE) AS Numero,
-                    ID_EXAMPLE, NM_EXAMPLE , DT_CREATE FROM TB_EXAMPLE
-               ) AS TBL
-WHERE Numero BETWEEN ((@PageNumber - 1) * @RowspPage + 1) AND (@PageNumber * @RowspPage)
-ORDER BY ID_EXAMPLE
-GO
+-------------------------------------OOPS Concepts---------------------------------------------------------------------
 
-jQuery Method Chaining
-Until now we have been writing jQuery statements one at a time (one after the other).
-However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
-$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+-------------------------------------Why we need interface----------------------------------------------------------
+- Interface is contract so any class which implements interface gives promise that it will implement all functionalities of it.
+- Code reuseability because implementation is seperated from its declaration
+- Achieve loose coupling
+- Achieve multiple inheritance
+-------------------------------------Abstraction vs interface-------------------------------------
+https://www.codeproject.com/Articles/11155/Abstract-Class-versus-Interface
 
-* Why Angular compared to mvc 
-Reference site: https://blog.angular-university.io/why-angular-angular-vs-jquery-a-beginner-friendly-explanation-on-the-advantages-of-angular-and-mvc/
-1)Seperation of cocenrns
-	MVC : Bind grid in MVC using ajax request -> First request to HTTP methods using ajax and get data -> success upon it,
-		  we are building HTML using string concetenation and then pass it to browser and browser renders it
-	Angular : We request to http method -> Get data and then bind model with data ->
-	on HTML side we iterate through this model using directives and display list
-2)Syncronization of Model and view:
-	MVC : Suppose we want to update list on button click then we need to again generate HTML and bind it into view (Manually sync process)
-	Angular: Syncronization of model and view is automatically using change detection mechanism
-3)UI Performance:  Angular is not generating HTML and passing it to browser to have parse it, but angular is generating DOM data structure directly
-4)Update DOM content partially: Angular is not replacing whole DOM data but it detects changes and then update only those DOM data structure.
+-------------------------------------Method Overloading-------------------------------------
+- Static binding, compile time polymorphism
+
+Method Overloading can be done by changing
+1) By changing no of parameters in method
+2) By changing data type of parameters in method
+3) By changing order sequnece of parameters in metod
+Reference : https://www.geeksforgeeks.org/c-method-overloading/
+
+-------------------------------------Method Overriding-------------------------------------
+- Run time polymorphism
+- dynamic binding
+
+- It enables you to provide specificimplementation of method which is already provided by base class
+- It use virtual/abstract override keyword to override base class method into derived class.
+
+https://www.codeproject.com/Articles/18734/Method-Overriding-in-C
+
+https://www.c-sharpcorner.com/UploadFile/8911c4/different-between-method-overriding-method-hiding-new-keyw/
+
+---------------------------------------Comparison between method overloading and method overriding.--------------
+https://www.c-sharpcorner.com/blogs/difference-between-method-overloading-and-method-overriding
+
+-------------------------------------Encapsulation-------------------------------------
 
 
-* OutputCache in MVC
-https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/output-caching-in-mvc/
+-------------------------------------Constant vs Readonly vs Static-------------------------------------
+https://exceptionnotfound.net/const-vs-static-vs-readonly-in-c-sharp-applications/
 
-The main usage of output cache is to improve performance of asp.net mvc application.
-It enable us to cache output of controller method. So we don't require to call each time for same controller action method
-Advantages
-- It reduces server round trips
-- It reduces database server round trips
-- It reduces network traffic
+-------------------------------------Static class-------------------------------------
+https://stackoverflow.com/questions/7933540/c-sharp-static-class-why-use
 
-Keep in mind
-- Avoid caching contents that are unique per user
-- Avoid caching contents that are changed rarely
-- Used caching for contents that are access frequently.
+-------------------------------------Pass by value or pass by reference-------------------------------------
+https://www.codeproject.com/Articles/1037209/Story-of-Pass-By-Value-and-Pass-By-Reference-in-Cs
 
-How to use Output cache in controller action method
-[OutputCache(duration=10,VaryByParam="none/param name"]
-public actionresult Actionname(string param name)
-{
+-------------------------------------Object vs Var vs Dynamic-------------------------------------
+http://www.dotnettricks.com/learn/csharp/differences-between-object-var-and-dynamic-type
 
-}
-OutputCache has 2 properties.
-1) Duration in section.
-2) VaryByParam is either none or param name
-		If VaryByParam is none then it will create same version of cache for contents of controller method
-		[OutputCache(duration=10,VaryByParam="none"]
-		public actionresult Actionname(string param name)
-		{}
-		in this case if you pass param name and try to find specific record then it will always display previous cached list. Nothing happens.
-  VaryByParam is param name then it will create different version of cache content for query string or form parameters values
-	  [OutputCache(duration=10,VaryByParam="param_name"]
-	  public actionresult Actionname(string param_name)
-	  {}  
-	  This will create different version of cache contents for different query string or form parameters values. 
-	  If value is same as previously then it will return cache  version of content.
-  VaryByParam is "*" then it works for all parameters. if you want to specify parameters then you should provide name with ;
-  example [OutputCache(duration=10,VaryByParam="firstName; lastName"]
-	  
-Store locations for output cache contents
-You can specify cache location using location attribute. Default value is Any
-1) Any : You can store cache contenr on service side in which request is processed. 
-2) Client
-3) Downstream
-4) Server
-5) None
-6) ServerAnd Client
+--------------------------------IEnumerable vs IQueryable---------------------------------
+https://www.codeproject.com/Articles/732425/IEnumerable-Vs-IQueryable
 
-* How to improve MVC application performance
-https://stackoverflow.com/questions/2246251/how-do-i-improve-asp-net-mvc-application-performance
-1) Bundling and Minification
-2) Use Caching
-3) Use CDN to load scripts
-4) Use AJAX request to update your components of UI
-5) Add GZip
-6) Remove unused HTTP modules
-7) Use Asyncronous controller to implement action methods that use external resources processing
-8) Disable viewstate if you are not using it <pages buffer="true" enableViewState="false">
+-------------------------------Generic class and its usage---------------------------
+https://en.wikibooks.org/wiki/C_Sharp_Programming/Generics
 
-* Delegate 
+-------------------------------- Array and ArrayList-----------------------------
+http://www.tutorialsteacher.com/articles/difference-between-array-and-arraylist-in-csharp
+
+-----------------------------------Garbage collector-------------------------------
+GC handles only handles managed code
+GC.collect() 
+
+-----------------------------------Using Statement---------------------------------
+
+Unmanaged resouces (Like FileStream, DBConnection class) can be handled by 2 ways 
+1) Either implement IDisposable interface and implement dispose method
+2) Using statement
+
+Using statement is used to handle unmanaged resources which implements idisposable interface. It will automatically call dispose method and release resouces.
+https://www.c-sharpcorner.com/UploadFile/ff0d0f/using-keyword-in-C-Sharp/
+
+-------------------Delegate-------------------------------------------
 Delegate is reference pointer which encapsulate reference to a method inside delegate object. 
 Then this delegate object can be passed to code and calls reference method.
 
@@ -113,17 +84,17 @@ Example
 https://stackoverflow.com/questions/2019402/when-why-to-use-delegates
 
 
-1) SOLID Principals : 
+-------------------------------------------SOLID Principals-------------------------------------------------
  http://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
  https://www.codeproject.com/Tips/1033646/SOLID-Principle-with-Csharp-Example
  
-Dependency Injection basic concepts
+-------------------------------------------Dependency Injection basic concepts------------------------------
 https://assist-software.net/blog/dependency-injection-aspnet-mvc-tutorial
 
-Dependency Injection in MVC
+-------------------------------------------Dependency Injection in MVC--------------------------------------
 http://www.csharpstar.com/dependency-injection-in-asp-net-mvc/
 
-Types of dependency injection
+--------------------------------------------Types of dependency injection-----------------------------------
 https://github.com/quozd/awesome-dotnet/blob/master/README.md#ioc
 
 Castle windsor DI
@@ -132,20 +103,365 @@ https://github.com/CopperStarSystems/DependencyInjection.GettingStarted
 Unit Container
 https://www.codeproject.com/Articles/1163016/Using-Unity-Framework-in-ASP-NET-MVC
 
-2)Factory method design example
-  http://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/
-  https://www.javatpoint.com/creational-design-patterns
-  https://www.geeksforgeeks.org/abstract-factory-pattern/
+-------------------------------------Design pattern-------------------------
+Reference : https://www.javatpoint.com/creational-design-patterns  
 
-3) Singleton Example
-http://www.c-sharpcorner.com/UploadFile/8911c4/singleton-design-pattern-in-C-Sharp/
+Design pattern: http://www.abhisheksur.com/2010/05/design-patterns.html
+Design pattern is reuseable solution of common software design problems which occurs repeatedly with real world application development.
+1) Creational design pattern:
+	This pattern deals mainly with creation of object and classes.
+2) Structural design pattern
+	mainly deals with object and classes composition
+3) Behaviroal design pattern
+	Mainly deals with object classes communication.
+	
+1) Creational design pattern:
+
+		1.0) Factory method pattern:
+			Let's define an interface or abstract class for creating object, but let sub classes decide which class to instaniate
+			Usage:
+			1) When class wants that its sub class specify which class object to be created
+			
+			public abstract class Plan
+			{
+				double rate=0;
+				abstract void getPlanRate();
+				public void CalculateBill(int unit)
+				{
+					print(unit * rate)
+				}
+			}
+			
+			public class DomesticPlan : Plan
+			{
+				public override void getPlanRate()
+				{
+					rate=3.0;
+				}
+				
+			}
+			
+			public class CommercialPlan : Plan
+			{
+				public override void getPlanRate()
+				{
+					rate=5.0;
+				}
+				
+			}
+			
+			public class InstitutionalPlan : Plan
+			{
+				public override void getPlanRate()
+				{
+					rate=7.0;
+				}
+				
+			}
+			
+			public class PlanFactory
+			{
+				public Plan GetPlan(string planname)
+				{
+					if(planname == "DomesticPlan")
+						return new DomesticPlan();
+					else if(planname == "CommercialPlan")
+						return new CommercialPlan();
+					else if(planname == "InstitutionalPlan")
+						return new InstitutionalPlan();
+					else
+						return null;
+				}
+			}
+			
+			------------------Client-----------------------------------
+			public class generateBill
+			{
+				public static void Main()
+				{
+					PlanFactory obj=new PlanFactory();
+					Plan objplan=obj.GetPlan("DomesticPlan");
+					objplan.getPlanRate();
+					objplan.CalculateBill(50);
+				}
+			}
+			
+		1.1) Abstract factory pattern
+			Lets define an interface or abstract class for creating family of related objects, but without specifying their sub classes.
+			It means abstract factory is a class which defines factory of classes.
+			Abstract factory pattern is one level higher than factory pattern
+			
+			Advantage of abstract factory pattern
+			1) It isolates client code completely from its actual implementation
+			2) It provides consistency among related objects.
+			
+			Usage
+			1) When you want to develop system which is completely independent from how object is created, composed and represented.
+			2) When you want to use families of related objects togeather
+			3) When you want to use library of objects, which only shows interface and does not reveal interface.
+			
+						Abstract factory design pattern example (class) 
+									|
+									| uses
+									|
+							Factory creator class	
+									|
+									| get an object of
+									|
+							Abstract factory class
+									|
+									| extenDS
+						------------|------------
+						|                       |
+						|                       |
+					Bank interface	        loan abstract class
+						|						|			
+						|implement				|
+						|						|
+				------------------   Home Loan------------------------ Commercial Loan
+				|                |	
+				|                |
+			HDFC BANK	      ICICI BANK
+	
+	
+		public interface IBank
+		{
+			public string getBankname();
+		}
+		
+		public HDFC : IBank
+		{
+			public string getBankname()
+			{
+				return "HDFC";
+			}
+		}
+		
+		public ICICI : IBank
+		{
+			public string getBankname()
+			{
+				return "ICICI";
+			}
+		}
+		
+		public abstract class Loan
+		{
+			public abstract void GetInterestRate();
+			
+			public void calculateLoanPayment(int years, double loanAmount)
+			{
+				// logic for loan payment based on years and loan amount
+			}
+		}
+		
+		public HomeLoan : Loan
+		{
+			public double interestRate=0;
+			public override void GetInterestRate()
+			{
+				interestRate=8;
+			}
+		}
+		
+		public CommercialLoan : Loan
+		{
+			public double interestRate=0;
+			public override void GetInterestRate()
+			{
+				interestRate=10.0;
+			}
+		}
+		
+		public abstract class AbstractFactory
+		{
+			public abstract Bank GetBank(string bankname);
+			public abstract Loan GetLoan(string loanType);
+		}
+		
+		public BankFactory :AbstractFactory
+		{
+			public override Bank GetBank(string bankname)
+			{
+				if(bankname == "HDFC")
+					return new HDFC();
+				if(bankname == "ICICI")
+					return new ICICI();
+			}
+			
+			public override Loan GetLoan(string loan)
+			{
+				return null;
+			}
+		}
+		
+		public LoanFactory :AbstractFactory
+		{
+			public override Bank GetBank(string bankname)
+			{
+				return null;
+			}
+			
+			public override Loan GetLoan(string loan)
+			{
+				if(loan == "Home")
+					return new HomeLoan();
+				if(loan == "Commercial")
+					return new CommercialLoan();
+			}
+		}
+		
+		public class FactoryCreator
+		{
+			public static AbstractFactory GetFactory(string choice)
+			{
+				if(choice == "bank")
+				{
+					return new BankFactory();
+				}
+				
+				if(choice == "loan")
+				{
+					return new LoanFactory();
+				}
+			}
+		}
+		
+		public class clientClass
+		{
+			public static void Main()
+			{
+				AbstractFactory objBank=FactoryCreator.GetFactory("bank")
+				Bank b= objBank.GetBank("HDFC");
+				b.getBankname();
+				
+				AbstractFactory objLoan=FactoryCreator.GetFactory("loan");
+				Loan l= objLoan.GetLoan("Home")
+				l.getInterestRate();
+				l.CalculateLoanAmount(10,50000);
+			}
+		}
 
 
-20) Unit of work
+		1.2) Singleton pattern:
+				Singleton pattern create class which can have single object through out application. If any other class or objects try to access singleton
+				object then it should have same object always.
+				
+				public sealed class Singleton // class should be sealed so can't inheritate it
+				{
+					private static Singleton _instance=new Singleton();
+					private Singleton() // default constructor should be private so can't instaniate from outside of class
+					{
+						
+					}
+					
+					public static Singleton GetInstance // one static property which returns object of class
+					{
+						get
+						{																														
+							return _instance;
+						}
+					
+					}
+					
+					// here you can define as many methods as want of non static
+				}
+				
+				//usage of singleton class
+				class Usage
+				{
+					Singleton s= Singleton.GetInstance;
+					
+					s.methodname();
+				}
+		Usage : Logging mechanism, Multi Threading
+		
+-------------------Difference between Singleton class and static class------------------------------------
+		
+		- One of the key advantage of singleton over static class is that it can implement interfaces and extend classes while the static class cannot (it can extend classes, but it does not inherit their instance members). If we consider a static class it can only be a nested static class as top level class cannot be a static class. Static means that it belongs to a class it is in and not to any instance. So it cannot be a top level class.
+		- Static class will have all its member as static only unlike Singleton.
+		- It can be lazily loaded whereas static will be initialized whenever it is first loaded.
+		- Singleton object stores in Heap but, static object stores in stack.
+		- We can clone the object of Singleton but, we can not clone the static class object.
+		- Singleton can use the Object Oriented feature of polymorphism but static class cannot.	
+		
+		1.3) Prototype design pattern
+			This pattern says that lets clone of an existing object rather than create new one and you can customized it as per your requirements.
+			Advantage
+			1) It reduces the need of sub classes
+			2) It hides complexity of object creation
+			3) Client can get new object without specifying type of an object
+			Usage
+			1) When system requires minimum classes
+			2) In a situation, where create new object is quite complex and expensive at that time
+			3) When you want to create new object at runtime
+			
+			public interface IEmployee
+			{
+				public IEmployee getClone();
+				public string getDetails();
+			}
+			
+			public Developer : IEmployee
+			{
+				string name;
+				string primaryskill;
+				public IEmployee getClone()
+				{
+					return (IEmployee)MemberwiseClone();
+				}
+				
+				public string getDetails()
+				{
+					return string.format("{0}-{1}-{2}",name,primaryskill);
+				}
+			}
+			
+			public Typist : IEmployee
+			{
+				string name;
+				string canTypeWordPerMinute;
+				public IEmployee getClone()
+				{
+					return (IEmployee)MemberwiseClone();
+				}
+				
+				public string getDetails()
+				{
+					return string.format("{0}-{1}",name,canTypeWordPerMinute);
+				}
+			}
+			
+			public class Client
+			{
+				public static voud Main()
+				{
+					Developer obj=new Developer();
+					obj.name="Rajni";
+					obj.primaryskill="";
+					
+					Developer obj1=(Developer)obj.getClone();
+					obj1.name="Hiral";
+					
+					Typist objTypist= new Typist()
+					objTypist.name="xyz";
+					objTypist.canTypeWordPerMinute="150";
+					
+					Typist objTypist1= (Typist)objTypist.getClone();
+					objTypist1.name="abc";
+				}
+			}
+	
+----------------------------------------------- Unit of work ----------------------------------------------------------------
 https://www.c-sharpcorner.com/UploadFile/b1df45/unit-of-work-in-repository-pattern/
 http://jasonwatmore.com/post/2015/01/28/unit-of-work-repository-pattern-in-mvc5-and-web-api-2-with-fluent-nhibernate-and-ninject
 
-21) WEBAPI token system
+
+----------------------------------------- WEBAPI token system ---------------------------------------------------------------
+
+http://www.tutorialsteacher.com/webapi/
+https://weblogs.asp.net/dwahlin/new-features-in-asp-net-web-api-2-part-i
+
 https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/individual-accounts-in-web-api
 https://github.com/aamir-poswal/ASP.NET-WEB-API-OAuth-2.0-Token-Based-Authentication
 
@@ -153,42 +469,144 @@ JWT Token-Based-Authentication
 https://auth0.com/docs/api-auth/tutorials/verify-access-token
 https://stackoverflow.com/questions/40281050/jwt-authentication-for-asp-net-web-api?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 
+Web api token based authentication
+https://www.dotnetcurry.com/aspnet/1223/secure-aspnet-web-api-using-tokens-owin-angularjs
+
+Login with credentials -> Authorization service interact with Middleware and generate Token -> Token pass to client
+-> Client request with token -> authentication server and authorization server validates token and give permission to access web api controller
+
+---------------------------------------------MVC-----------------------------------------------------------------------------
 22) For Authentication in MVC 5
 https://www.codeproject.com/Articles/1111522/Custom-Authentication-and-Authorization-in-MVC
 
-4) Abstraction vs interface
-https://www.codeproject.com/Articles/11155/Abstract-Class-versus-Interface
+-----------------------------------------------JQuery--------------------------------------------------
+-----------------------------------------Jquery Closuers---------------------------------------------------
+-----------------------------------jQuery Method Chaining----------------------------------------------------------------
+Until now we have been writing jQuery statements one at a time (one after the other).
+However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
 
-5) Method Overloading
-6) Encapsulation
 
-7) Method Overriding
-https://www.codeproject.com/Articles/18734/Method-Overriding-in-C
+--------------------------------------------------Angular------------------------------------------------------------------------
 
-8) Constant vs Readonly vs Static
-https://exceptionnotfound.net/const-vs-static-vs-readonly-in-c-sharp-applications/
+-----------------------------------Why Angular compared to mvc ------------------------------------------
+Reference site: https://blog.angular-university.io/why-angular-angular-vs-jquery-a-beginner-friendly-explanation-on-the-advantages-of-angular-and-mvc/
+1)Seperation of cocenrns
+	MVC : Bind grid in MVC using ajax request -> First request to HTTP methods using ajax and get data -> success upon it,
+		  we are building HTML using string concetenation and then pass it to browser and browser renders it
+	Angular : We request to http method -> Get data and then bind model with data ->
+	on HTML side we iterate through this model using directives and display list
+2)Syncronization of Model and view:
+	MVC : Suppose we want to update list on button click then we need to again generate HTML and bind it into view (Manually sync process)
+	Angular: Syncronization of model and view is automatically using change detection mechanism
+3)UI Performance:  Angular is not generating HTML and passing it to browser to have parse it, but angular is generating DOM data structure directly
+4)Update DOM content partially: Angular is not replacing whole DOM data but it detects changes and then update only those DOM data structure.
 
-9) Static class
-https://stackoverflow.com/questions/7933540/c-sharp-static-class-why-use
+---------------------How to call multiple http request methods simultaneously------------------------------
+Observable.ForkJoin
 
-10) Pass by value or pass by reference
-https://www.codeproject.com/Articles/1037209/Story-of-Pass-By-Value-and-Pass-By-Reference-in-Cs
+-----------------------------------------Observable Reduce and Map---------------------------------------
+----------------------------------------------How to filter table data in angular-------------------
+HTML
+	<input [(ngModel)]="searchText" placeholder="search text goes here">
+<ul>
+  <li *ngFor="let c of characters | filter : searchText">
+    {{c}}
+  </li>
+</ul>
 
-11) Object vs Var vs Dynamic
-http://www.dotnettricks.com/learn/csharp/differences-between-object-var-and-dynamic-type
+import { Pipe, PipeTransform } from '@angular/core';
+@Pipe({
+  name: 'filter'
+})
+export class FilterPipe implements PipeTransform {
+  transform(items: any[], searchText: string): any[] {
+    if(!items) return [];
+    if(!searchText) return items;
+	
+	searchText = searchText.toLowerCase();
+	
+	return items.filter( it => {it.toLowerCase().includes(searchText);});
+	
+   }
+}
 
-12) WEBAPI
-http://www.tutorialsteacher.com/webapi/
-https://weblogs.asp.net/dwahlin/new-features-in-asp-net-web-api-2-part-i
+In order to use the pipe, first we need to import it into the app module. Below the import AppComponent statement,
+import the Filter Pipe: import { FilterPipe }from './filter.pipe';. Also add it to the array of declarations in the NgModule decorator.
 
-13) IEnumerable vs IQueryable
-https://www.codeproject.com/Articles/732425/IEnumerable-Vs-IQueryable
+Your app.module.ts file should now look like this:
 
-14) Generic class and its usage
-https://en.wikibooks.org/wiki/C_Sharp_Programming/Generics
+import { NgModule }      from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent }  from './app.component';
+import { FilterPipe} from './filter.pipe';
+@NgModule({
+  imports:      [ BrowserModule, FormsModule ],
+  declarations: [ AppComponent, FilterPipe ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
 
-15) Array and ArrayList
-http://www.tutorialsteacher.com/articles/difference-between-array-and-arraylist-in-csharp
+-------------------HTTP Get and Post method and how to pass parameters-----------------------
+
+HTTP Get method:
+		let params = {}
+		params[code] = this.code
+		params[name] = this.name
+		params[fieldName] = this.data
+
+		let param = JSON.strigify(params);
+				
+        return this._http.get(environment.apiUrl + 'MaestroEquipment/GetAllCustomerAndCountry?strUserName='+params)
+				.toPromise().then(this.extractData).catch(this.handleError);
+		
+		WEB API Side
+		public HttpResponseMessage GetExclustionCommMapList([FromBody]JObject objUserName)
+
+HTTP Post method
+		var requestoptions = new RequestOptions({
+            method: RequestMethod.Post,
+            headers: headers,
+            body: data
+        })
+
+        return this._http.post(environment.apiUrl + 'MaestroEquipment/SaveMaestroUsers', requestoptions)
+            .toPromise().then(this.extractData).catch(this.handleError);
+
+			
+----------- Var and let variable difference------------------
+var is function scoped and let is block scoped.			
+
+Can't access let variable using window object
+console.log(window.varVariable); //this is a var variable
+console.log(window.letVariable); //undefined
+
+for(let i=0;i<10;i++){
+	console.log(i); //i is visible thus is logged in the console as 0,1,2,....,9
+}
+console.log(i); //throws an error as "i is not defined" because i is not visible
+
+for(var i=0; i<10; i++){
+console.log(i); //i is visible thus is logged in the console as 0,1,2,....,9
+}
+console.log(i); //i is visible here too. thus is logged as 10.
+
+
+-----------------------------------How to pass value from parent view to child view and child view to parent view---------
+In parent view
+  <app-edituser hidden="true" [value]='sujith'> </app-edituser>
+In Child view
+@input value:string;
+
+console.log(this.value);
+
+-------------------------How to implement Bootstrap in Angular-----------------------------	
+
+
+
+
+
 
 16) SQL Constraints
 https://www.geeksforgeeks.org/sql-constraints/
@@ -507,362 +925,76 @@ https://angular.io/api?type=pipe
 3)Attributes directives - can be used to change behaviour of html elements (NgStyle
 
 -----------------------MVC------------------------------------
+-------------------------------------------Interview Questions--------------------------------------
 https://www.c-sharpcorner.com/UploadFile/8ef97c/most-asked-Asp-Net-mvc-interview-questions-and-answers/
-Authentication in MVC : https://www.learnmvc.in/aspnet-mvc5-authentication-filters-example.php
-Dependancy injection in MVC : https://code.msdn.microsoft.com/Dependency-Injection-in-11d54863
 
-Web api token based authentication
-https://www.dotnetcurry.com/aspnet/1223/secure-aspnet-web-api-using-tokens-owin-angularjs
+----------------------------------------Authentication in MVC ------------------------------------------------
+: https://www.learnmvc.in/aspnet-mvc5-authentication-filters-example.php
 
-	Login with credentials -> Authorization service interact with Middleware and generate Token -> Token pass to client
-	-> Client request with token -> authentication server and authorization server validates token and give permission to access web api controller
+--------------------------------------Dependancy injection in MVC---------------------------------------
+https://code.msdn.microsoft.com/Dependency-Injection-in-11d54863
 
-Design pattern: http://www.abhisheksur.com/2010/05/design-patterns.html
-Design pattern is reuseable solution of common software design problems which occurs repeatedly with real world application development.
-1) Creational design pattern:
-	This pattern deals mainly with creation of object and classes.
-2) Structural design pattern
-	mainly deals with object and classes composition
-3) Behaviroal design pattern
-	Mainly deals with object classes communication.
-	
-1) Creational design pattern:
+-----------------------------------OutputCache in MVC---------------------------------
+https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/output-caching-in-mvc/
 
-		1.0) Factory method pattern:
-			Let's define an interface or abstract class for creating object, but let sub classes decide which class to instaniate
-			Usage:
-			1) When class wants that its sub class specify which class object to be created
-			
-			public abstract class Plan
-			{
-				double rate=0;
-				abstract void getPlanRate();
-				public void CalculateBill(int unit)
-				{
-					print(unit * rate)
-				}
-			}
-			
-			public class DomesticPlan : Plan
-			{
-				public override void getPlanRate()
-				{
-					rate=3.0;
-				}
-				
-			}
-			
-			public class CommercialPlan : Plan
-			{
-				public override void getPlanRate()
-				{
-					rate=5.0;
-				}
-				
-			}
-			
-			public class InstitutionalPlan : Plan
-			{
-				public override void getPlanRate()
-				{
-					rate=7.0;
-				}
-				
-			}
-			
-			public class PlanFactory
-			{
-				public Plan GetPlan(string planname)
-				{
-					if(planname == "DomesticPlan")
-						return new DomesticPlan();
-					else if(planname == "CommercialPlan")
-						return new CommercialPlan();
-					else if(planname == "InstitutionalPlan")
-						return new InstitutionalPlan();
-					else
-						return null;
-				}
-			}
-			
-			------------------Client-----------------------------------
-			public class generateBill
-			{
-				public static void Main()
-				{
-					PlanFactory obj=new PlanFactory();
-					Plan objplan=obj.GetPlan("DomesticPlan");
-					objplan.getPlanRate();
-					objplan.CalculateBill(50);
-				}
-			}
-			
-		1.1) Abstract factory pattern
-			Lets define an interface or abstract class for creating family of related objects, but without specifying their sub classes.
-			It means abstract factory is a class which defines factory of classes.
-			Abstract factory pattern is one level higher than factory pattern
-			
-			Advantage of abstract factory pattern
-			1) It isolates client code completely from its actual implementation
-			2) It provides consistency among related objects.
-			
-			Usage
-			1) When you want to develop system which is completely independent from how object is created, composed and represented.
-			2) When you want to use families of related objects togeather
-			3) When you want to use library of objects, which only shows interface and does not reveal interface.
-			
-						Abstract factory design pattern example (class) 
-									|
-									| uses
-									|
-							Factory creator class	
-									|
-									| get an object of
-									|
-							Abstract factory class
-									|
-									| extenDS
-						------------|------------
-						|                       |
-						|                       |
-					Bank interface	        loan abstract class
-						|						|			
-						|implement				|
-						|						|
-				------------------   Home Loan------------------------ Commercial Loan
-				|                |	
-				|                |
-			HDFC BANK	      ICICI BANK
-	
-	
-		public interface IBank
-		{
-			public string getBankname();
-		}
-		
-		public HDFC : IBank
-		{
-			public string getBankname()
-			{
-				return "HDFC";
-			}
-		}
-		
-		public ICICI : IBank
-		{
-			public string getBankname()
-			{
-				return "ICICI";
-			}
-		}
-		
-		public abstract class Loan
-		{
-			public abstract void GetInterestRate();
-			
-			public void calculateLoanPayment(int years, double loanAmount)
-			{
-				// logic for loan payment based on years and loan amount
-			}
-		}
-		
-		public HomeLoan : Loan
-		{
-			public double interestRate=0;
-			public override void GetInterestRate()
-			{
-				interestRate=8;
-			}
-		}
-		
-		public CommercialLoan : Loan
-		{
-			public double interestRate=0;
-			public override void GetInterestRate()
-			{
-				interestRate=10.0;
-			}
-		}
-		
-		public abstract class AbstractFactory
-		{
-			public abstract Bank GetBank(string bankname);
-			public abstract Loan GetLoan(string loanType);
-		}
-		
-		public BankFactory :AbstractFactory
-		{
-			public override Bank GetBank(string bankname)
-			{
-				if(bankname == "HDFC")
-					return new HDFC();
-				if(bankname == "ICICI")
-					return new ICICI();
-			}
-			
-			public override Loan GetLoan(string loan)
-			{
-				return null;
-			}
-		}
-		
-		public LoanFactory :AbstractFactory
-		{
-			public override Bank GetBank(string bankname)
-			{
-				return null;
-			}
-			
-			public override Loan GetLoan(string loan)
-			{
-				if(loan == "Home")
-					return new HomeLoan();
-				if(loan == "Commercial")
-					return new CommercialLoan();
-			}
-		}
-		
-		public class FactoryCreator
-		{
-			public static AbstractFactory GetFactory(string choice)
-			{
-				if(choice == "bank")
-				{
-					return new BankFactory();
-				}
-				
-				if(choice == "loan")
-				{
-					return new LoanFactory();
-				}
-			}
-		}
-		
-		public class clientClass
-		{
-			public static void Main()
-			{
-				AbstractFactory objBank=FactoryCreator.GetFactory("bank")
-				Bank b= objBank.GetBank("HDFC");
-				b.getBankname();
-				
-				AbstractFactory objLoan=FactoryCreator.GetFactory("loan");
-				Loan l= objLoan.GetLoan("Home")
-				l.getInterestRate();
-				l.CalculateLoanAmount(10,50000);
-			}
-		}
+The main usage of output cache is to improve performance of asp.net mvc application.
+It enable us to cache output of controller method. So we don't require to call each time for same controller action method
+Advantages
+- It reduces server round trips
+- It reduces database server round trips
+- It reduces network traffic
+
+Keep in mind
+- Avoid caching contents that are unique per user
+- Avoid caching contents that are changed rarely
+- Used caching for contents that are access frequently.
+
+How to use Output cache in controller action method
+[OutputCache(duration=10,VaryByParam="none/param name"]
+public actionresult Actionname(string param name)
+{
+
+}
+OutputCache has 2 properties.
+1) Duration in section.
+2) VaryByParam is either none or param name
+		If VaryByParam is none then it will create same version of cache for contents of controller method
+		[OutputCache(duration=10,VaryByParam="none"]
+		public actionresult Actionname(string param name)
+		{}
+		in this case if you pass param name and try to find specific record then it will always display previous cached list. Nothing happens.
+  VaryByParam is param name then it will create different version of cache content for query string or form parameters values
+	  [OutputCache(duration=10,VaryByParam="param_name"]
+	  public actionresult Actionname(string param_name)
+	  {}  
+	  This will create different version of cache contents for different query string or form parameters values. 
+	  If value is same as previously then it will return cache  version of content.
+  VaryByParam is "*" then it works for all parameters. if you want to specify parameters then you should provide name with ;
+  example [OutputCache(duration=10,VaryByParam="firstName; lastName"]
+	  
+Store locations for output cache contents
+You can specify cache location using location attribute. Default value is Any
+1) Any : You can store cache contenr on service side in which request is processed. 
+2) Client
+3) Downstream
+4) Server
+5) None
+6) ServerAnd Client
+
+-----------------------------------------How to improve MVC application performance-------------------------------------
+https://stackoverflow.com/questions/2246251/how-do-i-improve-asp-net-mvc-application-performance
+1) Bundling and Minification
+2) Use Caching
+3) Use CDN to load scripts
+4) Use AJAX request to update your components of UI
+5) Add GZip
+6) Remove unused HTTP modules
+7) Use Asyncronous controller to implement action methods that use external resources processing
+8) Disable viewstate if you are not using it <pages buffer="true" enableViewState="false">
 
 
-		1.2) Singleton pattern:
-				Singleton pattern create class which can have single object through out application. If any other class or objects try to access singleton
-				object then it should have same object always.
-				
-				public sealed class Singleton // class should be sealed so can't inheritate it
-				{
-					private static Singleton _instance=new Singleton();
-					private Singleton() // default constructor should be private so can't instaniate from outside of class
-					{
-						
-					}
-					
-					public static Singleton GetInstance // one static property which returns object of class
-					{
-						get
-						{																														
-							return _instance;
-						}
-					
-					}
-					
-					// here you can define as many methods as want of non static
-				}
-				
-				//usage of singleton class
-				class Usage
-				{
-					Singleton s= Singleton.GetInstance;
-					
-					s.methodname();
-				}
-		Usage : Logging mechanism, Multi Threading
-		
-		Difference between Singleton class and static class
-		
-		- One of the key advantage of singleton over static class is that it can implement interfaces and extend classes while the static class cannot (it can extend classes, but it does not inherit their instance members). If we consider a static class it can only be a nested static class as top level class cannot be a static class. Static means that it belongs to a class it is in and not to any instance. So it cannot be a top level class.
-		- Static class will have all its member as static only unlike Singleton.
-		- It can be lazily loaded whereas static will be initialized whenever it is first loaded.
-		- Singleton object stores in Heap but, static object stores in stack.
-		- We can clone the object of Singleton but, we can not clone the static class object.
-		- Singleton can use the Object Oriented feature of polymorphism but static class cannot.	
-		
-		1.3) Prototype design pattern
-			This pattern says that lets clone of an existing object rather than create new one and you can customized it as per your requirements.
-			Advantage
-			1) It reduces the need of sub classes
-			2) It hides complexity of object creation
-			3) Client can get new object without specifying type of an object
-			Usage
-			1) When system requires minimum classes
-			2) In a situation, where create new object is quite complex and expensive at that time
-			3) When you want to create new object at runtime
-			
-			public interface IEmployee
-			{
-				public IEmployee getClone();
-				public string getDetails();
-			}
-			
-			public Developer : IEmployee
-			{
-				string name;
-				string primaryskill;
-				public IEmployee getClone()
-				{
-					return (IEmployee)MemberwiseClone();
-				}
-				
-				public string getDetails()
-				{
-					return string.format("{0}-{1}-{2}",name,primaryskill);
-				}
-			}
-			
-			public Typist : IEmployee
-			{
-				string name;
-				string canTypeWordPerMinute;
-				public IEmployee getClone()
-				{
-					return (IEmployee)MemberwiseClone();
-				}
-				
-				public string getDetails()
-				{
-					return string.format("{0}-{1}",name,canTypeWordPerMinute);
-				}
-			}
-			
-			public class Client
-			{
-				public static voud Main()
-				{
-					Developer obj=new Developer();
-					obj.name="Rajni";
-					obj.primaryskill="";
-					
-					Developer obj1=(Developer)obj.getClone();
-					obj1.name="Hiral";
-					
-					Typist objTypist= new Typist()
-					objTypist.name="xyz";
-					objTypist.canTypeWordPerMinute="150";
-					
-					Typist objTypist1= (Typist)objTypist.getClone();
-					objTypist1.name="abc";
-				}
-			}
-	
+
+
 
 
 
