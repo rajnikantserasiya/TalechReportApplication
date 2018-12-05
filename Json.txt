@@ -1,0 +1,142 @@
+Form name: Download FTP File
+
+{
+   "id": "6b50fbf5-0ce0-4c47-af10-098bfdb41ddb",
+   "formdata": [
+      {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "ftpURL",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "FTP Server Name",
+                  "required": true
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "ftpFilePath",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "FTP Server File Path",
+                  "required": true
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "ftpFileName",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "FTP Server File Name",
+                  "required": true
+               }
+            }
+         ]
+      },
+      {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "isPassiveMode",
+               "type": "checkbox",
+               "templateOptions": {
+                  "label": "FTP Server uses Passive Mode"                 
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "isSSLEnable",
+               "type": "checkbox",
+               "templateOptions": {
+                  "label": "FTP Server uses SSL"                 
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "isAcceptSSLCertificate",
+               "type": "checkbox",
+               "templateOptions": {
+                  "label": "FTP Server accept SSL certificate"                 
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "destinationFilePath",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "Destination File Path",
+                  "required": true
+               }
+            }
+         ]
+      },
+      {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "destinationFileName",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "Destination File Name",
+                  "required": true
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "username",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "Username"                  
+               }
+            }
+         ]
+      },
+	  {
+         "fieldGroupClassName": "row",
+         "fieldGroup": [
+            {
+               "className": "col-12",
+               "key": "password",
+               "type": "tags-input",
+               "templateOptions": {
+                  "label": "Password"                  
+               }
+            }
+         ]
+      }
+   ]
+}
